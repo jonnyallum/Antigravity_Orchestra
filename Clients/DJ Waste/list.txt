@@ -1,0 +1,126 @@
+ Volume in drive C is Boot
+ Volume Serial Number is 0A9F-BF7F
+
+ Directory of c:\Users\jonny
+
+30/01/2026  21:14    <DIR>          .
+17/01/2026  18:58    <DIR>          ..
+11/03/2025  23:22    <DIR>          .anaconda
+29/01/2026  20:50    <DIR>          .android
+26/01/2026  10:48    <DIR>          .antigravity
+15/05/2025  19:51    <DIR>          .app-store
+02/03/2025  12:57    <DIR>          .aws
+02/03/2025  12:57    <DIR>          .azure
+03/06/2025  10:20    <DIR>          .cache
+26/01/2026  11:04    <DIR>          .cagent
+29/01/2026  16:42    <DIR>          .claude
+28/01/2026  21:20             2,105 .claude.json
+28/01/2026  11:12             1,007 .claude.json.backup
+28/01/2026  20:16             1,932 .claude.json.backup.1769631389870
+28/01/2026  20:16             2,108 .claude.json.backup.1769631395072
+28/01/2026  20:16             2,107 .claude.json.backup.1769635216685
+28/01/2026  21:20             2,107 .claude.json.backup.1769635216695
+28/01/2026  21:20             2,106 .claude.json.backup.1769635221110
+29/12/2025  12:42    <DIR>          .codex
+11/03/2025  23:23    <DIR>          .conda
+26/01/2026  11:04    <DIR>          .config
+11/03/2025  23:22    <DIR>          .continuum
+04/05/2025  19:53    <DIR>          .cursor
+17/09/2025  13:21    <DIR>          .dbus-keyrings
+28/01/2026  21:57    <DIR>          .docker
+15/06/2025  20:17    <DIR>          .dotnet
+02/06/2025  08:34                16 .emulator_console_auth_token
+04/06/2025  20:21    <DIR>          .expo
+26/05/2025  08:29    <DIR>          .flowise
+26/01/2026  12:10    <DIR>          .gemini
+02/03/2025  21:11                53 .git-for-windows-updater
+12/03/2025  22:37               278 .gitconfig
+18/04/2025  12:49    <DIR>          .gmail-mcp
+05/06/2025  12:20    <DIR>          .gradle
+01/03/2025  19:29    <DIR>          .ipython
+27/05/2025  08:20    <DIR>          .kube
+12/05/2025  12:45    <DIR>          .local
+10/05/2025  08:34    <DIR>          .matplotlib
+10/05/2025  07:46    <DIR>          .mintlify
+26/01/2026  10:26    <DIR>          .notebooklm-mcp
+01/06/2025  02:20    <DIR>          .pkg-cache
+17/09/2025  14:33    <DIR>          .pnpm-store
+17/04/2025  12:46    <DIR>          .rest-client
+02/06/2025  14:42    <DIR>          .skiko
+15/06/2025  18:15    <DIR>          .ssh
+01/03/2025  17:20    <DIR>          .vscode
+10/06/2025  18:23               121 .yarnrc
+03/05/2025  11:27                53 .zapierrc
+22/05/2025  17:15           204,323 01_All_filters.csv
+29/01/2026  16:14    <DIR>          anaconda3
+26/01/2026  12:11    <DIR>          Antigravity
+29/01/2026  21:41    <DIR>          Antigravity - template
+29/01/2026  13:23    <DIR>          Antigravity-TEAM
+17/04/2025  13:33    <DIR>          api
+22/05/2025  10:13        28,753,425 Bike It Data feed and FTP Data Services Explained.mp4
+22/05/2025  17:14           104,473 Bike It Data Feed Guide.pdf
+17/04/2025  13:33    <DIR>          bin
+30/01/2026  18:22                56 CD
+30/01/2026  19:52    <DIR>          CD Waste
+26/03/2025  18:09                52 codereview.cfg
+17/01/2026  19:03    <DIR>          Contacts
+26/03/2025  18:09             1,337 CONTRIBUTING.md
+26/01/2026  11:04    <DIR>          CrossDevice
+28/01/2026  20:05    <DIR>          Desktop
+30/01/2026  16:10    <DIR>          DJ Waste
+17/04/2025  13:33    <DIR>          doc
+17/01/2026  19:03    <DIR>          Documents
+30/01/2026  21:21    <DIR>          Downloads
+21/03/2025  17:04        86,611,344 edb_languagepack_4.exe
+21/03/2025  17:04        15,123,520 edb_mtk.exe
+21/03/2025  17:04        12,870,368 edb_npgsql.exe
+21/03/2025  17:05       669,403,584 edb_pem_server_8.exe
+21/03/2025  17:05        12,174,344 edb_pgagent_pg16.exe
+21/03/2025  17:06        42,064,112 edb_pgbouncer.exe
+21/03/2025  17:06        12,797,016 edb_pgjdbc.exe
+21/03/2025  17:06        21,080,920 edb_psqlodbc.exe
+21/03/2025  17:06        11,975,976 edb_sqlprofiler_pg16.exe
+21/03/2025  17:06        70,846,512 edb_xdb_62.exe
+17/01/2026  19:03    <DIR>          Favorites
+22/05/2025  17:14           983,064 FTP Connection Guide.pdf
+17/04/2025  13:03    <DIR>          go
+26/03/2025  18:09               505 go.env
+06/05/2025  21:00    <DIR>          hendler-ebay-sync
+28/01/2026  21:38    <DIR>          Joes #app
+02/05/2025  18:45    <DIR>          kliqtmedia-crm
+30/01/2026  16:11    <DIR>          La-Aesthetician.co.uk
+17/04/2025  13:33    <DIR>          lib
+26/03/2025  18:09             1,453 LICENSE
+17/01/2026  19:03    <DIR>          Links
+17/04/2025  13:33    <DIR>          misc
+17/01/2026  19:03    <DIR>          Music
+29/01/2026  18:57    <DIR>          New AG Project
+06/05/2025  19:17    <DIR>          New folder
+30/01/2026  21:13    <DIR>          new project antigraity
+28/01/2026  20:35    <DIR>          New project-Insydetradar
+01/06/2025  00:41    <DIR>          node_modules
+24/03/2025  13:08    <DIR>          npm-cache
+26/01/2026  20:11    <DIR>          OneDrive
+26/03/2025  18:09             1,303 PATENTS
+21/03/2025  17:06        43,537,408 pemhttpd.exe
+20/01/2026  11:07    <DIR>          Pictures
+17/04/2025  13:32    <DIR>          pkg
+28/01/2026  21:15    <DIR>          playground
+21/03/2025  17:07       122,691,059 postgis_3_4_pg16.exe
+16/04/2025  18:12       123,956,667 postgis_3_5_pg16.exe
+26/01/2026  16:42    <DIR>          Poundtrades
+28/01/2026  17:00    <DIR>          Poundtrades.app-antigravity
+12/03/2025  21:18    <DIR>          puppeteer_mcp_server
+26/03/2025  18:09             1,454 README.md
+17/01/2026  19:03    <DIR>          Saved Games
+17/01/2026  19:04    <DIR>          Searches
+26/03/2025  18:09               426 SECURITY.md
+23/01/2026  12:50    <DIR>          shield carpentry website
+17/04/2025  13:33    <DIR>          src
+17/04/2025  13:33    <DIR>          test
+26/03/2025  18:09                35 VERSION
+17/01/2026  19:03    <DIR>          Videos
+29/01/2026  22:16    <DIR>          Village-bakery
+01/06/2025  00:41                90 yarn.lock
+              39 File(s)  1,275,198,819 bytes
+              80 Dir(s)  1,782,432,100,352 bytes free
