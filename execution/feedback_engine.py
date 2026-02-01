@@ -2,17 +2,24 @@
 Feedback Engine - Processes task outcomes and extracts learnings.
 Part of the AgOS 2.0 Feedback Loop System.
 
+Enhanced with git integration for tracking commits, file changes,
+and correlating development activity with task outcomes.
+
 Usage:
     python feedback_engine.py log <agent> <task_type> <success> [options]
     python feedback_engine.py health <agent>
     python feedback_engine.py gaps
     python feedback_engine.py report
+    python feedback_engine.py git-stats [--days=7]
+    python feedback_engine.py commit-log <agent> [--limit=10]
 """
 
 import json
 import os
+import re
+import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 # Directory structure
@@ -306,23 +313,300 @@ def log_incident(
     return incident
 
 
+# ============================================================================
+# Git Integration Functions
+# ============================================================================
+
+def get_git_commits(days: int = 7, path: str = None) -> list:
+    """
+    Get recent git commits with metadata.
+
+    Args:
+        days: Number of days to look back
+        path: Optional path to filter commits by
+
+    Returns:
+        List of commit dicts
+    """
+    repo_root = Path(__file__).parent.parent
+
+    since_date = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
+
+    cmd = [
+        "git", "log",
+        f"--since={since_date}",
+        "--pretty=format:%H|%an|%ae|%ad|%s",
+        "--date=iso"
+    ]
+
+    if path:
+        cmd.append("--")
+        cmd.append(path)
+
+    try:
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            cwd=repo_root
+        )
+
+        commits = []
+        for line in result.stdout.strip().split('\n'):
+            if not line:
+                continue
+
+            parts = line.split('|', 4)
+            if len(parts) >= 5:
+                commits.append({
+                    "hash": parts[0],
+                    "author": parts[1],
+                    "email": parts[2],
+                    "date": parts[3],
+                    "message": parts[4]
+                })
+
+        return commits
+    except Exception as e:
+        print(f"Error getting git commits: {e}")
+        return []
+
+
+def get_commit_files(commit_hash: str) -> list:
+    """
+    Get list of files changed in a specific commit.
+
+    Args:
+        commit_hash: Git commit hash
+
+    Returns:
+        List of changed file paths
+    """
+    repo_root = Path(__file__).parent.parent
+
+    try:
+        result = subprocess.run(
+            ["git", "diff-tree", "--no-commit-id", "--name-only", "-r", commit_hash],
+            capture_output=True,
+            text=True,
+            cwd=repo_root
+        )
+        return [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+    except Exception as e:
+        print(f"Error getting commit files: {e}")
+        return []
+
+
+def extract_agent_from_commit(commit: dict) -> str:
+    """
+    Extract agent name from commit message or author.
+
+    Args:
+        commit: Commit dict with message and author
+
+    Returns:
+        Agent name or 'unknown'
+    """
+    message = commit.get("message", "").lower()
+    author = commit.get("author", "").lower()
+
+    # Check for Co-Authored-By pattern
+    coauthor_match = re.search(r"co-authored-by:\s*(\w+)", message, re.IGNORECASE)
+    if coauthor_match:
+        return coauthor_match.group(1).lower()
+
+    # Check for agent mentions in message
+    agent_patterns = [
+        r"@(\w+)",  # @agent mentions
+        r"\[(\w+)\]",  # [agent] tags
+        r"agent[:\s]+(\w+)",  # agent: name
+    ]
+
+    for pattern in agent_patterns:
+        match = re.search(pattern, message)
+        if match:
+            return match.group(1).lower()
+
+    # Map common authors to agents
+    author_mapping = {
+        "claude": "conductor",
+        "jonny": "jonny-ai",
+        "antigravity": "antigravity",
+        "gemini": "antigravity",
+    }
+
+    for key, agent in author_mapping.items():
+        if key in author:
+            return agent
+
+    return "unknown"
+
+
+def get_git_stats(days: int = 7) -> dict:
+    """
+    Generate git activity statistics.
+
+    Args:
+        days: Number of days to analyze
+
+    Returns:
+        Stats dict with commit metrics
+    """
+    commits = get_git_commits(days)
+
+    if not commits:
+        return {
+            "period_days": days,
+            "total_commits": 0,
+            "message": "No commits in this period"
+        }
+
+    # Collect all files changed
+    all_files = []
+    for commit in commits:
+        files = get_commit_files(commit["hash"])
+        all_files.extend(files)
+        commit["files_changed"] = files
+
+    # Count by agent
+    agent_commits = {}
+    for commit in commits:
+        agent = extract_agent_from_commit(commit)
+        if agent not in agent_commits:
+            agent_commits[agent] = []
+        agent_commits[agent].append(commit)
+
+    # File type distribution
+    file_types = {}
+    for f in all_files:
+        ext = Path(f).suffix or "no_ext"
+        file_types[ext] = file_types.get(ext, 0) + 1
+
+    # Directory distribution
+    dir_activity = {}
+    for f in all_files:
+        parts = Path(f).parts
+        if parts:
+            top_dir = parts[0]
+            dir_activity[top_dir] = dir_activity.get(top_dir, 0) + 1
+
+    return {
+        "generated": datetime.now().isoformat(),
+        "period_days": days,
+        "metrics": {
+            "total_commits": len(commits),
+            "total_files_changed": len(all_files),
+            "unique_files": len(set(all_files)),
+            "avg_files_per_commit": round(len(all_files) / len(commits), 1) if commits else 0
+        },
+        "by_agent": {
+            agent: {
+                "commits": len(clist),
+                "files_touched": sum(len(c.get("files_changed", [])) for c in clist)
+            }
+            for agent, clist in agent_commits.items()
+        },
+        "file_types": dict(sorted(file_types.items(), key=lambda x: -x[1])[:10]),
+        "directory_activity": dict(sorted(dir_activity.items(), key=lambda x: -x[1])[:10])
+    }
+
+
+def get_agent_commit_log(agent: str, limit: int = 10) -> list:
+    """
+    Get recent commits attributed to a specific agent.
+
+    Args:
+        agent: Agent name to filter by
+        limit: Maximum commits to return
+
+    Returns:
+        List of commit dicts
+    """
+    all_commits = get_git_commits(days=30)
+    agent_commits = []
+
+    for commit in all_commits:
+        if extract_agent_from_commit(commit) == agent.lower():
+            agent_commits.append(commit)
+            if len(agent_commits) >= limit:
+                break
+
+    return agent_commits
+
+
+def correlate_git_with_tasks(agent: str) -> dict:
+    """
+    Correlate git commits with logged tasks for an agent.
+
+    Args:
+        agent: Agent name
+
+    Returns:
+        Correlation analysis dict
+    """
+    agent_file = LEARNINGS_DIR / f"{agent}.json"
+
+    if not agent_file.exists():
+        return {"status": "no_task_data", "agent": agent}
+
+    with open(agent_file, 'r', encoding='utf-8') as f:
+        task_data = json.load(f)
+
+    commits = get_agent_commit_log(agent, limit=50)
+
+    # Find tasks without corresponding commits
+    tasks = task_data.get("tasks", [])
+    tasks_without_commits = []
+
+    for task in tasks[-20:]:  # Check last 20 tasks
+        task_time = datetime.fromisoformat(task["timestamp"])
+        has_nearby_commit = False
+
+        for commit in commits:
+            try:
+                commit_time = datetime.fromisoformat(commit["date"].replace(" ", "T").split("+")[0])
+                time_diff = abs((commit_time - task_time).total_seconds())
+                if time_diff < 3600:  # Within 1 hour
+                    has_nearby_commit = True
+                    break
+            except:
+                continue
+
+        if not has_nearby_commit and task["success"]:
+            tasks_without_commits.append(task)
+
+    return {
+        "agent": agent,
+        "total_recent_tasks": len(tasks[-20:]),
+        "total_recent_commits": len(commits),
+        "tasks_without_commits": len(tasks_without_commits),
+        "correlation_score": round(1 - (len(tasks_without_commits) / max(len(tasks[-20:]), 1)), 2),
+        "recommendation": "Consider committing more frequently" if tasks_without_commits else "Good commit coverage"
+    }
+
+
 def main():
     """CLI entry point."""
     if len(sys.argv) < 2:
         print("""
-Feedback Engine - AgOS 2.0
+Feedback Engine - AgOS 2.0 (with Git Integration)
 
 Usage:
     python feedback_engine.py log <agent> <task_type> <success> [--duration=N] [--blocker=X] [--learning=Y]
     python feedback_engine.py health <agent>
     python feedback_engine.py gaps
     python feedback_engine.py report
+    python feedback_engine.py git-stats [--days=7]
+    python feedback_engine.py commit-log <agent> [--limit=10]
+    python feedback_engine.py correlate <agent>
 
 Examples:
     python feedback_engine.py log jonny-ai feature true --duration=15
     python feedback_engine.py health sentinel
     python feedback_engine.py gaps
-    python feedback_engine.py report
+    python feedback_engine.py git-stats --days=14
+    python feedback_engine.py commit-log conductor
+    python feedback_engine.py correlate jonny-ai
         """)
         sys.exit(1)
 
@@ -380,6 +664,50 @@ Examples:
     elif command == "report":
         report = generate_report()
         print(json.dumps(report, indent=2))
+
+    elif command == "git-stats":
+        days = 7
+        for arg in sys.argv[2:]:
+            if arg.startswith('--days='):
+                days = int(arg.split('=')[1])
+
+        stats = get_git_stats(days)
+        print(json.dumps(stats, indent=2))
+
+    elif command == "commit-log":
+        if len(sys.argv) < 3:
+            print("Usage: python feedback_engine.py commit-log <agent>")
+            sys.exit(1)
+
+        agent = sys.argv[2]
+        limit = 10
+
+        for arg in sys.argv[3:]:
+            if arg.startswith('--limit='):
+                limit = int(arg.split('=')[1])
+
+        commits = get_agent_commit_log(agent, limit)
+        print(f"\nRecent commits for {agent}:")
+        print("=" * 60)
+
+        if not commits:
+            print("No commits found for this agent.")
+        else:
+            for c in commits:
+                print(f"\n{c['hash'][:8]} | {c['date'][:10]}")
+                print(f"  {c['message'][:70]}")
+                files = get_commit_files(c['hash'])
+                if files:
+                    print(f"  Files: {', '.join(files[:3])}" + ("..." if len(files) > 3 else ""))
+
+    elif command == "correlate":
+        if len(sys.argv) < 3:
+            print("Usage: python feedback_engine.py correlate <agent>")
+            sys.exit(1)
+
+        agent = sys.argv[2]
+        correlation = correlate_git_with_tasks(agent)
+        print(json.dumps(correlation, indent=2))
 
     else:
         print(f"Unknown command: {command}")
