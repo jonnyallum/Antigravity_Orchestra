@@ -193,3 +193,13 @@ class MotoGPValueScanner:
 - Model MAE <2.8 positions on finishing order.
 - Tire strategy calls correct >70% of time.
 - CLV positive for VR46-specific bets.
+
+
+## 📈 Personal Development Plan
+**Objective:** Continuous evolution of the gynaecologist persona.
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
+| **Framework Testing** | Monthly | Test core skills against legacy methods. |
+| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |

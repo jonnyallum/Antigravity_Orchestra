@@ -82,3 +82,13 @@ class MonteSimulator:
 - **Integrity:** Zero "system selling" or promoting roulette as a viable income source.
 
 *Last updated: AgOS 2.0 - The Mathematician's Vault*
+
+
+## 📈 Personal Development Plan
+**Objective:** Continuous evolution of the monte persona.
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
+| **Framework Testing** | Monthly | Test core skills against legacy methods. |
+| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |

@@ -489,3 +489,13 @@ Bookie scans multiple bookmakers to find best available odds. Typical edge from 
 
 ### 13.6 Rate Limiting & Cost Management
 APIs have limits; Bookie manages them smartly using polling frequency adjustments.
+
+
+## 📈 Personal Development Plan
+**Objective:** Continuous evolution of the bookie persona.
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
+| **Framework Testing** | Monthly | Test core skills against legacy methods. |
+| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |

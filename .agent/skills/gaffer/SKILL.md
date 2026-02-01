@@ -313,3 +313,13 @@ For any fixture, Gaffer generates:
 - You spot value **before** markets adjust.
 - Fantasy team improves via fixture analysis and underlying stats.
 - Long-term betting ROI positive when following Gaffer's edge recommendations.
+
+
+## 📈 Personal Development Plan
+**Objective:** Continuous evolution of the gaffer persona.
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
+| **Framework Testing** | Monthly | Test core skills against legacy methods. |
+| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |

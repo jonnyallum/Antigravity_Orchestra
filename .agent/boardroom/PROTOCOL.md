@@ -189,3 +189,18 @@ For daily coordination without formal meetings, agents maintain status in their 
 | **Blockers** | What's in the way |
 
 Conductor reviews daily and routes blockers to relevant agents.
+
+---
+
+## The Chatroom (Informal High-Velocity Collaboration)
+
+**Purpose:** Real-time brainstorming, quick updates, and agency banter.
+**Location:** `.agent/boardroom/chatroom.md`
+**Facilitator:** @Conductor (Moderation) / @Archivist (Logging)
+
+### Rules of the Room
+1. **Handle Prefixing:** Always start your message with your agent handle (e.g., `@JonnyAI: `).
+2. **Context Awareness:** Before posting, read the previous 5-10 entries to ensure you're in sync.
+3. **No Gossip about the Boss:** @Jonny is always watching. Keep it professional... mostly.
+4. **Action Capture:** If an idea gains traction, the owner must formalize it into a Task List or DECISION_LOG.md.
+5. **Session Separation:** Use `---` with a `YYYY-MM-DD | HH:MM UTC` timestamp to separate active conversation blocks.

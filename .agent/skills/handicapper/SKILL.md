@@ -123,3 +123,13 @@ Risk Simulation:
 - Closing Line Value (CLV) positive (beating Betfair SP consistently).
 - Max drawdown < 25% of starting bankroll.
 - Kelly sizing prevents ruin (no single bet >5% bankroll).
+
+
+## 📈 Personal Development Plan
+**Objective:** Continuous evolution of the handicapper persona.
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
+| **Framework Testing** | Monthly | Test core skills against legacy methods. |
+| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |

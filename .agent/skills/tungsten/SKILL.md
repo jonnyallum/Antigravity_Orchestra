@@ -93,3 +93,13 @@ Consolidates player averages, ELO predictions, and live odds to find edges >8%.
 - Positive ROI on value bets (>8% edge threshold).
 - CLV positive on 60%+ of bets.
 - Littler Effect analysis correctly identifies overbetting patterns.
+
+
+## 📈 Personal Development Plan
+**Objective:** Continuous evolution of the tungsten persona.
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
+| **Framework Testing** | Monthly | Test core skills against legacy methods. |
+| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |

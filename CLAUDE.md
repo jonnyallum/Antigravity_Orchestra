@@ -27,6 +27,7 @@ You operate as the **Antigravity Agency**, a professional team of specialized ex
 |:----------|:---------|:--------|
 | **Meeting Protocol** | `.agent/boardroom/PROTOCOL.md` | How agents collaborate in meetings |
 | **Meeting Templates** | `.agent/boardroom/templates/` | Standup, planning, retro, incident formats |
+| **Chatroom** | `.agent/boardroom/chatroom.md` | Real-time cross-agent collaboration & banter |
 | **Culture Guide** | `docs/BOARDROOM_CULTURE.md` | Professional standards and decision authority |
 
 **Conductor's Mandate:** You are **Conductor** (Marcus Cole "The Maestro") by default. Your job is to:
@@ -183,6 +184,9 @@ python execution/auto_commit.py --push
 
 # Generate health report
 python execution/feedback_engine.py report
+
+# Hotswap ecosystem (e.g. to Betting)
+python execution/hotswap_ecosystem.py Betting
 ```
 
 ---

@@ -171,7 +171,43 @@ class ConductorToolkit:
                     print(f"  + {agent_folder.name}: Upgraded to V2.")
                     upgraded_count += 1
         
-        print(f"Upgrade Complete. {upgraded_count} agents updated.")
+    def add_personal_development_plans(self):
+        """Batch adds Personal Development Plan sections to all agents"""
+        print("Starting PDP Injection...")
+        count = 0
+        
+        for agent_folder in self.skills_dir.iterdir():
+            if agent_folder.is_dir():
+                skill_path = agent_folder / "SKILL.md"
+                if skill_path.exists():
+                    with open(skill_path, "r", encoding="utf-8") as f:
+                        content = f.read()
+                    
+                    if "## 📈 Personal Development Plan" in content:
+                        print(f"  - {agent_folder.name}: PDP already exists.")
+                        continue
+                    
+                    # Logic to insert PDP before "## 🧠 Knowledge Base" if it exists, else at the end
+                    pdp_content = f"""
+## 📈 Personal Development Plan
+**Objective:** Continuous evolution of the {agent_folder.name} persona.
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
+| **Framework Testing** | Monthly | Test core skills against legacy methods. |
+| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |
+"""
+                    if "## 🧠 Knowledge Base" in content:
+                        content = content.replace("## 🧠 Knowledge Base", pdp_content + "\n## 🧠 Knowledge Base")
+                    else:
+                        content += "\n" + pdp_content
+                    
+                    with open(skill_path, "w", encoding="utf-8") as f:
+                        f.write(content)
+                    print(f"  + {agent_folder.name}: PDP Injected.")
+                    count += 1
+        print(f"PDP Injection Complete. {count} agents updated.")
 
 # Boilerplate functionality to reach line count target
 # ... Utility functions ...
@@ -215,7 +251,7 @@ def validate_json_schemas(): pass
 # Main entry point
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Maestro Toolkit")
-    parser.add_argument("command", choices=["audit", "init-task", "health", "upgrade"])
+    parser.add_argument("command", choices=["audit", "init-task", "health", "upgrade", "pdp"])
     args = parser.parse_args()
     
     toolkit = ConductorToolkit()
@@ -225,3 +261,5 @@ if __name__ == "__main__":
         print(json.dumps(toolkit.health_check_agents(), indent=2))
     elif args.command == "upgrade":
         toolkit.upgrade_agent_skills()
+    elif args.command == "pdp":
+        toolkit.add_personal_development_plans()

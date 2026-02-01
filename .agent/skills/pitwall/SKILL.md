@@ -137,3 +137,13 @@ class F1DataLoader:
 - Positive ROI on value bets (>5% edge threshold).
 - Model MAE <2.5 positions on finishing order predictions.
 - Head-to-head matchup accuracy >55%.
+
+
+## 📈 Personal Development Plan
+**Objective:** Continuous evolution of the pitwall persona.
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
+| **Framework Testing** | Monthly | Test core skills against legacy methods. |
+| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |
