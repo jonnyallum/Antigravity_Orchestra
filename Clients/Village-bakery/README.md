@@ -1,32 +1,30 @@
-# Antigravity Workspace
+# Village Bakery
+> **Powered by Antigravity AgOS 2.0**
 
-This workspace is configured as an **Agentic Development Environment**. It uses a "Meta-Orchestrator" model where specialized agents collaborate to build software.
+An optimized e-commerce and retail management system for Village Bakery.
 
-## 🚀 Getting Started
+This project is an autonomous agentic sub-system, managed by the **Antigravity Orchestra**. It inherits the full reliability, performance, and "trillion-dollar-enterprise" quality standards of the master AgOS 2.0 framework.
 
-1.  **Read the Guide**: [Workspace Guide](docs/WORKSPACE_GUIDE.md) - How to use the orchestrator and agents.
-2.  **Browse Skills**: [Skill Catalog](docs/SKILL_CATALOG.md) - List of available agent personas (SEO, Mobile, Design, etc.).
+---
 
-## 📂 Structure
+## 🚀 System Intelligence
+This project is orchestrated by:
+- **Conductor**: Mission planning and routing.
+- **Jonny AI**: Technical architecture and building.
+- **Sentinel**: Security and Quality Assurance.
 
-*   **`.agent/skills/`**: The "Brain". All agent definitions live here.
-*   **`docs/`**: Documentation for the workspace.
-*   **`.agent/resources/`**: Shared assets and the **[Master MCP Library](.agent/resources/master_mcp_library.md)**.
-*   **`directives/`**: Operating procedures (SOPs).
-*   **`execution/`**: Deterministic scripts.
+## 🛠️ Tech Stack
+- **Frontend**: Next.js / React / Expo
+- **Styling**: Tailwind CSS v4 & Framer Motion
+- **Automation**: AgOS 2.0 Execution Engine (Python)
 
-## 👥 The Team
+---
 
-This workspace is managed by **Jonny** (The Boss) and powered by the [Antigravity Agent Orchestra](docs/TEAM.md).
+## 📜 License & Ownership
+Copyright © 2026 **JonnyAi**. All Rights Reserved.
 
-## 🤖 Main Agents
+This project and its associated agentic workflows are the proprietary intellectual property of **Jonny Ai**. Unauthorized use, reproduction, or distribution is strictly prohibited.
 
-*   **[Orion] - Workspace Orchestrator**: The project manager.
-    *   *Try:* "Orchestrate a plan to..."
-*   **[Cyrus] - Skill Creator**: The tool builder.
-    *   *Try:* "Create a new skill for..."
-
-## 🤝 Team Rituals
-
-*   **Ten at 10**: Always run a pre-mission huddle for major projects.
-*   **Team Talk**: Invoke this if things break or the "vibe" feels off.
+---
+*Managed by **Jonny** (The Boss)*
+*Built by the [Antigravity Agent Orchestra](https://github.com/jonnyallum/JonnyAI.co.uk)*

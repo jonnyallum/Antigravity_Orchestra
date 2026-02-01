@@ -31,9 +31,9 @@ Standard AgOS 2.0 Agent: sentinel
 
 | Job | Frequency | Success Criteria |
 |:----|:----------|:-----------------|
-| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
-| **Framework Testing** | Monthly | Test core skills against legacy methods. |
-| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |
+| **Regression Suite Build** | Weekly | Add 1 automated regression test for a core `execution/` script. |
+| **Pioneer Vulnerability Scan** | Monthly | Audit 1 new "God-Tier" framework for security/performance regressions. |
+| **Expansion** | Quarterly | Design a new "Quality Gate" for the Agent Orchestra. |
 
 ## 🧠 Knowledge Base / Context (Legacy)
 # Sentinel - Security & Quality Assurance Lead

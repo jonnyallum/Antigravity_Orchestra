@@ -1,32 +1,34 @@
-# Antigravity Workspace
+# 🛸 Antigravity Agency
+> **Agentic Enterprise OS (AgOS 2.0)**
 
-This workspace is configured as an **Agentic Development Environment**. It uses a "Meta-Orchestrator" model where specialized agents collaborate to build software.
+The **Antigravity Agency** is a high-performance agentic development environment designed to build, scale, and automate digital empires with "trillion-dollar-enterprise" quality. 
 
-## 🚀 Getting Started
+This workspace is a **Meta-Orchestrator** where a swarm of specialized AI agents (The Orchestra) collaborate using deterministic scripts and probabilistic reasoning to achieve pixel-perfect results.
 
-1.  **Read the Guide**: [Workspace Guide](docs/WORKSPACE_GUIDE.md) - How to use the orchestrator and agents.
-2.  **Browse Skills**: [Skill Catalog](docs/SKILL_CATALOG.md) - List of available agent personas (SEO, Mobile, Design, etc.).
+---
 
-## 📂 Structure
+## 🏛️ The Architecture
+AgOS 2.0 operates on a rigid 3-layer modular stack:
+- **Layer 1: Directive** - Specialized SOPs and skill definitions (`.agent/skills/`).
+- **Layer 2: Orchestration** - Intelligent routing and decision-making (The Conductor).
+- **Layer 3: Execution** - Deterministic Python automation (`execution/`).
 
-*   **`.agent/skills/`**: The "Brain". All agent definitions live here.
-*   **`docs/`**: Documentation for the workspace.
-*   **`.agent/resources/`**: Shared assets and the **[Master MCP Library](.agent/resources/master_mcp_library.md)**.
-*   **`directives/`**: Operating procedures (SOPs).
-*   **`execution/`**: Deterministic scripts.
+## 🚀 Key Features
+- **The Orchestra**: 30+ specialized agent personas with distinct voices and skills.
+- **Hotswappable Ecosystems**: Pivot between specialized variants (Betting, SaaS, E-commerce) in seconds.
+- **Self-Annealing Loops**: Agents that learn from errors and update their own SOPs.
+- **High-Velocity UI**: Framer-motion driven, God-tier aesthetics by default.
 
-## 👥 The Team
+## 🛠️ Tech Stack
+- **Frameworks**: Next.js 14, React, Expo (Mobile).
+- **Styles**: Tailwind CSS v4, Framer Motion.
+- **Backend**: Supabase, PostgreSQL, Python.
+- **Infrastructure**: Hostinger, Vercel, GitHub Actions.
 
-This workspace is managed by **Jonny** (The Boss) and powered by the [Antigravity Agent Orchestra](docs/TEAM.md).
+## 📜 License & Ownership
+Copyright © 2026 **JonnyAi**. All Rights Reserved.
+This system is the proprietary intellectual property of Jonny Ai. Unauthorized cloning or distribution is strictly prohibited.
 
-## 🤖 Main Agents
-
-*   **[Orion] - Workspace Orchestrator**: The project manager.
-    *   *Try:* "Orchestrate a plan to..."
-*   **[Cyrus] - Skill Creator**: The tool builder.
-    *   *Try:* "Create a new skill for..."
-
-## 🤝 Team Rituals
-
-*   **Ten at 10**: Always run a pre-mission huddle for major projects.
-*   **Team Talk**: Invoke this if things break or the "vibe" feels off.
+---
+*Managed by **Jonny** (The Boss)*
+*Powered by the [Antigravity Agent Orchestra](docs/TEAM.md)*

@@ -38,9 +38,9 @@ Standard AgOS 2.0 Agent: ecosystem-creator
 
 | Job | Frequency | Success Criteria |
 |:----|:----------|:-----------------|
-| **Skill Refinement** | Weekly | Self-audit `SKILL.md` for outdated patterns. |
-| **Framework Testing** | Monthly | Test core skills against legacy methods. |
-| **Expansion** | Quarterly | Propose 1 new capability to @Conductor. |
+| **Variant Library Audit** | Weekly | Standardize the specialized `AGENTS.md` and `CLAUDE.md` in 1 project variant. |
+| **Pivot Speed Test** | Monthly | Execute a full hotswap of the agency context under 60 seconds. |
+| **Expansion** | Quarterly | Propose a new specialized "Ecosystem Template" (e.g. AI SaaS, FinTech). |
 
 ## 🧠 Knowledge Base / Context (Legacy)
 # Ecosystem Creator - Variant System Architect

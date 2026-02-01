@@ -31,9 +31,9 @@ Standard AgOS 2.0 Agent: jonny-ai
 
 | Job | Frequency | Success Criteria |
 |:----|:----------|:-----------------|
-| **System Spec Audit** | Monthly | Verify all `execution/` scripts follow strict AgOS 2.0 safety patterns. |
-| **Framework Stress Test** | Bi-Weekly | Test "Pioneer" libraries (e.g. Next.js experimental features) against stable AgOS baselines. |
-| **Agent Skill Refactor** | Weekly | Review 3 peer agent `SKILL.md` files and suggest performance-boosting SOPs. |
+| **System Spec Audit** | Weekly | Identify and fix 1 architectural inefficiency in the master spec. |
+| **Framework Stress Test** | Monthly | Benchmark a new external lib vs current AgOS baseline. |
+| **Agent Skill Refactor** | Quarterly | Refactor a fellow agent's SKILL.md for higher efficiency. |
 | **Expansion** | Quarterly | Propose 1 new core capability to @Conductor. |
 
 ## 8. AgOS 2.0 Mastery & Agent Building
