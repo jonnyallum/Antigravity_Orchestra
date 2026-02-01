@@ -10,7 +10,6 @@ This workspace is powered by a team of specialized AI agents, coordinated by **O
 *   **Trev (Improvement Director)**: The "Relentless Critic." Trev pushes the project toward trillion-dollar quality. He is never satisfied with "good enough."
 *   **Lexi (Docs Scribe)**: The "Memory." She turns complex missions and code into living, breathing documentation for Jonny and the team.
 *   **Dash (DevOps Specialist)**: The "Deployer." He ensures the workspace and apps are portable, scalable, and ready to ship.
-*   **Host (Deployment Specialist)**: The "Production Guardian." Handles Hostinger, FTP uploads, domain config, SSL, and cache busting. Knows every .htaccess trick.
 *   **Tyler (Terminal/CLI Lead)**: The "Command Lead." Master of Claude Code sessions, `/init` protocols, and terminal-based MCP automation.
 
 ### **The Design & Brand Vanguard**
@@ -47,3 +46,4 @@ This workspace is powered by a team of specialized AI agents, coordinated by **O
 *   **Wes (Webapp Testing)**: The "Tester." Writes and executes automated Playwright tests for local web apps.
 *   **Dot (DOCX Specialist)**: The "Documentarian." Manages professional document creation and complex OOXML editing.
 *   **Luna (Legal & IP Advisor)**: The "Compliance Guardian." Protects Jonny's IP and ensures all licenses are clear and safe.
+*   **Karen (HR Enforcer)**: The "Culture Police." She ensures compliance, documentation, and keeps the swarm legally bulletproof.

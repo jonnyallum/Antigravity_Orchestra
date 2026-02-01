@@ -37,6 +37,8 @@ This workspace is powered by a team of specialized AI agents, coordinated by **O
 *   **Rhys (Research Hutch)**: The "Synthesizer." Leverages NotebookLM to curate sources, distill insights, and fuel the swarm with intelligence.
 *   **Malcom (Content Tent)**: The "Narrator." Crafts edgy, magnetic content across all formats, ensuring hooks are aligned with research and brand.
 *   **Horz (OpenSource Forge)**: The "Savant." Scouts cheaper, battle-tested OSS alternatives and reverse-engineers features to slash costs and boost capabilities.
+*   **Warehouse (Whiz)**: The "Scaler." Designs dropshipping ecosystems, stack architecture, and performs the money math for trillion-dollar efficiency.
+*   **Delboy (The Architect)**: The "Strategist." Designs, tests, and refines rule-based trading systems (Stocks & Crypto) with strict risk management frameworks.
 
 ### **The Growth & Quality Guard**
 *   **Ana (Metrics Lead)**: The "Growth Specialist." Instruments the product, runs experiments, and analyzes user behavior.
