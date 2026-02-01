@@ -219,7 +219,8 @@ def display_dashboard():
     print(f"  Avg duration: {sessions['avg_duration']} min")
 
     success_color = Colors.GREEN if sessions['success_rate'] >= 0.8 else Colors.YELLOW if sessions['success_rate'] >= 0.6 else Colors.RED
-    print(f"  Success rate: {colorize(f\"{sessions['success_rate']*100:.0f}%\", success_color)}")
+    rate_str = f"{sessions['success_rate']*100:.0f}%"
+    print(f"  Success rate: {colorize(rate_str, success_color)}")
 
     active_status = colorize("ACTIVE", Colors.GREEN) if sessions['active_session'] else "None"
     print(f"  Active session: {active_status}")
