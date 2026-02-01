@@ -8,8 +8,8 @@ This is the **Master Workspace** for the Antigravity Agency. All client projects
 
 ### 🌐 Alternative Environments
 To switch contexts (e.g. for specialized betting research), change your directory to the relevant client workspace:
-- **Betting Stable:** [Link to Environment](./Clients/Alternative-Environment-Betting)
-- **Activation:** `cd Clients/Alternative-Environment-Betting`
+- **Betting Stable:** [Link to Environment](./Ecosystems/Betting)
+- **Activation:** `cd Ecosystems/Betting`
 
 ---
 
