@@ -1,32 +1,42 @@
 {
   "ecosystems": [
     {
-      "name": "Alternative-Environment-Betting",
-      "path": "C:\\Users\\Dell\\.gemini\\antigravity\\scratch\\JonnyAI\\Clients\\Alternative-Environment-Betting",
+      "name": "Betting",
+      "path": "Ecosystems/Betting",
       "type": "agency",
-      "created": "2026-02-01 20:52",
-      "last_sync": null
+      "description": "Sports betting, odds analysis, and gambling systems",
+      "created": "2026-02-01T20:52:00Z",
+      "last_sync": "2026-02-01T00:00:00Z",
+      "status": "active"
     },
     {
-      "name": "Ecosystems/Trading-Floor",
-      "path": "C:\\Users\\Dell\\.gemini\\antigravity\\scratch\\JonnyAI\\Clients\\Ecosystems\\Trading-Floor",
+      "name": "Trading-Floor",
+      "path": "Ecosystems/Trading-Floor",
       "type": "trading",
-      "created": "2026-02-01 22:12",
-      "last_sync": null
+      "description": "Financial trading, market analysis, and algorithmic strategies",
+      "created": "2026-02-01T22:12:00Z",
+      "last_sync": "2026-02-01T00:00:00Z",
+      "status": "active"
     },
     {
-      "name": "Ecosystems/Red-Team-Lab",
-      "path": "C:\\Users\\Dell\\.gemini\\antigravity\\scratch\\JonnyAI\\Clients\\Ecosystems\\Red-Team-Lab",
-      "type": "agency",
-      "created": "2026-02-01 22:16",
-      "last_sync": null
+      "name": "Red-Team-Lab",
+      "path": "Ecosystems/Red-Team-Lab",
+      "type": "security",
+      "description": "Security testing, vulnerability research, and defensive strategies",
+      "created": "2026-02-01T22:16:00Z",
+      "last_sync": "2026-02-01T00:00:00Z",
+      "status": "active"
     },
     {
-      "name": "Ecosystems/Media-House",
-      "path": "C:\\Users\\Dell\\.gemini\\antigravity\\scratch\\JonnyAI\\Clients\\Ecosystems\\Media-House",
+      "name": "Media-House",
+      "path": "Ecosystems/Media-House",
       "type": "content",
-      "created": "2026-02-01 22:19",
-      "last_sync": null
+      "description": "Content creation, video production, and media campaigns",
+      "created": "2026-02-01T22:19:00Z",
+      "last_sync": "2026-02-01T00:00:00Z",
+      "status": "active"
     }
-  ]
+  ],
+  "default_ecosystem": null,
+  "hotswap_history": []
 }

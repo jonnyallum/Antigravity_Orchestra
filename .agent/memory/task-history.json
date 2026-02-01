@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "created": "2026-02-01T00:00:00Z",
+  "last_updated": "2026-02-01T00:00:00Z",
+  "tasks": [],
+  "summary": {
+    "total_tasks": 0,
+    "completed": 0,
+    "failed": 0,
+    "in_progress": 0,
+    "by_agent": {},
+    "by_type": {}
+  },
+  "recent_learnings": [],
+  "recurring_blockers": []
+}

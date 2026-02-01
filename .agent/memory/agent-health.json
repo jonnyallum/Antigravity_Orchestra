@@ -1,0 +1,205 @@
+{
+  "generated": "2026-02-01T00:00:00Z",
+  "period": "2026-W05",
+  "system_status": "operational",
+  "agents": {
+    "conductor": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "jonny-ai": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "pixel": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "sentinel": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "deploy": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "autoflow": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "forge": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "metric": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "helpline": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "archivist": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "scout": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "parser": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "echo": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "goldie": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "clippers": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "vaultguard": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "datastore": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "devops": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "manus": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "counsel": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "adapter": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "warehouse": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "delboy": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "ecosystem-creator": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": []
+    },
+    "watcher": {
+      "status": "new",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": ["initial_calibration"]
+    },
+    "nucleus": {
+      "status": "new",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": ["initial_calibration"]
+    },
+    "quartermaster": {
+      "status": "new",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": ["initial_calibration"]
+    },
+    "chronos": {
+      "status": "new",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": null,
+      "training_needs": ["initial_calibration"]
+    }
+  },
+  "gaps_detected": [],
+  "next_training_day": "2026-02-07"
+}
