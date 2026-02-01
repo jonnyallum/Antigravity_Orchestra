@@ -13,7 +13,7 @@ class FeedbackLoop:
         self.workspace = Path(workspace_path)
         self.stats_file = self.workspace / ".agent" / "memory" / "backtest_stats.json"
         self.iterations = 0
-        self.target_threshold = 0.50 # 50% minimum accuracy/ROI target
+        self.target_threshold = 0.70 # 70% minimum accuracy/ROI target
         
         # Initial Model Parameters
         self.parameters = {
@@ -60,8 +60,8 @@ class FeedbackLoop:
             self.parameters["f1"]["telemetry_depth"] += 0.05
             
         if darts_acc < self.target_threshold:
-            # Darts is already high, but we aim for excellence
-            print("  [STABILIZE] Darts performing well.")
+            print("  [REFINE] Improving Tungsten's Double Accuracy weight...")
+            self.parameters["darts"]["double_accuracy_weight"] += 0.05
             
         self.iterations += 1
         return results
@@ -87,4 +87,4 @@ if __name__ == "__main__":
     # Point to the specialized environment
     workspace = r"C:\Users\Dell\.gemini\antigravity\scratch\JonnyAI\Clients\Alternative-Environment-Betting"
     loop = FeedbackLoop(workspace)
-    loop.run_sprint()
+    loop.run_sprint(max_iterations=40)
