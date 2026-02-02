@@ -1,0 +1,179 @@
+{
+    "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/servers/main/schemas/mcp-config.json",
+    "mcpServers": {
+        "sequential-thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ],
+            "enabled": true
+        },
+        "memory": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-memory"
+            ],
+            "enabled": true
+        },
+        "fetch": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-fetch"
+            ],
+            "enabled": true
+        },
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "c:/Users/jonny/Desktop/Jonny AI"
+            ],
+            "enabled": true
+        },
+        "git": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-git",
+                "--repository",
+                "c:/Users/jonny/Desktop/Jonny AI"
+            ],
+            "enabled": true
+        },
+        "time": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-time"
+            ],
+            "enabled": true
+        },
+        "brave-search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-brave-search"
+            ],
+            "env": {
+                "BRAVE_API_KEY": "BSAA64MN7oF8UrnJoeNNXWCOOjkGG2P"
+            },
+            "enabled": true
+        },
+        "github": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-github"
+            ],
+            "env": {
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+            },
+            "enabled": true
+        },
+        "postgres": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-postgres",
+                "postgresql://postgres.jpfjyyagdnveumasrgdz:@aws-0-eu-west-2.pooler.supabase.com:6543/postgres"
+            ],
+            "enabled": true
+        },
+        "google-drive": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-gdrive"
+            ],
+            "env": {
+                "GDRIVE_CLIENT_ID": "628827376331-5i66ur566sfd21qe5oakh1qf2jq7fhht.apps.googleusercontent.com",
+                "GDRIVE_CLIENT_SECRET": "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"
+            },
+            "enabled": true
+        },
+        "google-maps": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-google-maps"
+            ],
+            "env": {
+                "GOOGLE_MAPS_API_KEY": "ba059b49d6fcb6770ab3d64a69454f2de808a4e4"
+            },
+            "enabled": true
+        },
+        "puppeteer": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-puppeteer"
+            ],
+            "enabled": true
+        },
+        "linear": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-linear"
+            ],
+            "env": {
+                "LINEAR_API_KEY": "lin_api_Miriv4fLP65Nu3njrc6xZ6F3hs8gQnV2LsmCOECg"
+            },
+            "enabled": true
+        },
+        "exa": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "exa-mcp-server"
+            ],
+            "env": {
+                "EXA_API_KEY": "e012e6da-7a6e-4026-b4d8-a96a4b9e2fd0"
+            },
+            "enabled": true
+        },
+        "sqlite": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sqlite",
+                "--db-path",
+                "c:/Users/jonny/Desktop/Jonny AI/.tmp/workspace.db"
+            ],
+            "enabled": true
+        },
+        "notebooklm": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "notebooklm-mcp"
+            ],
+            "enabled": true
+        },
+        "insydetradar-supabase": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@supabase/mcp-server"
+            ],
+            "env": {
+                "SUPABASE_URL": "https://kerqqobkiziadwtkpprx.supabase.co",
+                "SUPABASE_SERVICE_ROLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtlcnFxb2JraXppYWR3dGtwcHJ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk4OTg2MzUsImV4cCI6MjA4NTQ3NDYzNX0.9g0ddCqS2ZlCa7HlEhKlJxYumx-VKK7dyPkPCHXrVio"
+            },
+            "enabled": true
+        },
+        "insydetradar-db": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-postgres",
+                "postgresql://postgres.kerqqobkiziadwtkpprx:Aprilia100!69.@aws-0-eu-west-2.pooler.supabase.com:6543/postgres"
+            ],
+            "enabled": true
+        }
+    }
+}
