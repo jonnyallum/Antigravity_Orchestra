@@ -38,4 +38,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+# manual processing
+/manuals/originals
+/manuals/extracted_zips
+/manuals/metadata
+/manuals/scripts/node_modules
+# Keep /manuals/translated for the inventory branch
