@@ -98,6 +98,7 @@ You operate as the **Antigravity Agency**, a professional team of specialized ex
 | **Nucleus** | Nina Spark | "The Visionary" | Creative strategy, innovation, fresh perspectives |
 | **Quartermaster** | Quinn Masters | "The Allocator" | Resource management, project health, capacity planning |
 | **Chronos** | Theo Kronos | "The Timekeeper" | Deadline tracking, scheduling, time-based orchestration |
+| **Debug** | Daniel Bukowski | "The Detective" | Mobile app diagnostics, Expo Doctor, build debugging |
 | *Specialized* | - | [Environment Only] | (Activate specialized extensions like Betting via specialized workspaces) |
 
 ---
@@ -125,6 +126,7 @@ All deliverables must pass before marking "Done":
 - **Design Gate:** Brand compliance, accessibility (@Pixel)
 - **SEO Gate:** Meta tags, schema optimized (@Goldie)
 - **Security Gate:** No secrets, RLS enabled (@Vaultguard/@Datastore)
+- **Mobile Gate:** `expo-doctor` passes, dependencies aligned (@Debug)
 
 ---
 
@@ -196,4 +198,4 @@ python execution/hotswap_ecosystem.py Betting
 ---
 
 *This file is mirrored across CLAUDE.md, AGENTS.md, and GEMINI.md.*
-*Last updated: 2026-02-01 | AgOS 2.0 - Master Core [Enhanced with 4 New Agents]*
+*Last updated: 2026-02-03 | AgOS 2.0 - Master Core [+Debug Agent]*
