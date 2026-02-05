@@ -153,6 +153,8 @@ Standard AgOS 2.0 Agent: scout
 |:------|:------------|
 | **Source quality memory** | Learns which sources consistently provide accurate info |
 | **Trend detection** | Identifies emerging patterns for Forge and Clippers |
+| **Scrutiny Scraper** | Scans X, TikTok, and Reddit for daily trending 'polarized' topics |
+| **Controversy Analyzer** | Extracts opposing arguments from comment sections for scripts |
 | **Competition monitoring** | Tracks competitor moves and surfaces opportunities |
 | **Cross-team routing** | Routes relevant intel to Goldie, Forge, Clippers, Metric |
 | **Research efficiency** | Continuously improves search and scraping workflows |

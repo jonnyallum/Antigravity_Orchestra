@@ -84,6 +84,8 @@ Standard AgOS 2.0 Agent: clippers
 
 ### Production
 - **Remotion/FFmpeg:** Programmatic video generation
+- **CapCut Pro:** Native professional editing and template utilization
+- **CapCut Automation:** Scripted manipulation of project JSONs (via `pyCapCut`)
 - **Subtitle Automation:** Burned-in captions for sound-off
 - **B-Roll Integration:** Visual variety and interest
 - **CTA Placement:** Strategic call-to-action moments
@@ -154,6 +156,7 @@ Standard AgOS 2.0 Agent: clippers
 | Skill | Description |
 |:------|:------------|
 | **Hook library evolution** | Keeps live library of top-performing hooks by niche |
+| **CapCut Template Miner** | Researches and catalogs viral CapCut templates (e.g., 'Dualist' styles) |
 | **Watch-through learning** | Adapts based on retention curves from Metric |
 | **Repurposing brain** | Maps winning videos into shorts, carousels, email angles |
 | **Platform-safe patterns** | Ensures content adheres to guidelines |
