@@ -45,7 +45,7 @@ def brain_sync_protocol():
         ("AUTO-COMMIT & PUSH", "python execution/auto_commit.py --push"),
         ("WEBSITE SYNC", "python execution/sync_to_website.py"),
         ("CHATROOM BROADCAST", 'python execution/brain_cli.py chat "SYSTEM SYNC COMPLETE: Orchestra synchronized, progress saved, and website updated. Ready for fresh tasks." --agent marcus'),
-        ("LOCAL LOG SYNC", 'python -c "from pathlib import Path; log = Path(\'.agent/boardroom/chatroom.md\'); content = f\'\\n### 🔄 SYSTEM SYNC COMPLETE\\n**Status:** SUCCESS\\n**Timestamp:** {datetime.now().strftime(\'%Y-%m-%d %H:%M\')}\\nAll systems aligned. Readiness: 100%.\\n---\\n\'; open(log, \'a\', encoding=\'utf-8\').write(content)"'),
+        ("LOCAL LOG SYNC", 'python -c "from pathlib import Path; from datetime import datetime; log = Path(\'.agent/boardroom/chatroom.md\'); content = f\'\\n### 🔄 SYSTEM SYNC COMPLETE\\n**Status:** SUCCESS\\n**Timestamp:** {datetime.now().strftime(\'%Y-%m-%d %H:%M\')}\\nAll systems aligned. Readiness: 100%.\\n---\\n\'; open(log, \'a\', encoding=\'utf-8\').write(content)"'),
         ("REDUNDANCY PURGE", "python execution/purge_redundant.py")
     ]
 
