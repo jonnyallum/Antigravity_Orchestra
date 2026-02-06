@@ -97,6 +97,13 @@ The Orchestra plays as one.
 3. Verify accessibility compliance (contrast, ARIA).
 4. Update the Sign-Off table in the Shared Brain.
 
+### SOP-003: Premium Depth & Noise (God-Tier Polish)
+**Trigger:** Any UI upgrade or styling task.
+
+1. **Global Noise Texture:** Always apply a subtle SVG noise filter (`bg-noise`) to the `body` or main backgrounds to eliminate "flat digital feel" and add premium texture.
+2. **Layered Glassmorphism:** Ensure glass cards (`glass-card`) use multi-layered shadows and semi-transparent borders for physical depth.
+3. **Hero Gradient Blending:** Apply `mix-blend-soft-light` or deeper opacity gradients in Hero sections to blend text with background images seamlessly.
+
 ---
 
 ## Collaboration

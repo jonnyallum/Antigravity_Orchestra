@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 
 # Required sections in AgOS 2.0 SKILL.md format
-REQUIRED_SECTIONS = [
+REQUIRED_SECTIONS_V2 = [
     "Profile Card",
     "Personality & Collaboration Style",
     "Core Competencies",
@@ -24,8 +24,16 @@ REQUIRED_SECTIONS = [
     "Learning Log"
 ]
 
-# Required profile elements
-REQUIRED_PROFILE_ELEMENTS = [
+# Required sections in AgOS 3.0 SKILL.md format
+REQUIRED_SECTIONS_V3 = [
+    "Persona Overview",
+    "Core Capabilities",
+    "Standard Operating Procedures (SOPs)",
+    "Personal Development Plan"
+]
+
+# Required profile elements for V2
+REQUIRED_PROFILE_ELEMENTS_V2 = [
     "Human Name",
     "Nickname",
     "Role",
@@ -67,13 +75,23 @@ def validate_skill_file(filepath: Path, verbose: bool = False) -> dict:
         result["issues"].append(f"Could not read file: {e}")
         return result
 
-    # Check for Alias line (new format identifier)
-    if '**Alias:**' not in content and 'Alias:' not in content:
+    # Detect Version
+    is_v3 = "Persona Overview" in content or "Core Capabilities" in content
+    
+    if is_v3:
+        version = "3.0"
+        required_sections = REQUIRED_SECTIONS_V3
+    else:
+        version = "2.0"
+        required_sections = REQUIRED_SECTIONS_V2
+
+    # Check for Alias line (AgOS 2.0 only, or legacy section in V3)
+    if version == "2.0" and '**Alias:**' not in content and 'Alias:' not in content:
         result["issues"].append("Missing Alias line (AgOS 2.0 format)")
         result["valid"] = False
 
     # Check for required sections
-    for section in REQUIRED_SECTIONS:
+    for section in required_sections:
         # Check for variations of section headers
         patterns = [
             f"## {section}",
@@ -82,31 +100,36 @@ def validate_skill_file(filepath: Path, verbose: bool = False) -> dict:
         ]
         found = any(re.search(p, content, re.IGNORECASE) for p in patterns)
         if not found:
-            result["issues"].append(f"Missing section: {section}")
+            result["issues"].append(f"Missing section: {section} (AgOS {version} format)")
             result["valid"] = False
 
-    # Check for profile elements in Profile Card
-    profile_section = re.search(r'Profile Card.*?(?=##|\Z)', content, re.DOTALL | re.IGNORECASE)
-    if profile_section:
-        profile_content = profile_section.group(0)
-        for element in REQUIRED_PROFILE_ELEMENTS:
-            if element not in profile_content:
-                result["warnings"].append(f"Profile Card missing: {element}")
+    if version == "2.0":
+        # Check for profile elements in Profile Card
+        profile_section = re.search(r'Profile Card.*?(?=##|\Z)', content, re.DOTALL | re.IGNORECASE)
+        if profile_section:
+            profile_content = profile_section.group(0)
+            for element in REQUIRED_PROFILE_ELEMENTS_V2:
+                if element not in profile_content:
+                    result["warnings"].append(f"Profile Card missing: {element}")
+        else:
+            result["issues"].append("Profile Card section not found or malformed")
+            result["valid"] = False
+
+        # Check for Inner Circle
+        if "Inner Circle" not in content:
+            result["warnings"].append("Missing 'Inner Circle' in Team Interaction")
+
+        # Check for Performance Metrics table
+        if "| Metric |" not in content and "| Target |" not in content:
+            result["warnings"].append("Performance Metrics may not have proper table format")
+
+        # Check for Learning Log table
+        if "| Date |" not in content or "| Learning |" not in content:
+            result["warnings"].append("Learning Log may not have proper table format")
     else:
-        result["issues"].append("Profile Card section not found or malformed")
-        result["valid"] = False
-
-    # Check for Inner Circle
-    if "Inner Circle" not in content:
-        result["warnings"].append("Missing 'Inner Circle' in Team Interaction")
-
-    # Check for Performance Metrics table
-    if "| Metric |" not in content and "| Target |" not in content:
-        result["warnings"].append("Performance Metrics may not have proper table format")
-
-    # Check for Learning Log table
-    if "| Date |" not in content or "| Learning |" not in content:
-        result["warnings"].append("Learning Log may not have proper table format")
+        # V3 specific checks
+        if "| Job |" not in content and "| Task |" not in content:
+             result["warnings"].append("Personal Development Plan may be missing job table")
 
     if verbose:
         print(f"\n{'=' * 60}")

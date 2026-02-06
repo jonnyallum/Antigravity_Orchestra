@@ -1,0 +1,49 @@
+# 🎰 Current Active Bets (Next 48 Hours)
+> Pending Results
+
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}], 'odds': 8.22, 'title': 'Saturday High-Velocity Acca #1'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}], 'odds': 11.0, 'title': 'Saturday High-Velocity Acca #2'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}], 'odds': 10.82, 'title': 'Saturday High-Velocity Acca #3'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}], 'odds': 12.91, 'title': 'Saturday High-Velocity Acca #4'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}], 'odds': 13.68, 'title': 'Saturday High-Velocity Acca #5'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}], 'odds': 9.2, 'title': 'Saturday High-Velocity Acca #6'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}, {'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}], 'odds': 5.25, 'title': 'Saturday High-Velocity Acca #7'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}], 'odds': 6.82, 'title': 'Saturday High-Velocity Acca #8'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}], 'odds': 7.68, 'title': 'Saturday High-Velocity Acca #9'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}], 'odds': 8.82, 'title': 'Saturday High-Velocity Acca #10'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}], 'odds': 7.52, 'title': 'Saturday High-Velocity Acca #11'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}], 'odds': 10.72, 'title': 'Saturday High-Velocity Acca #12'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}], 'odds': 12.21, 'title': 'Saturday High-Velocity Acca #13'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}], 'odds': 13.02, 'title': 'Saturday High-Velocity Acca #14'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}], 'odds': 6.89, 'title': 'Saturday High-Velocity Acca #15'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}], 'odds': 8.45, 'title': 'Saturday High-Velocity Acca #16'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}], 'odds': 14.32, 'title': 'Saturday High-Velocity Acca #17'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Over 2.5 Goals', 'match': 'Newcastle vs Brentford'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}], 'odds': 12.18, 'title': 'Saturday High-Velocity Acca #18'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}], 'odds': 8.91, 'title': 'Saturday High-Velocity Acca #19'}
+- **Manchester United vs Tottenham** [accumulator]: {'legs': [{'pick': 'Home Win', 'match': 'Manchester United vs Tottenham'}, {'pick': 'Home Win', 'match': 'Arsenal vs Sunderland'}, {'pick': 'Over 2.5 Goals', 'match': 'Wolverhampton Wanderers vs Chelsea'}], 'odds': 13.71, 'title': 'Saturday High-Velocity Acca #20'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Son Heung-min'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Bukayo Saka'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Marcus Rashford'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Erling Haaland'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Marcus Rashford'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Son Heung-min'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Erling Haaland'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Bukayo Saka'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Son Heung-min'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Son Heung-min'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Cole Palmer'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Mohamed Salah'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Bukayo Saka'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Mohamed Salah'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Erling Haaland'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Mohamed Salah'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Alexander Isak'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Mohamed Salah'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Cole Palmer'}
+- **Liverpool vs Manchester City** [goalscorer]: {'odds': 2.25, 'market': 'Anytime Goalscorer', 'player': 'Cole Palmer'}
+- **Kingmaker Novice Chase** [tricast]: {'1st': 'Steel Ally', '2nd': 'Mambonumberfive', '3rd': 'Mirabad'}
+- **Kingmaker Novice Chase** [tricast]: {'1st': 'Mambonumberfive', '2nd': 'Steel Ally', '3rd': 'Hansard'}
+- **Kingmaker Novice Chase** [tricast]: {'1st': 'Steel Ally', '2nd': 'Mirabad', '3rd': 'Meetmebythesea'}
+- **Kingmaker Novice Chase** [win]: {'race': 'Kingmaker Novice Chase', 'horse': 'Steel Ally'}
+- **Denman Chase** [win]: {'race': 'Denman Chase', 'horse': 'Protektorat'}
+- **Game Spirit Chase** [win]: {'race': 'Game Spirit Chase', 'horse': 'Edwardstone'}

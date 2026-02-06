@@ -158,12 +158,17 @@ function Hero() {
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-taupe-light">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, var(--coffee-light) 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }} />
+      {/* Background Pattern & Hero Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero-bg-new.jpg"
+          alt="L.A. Aesthetics Atmosphere"
+          fill
+          className="object-cover opacity-20 blur-[10px] scale-110"
+          unoptimized
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-taupe-light/90 via-taupe-light/70 to-taupe-light/90 mix-blend-soft-light" />
+        <div className="absolute inset-0 bg-gradient-to-t from-taupe-light via-transparent to-taupe-light opacity-80" />
       </div>
 
       {/* Floating Elements */}
@@ -285,32 +290,33 @@ function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-[4/5] bg-gradient-to-br from-coffee-light/30 to-cloud/30 rounded-[2rem] overflow-hidden relative flex items-center justify-center p-12 text-center group">
-              {/* Real assets pending - removing fake placeholder (@Priya) */}
-              <div className="relative z-10">
-                <div className="w-24 h-24 bg-coffee/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Instagram className="w-10 h-10 text-coffee opacity-40 group-hover:scale-110 transition-transform" />
-                </div>
-                <p className="font-serif text-2xl text-coffee/60">Libby</p>
-                <p className="text-xs text-coffee/40 uppercase tracking-[0.2em] mt-2">Verified Professional<br />Assets Loading...</p>
-              </div>
-
-              {/* Decorative background motion */}
-              <motion.div
-                animate={{
-                  scale: [1, 1.2, 1],
-                  opacity: [0.1, 0.2, 0.1]
-                }}
-                transition={{ duration: 8, repeat: Infinity }}
-                className="absolute inset-0 bg-coffee/5"
+            <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative group shadow-2xl">
+              <Image
+                src="/images/libby.jpg"
+                alt="Libby - Registered Nurse & Founder"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                unoptimized
               />
 
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent" />
-
-              {/* Decorative border */}
-              <div className="absolute -inset-4 border-2 border-coffee/20 rounded-[2.5rem] -z-10" />
+              {/* Overlay Badge */}
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="bg-white/90 backdrop-blur md:p-6 p-4 rounded-xl border border-coffee/10 shadow-lg">
+                  <p className="font-serif text-xl text-coffee mb-1">Libby</p>
+                  <div className="flex items-center gap-2 text-xs text-charcoal-light uppercase tracking-widest">
+                    <Award className="w-3 h-3 text-gold" />
+                    <span>RN Qualified</span>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            {/* Overlay gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent" />
+
+            {/* Decorative border */}
+            <div className="absolute -inset-4 border-2 border-coffee/20 rounded-[2.5rem] -z-10" />
+
 
             {/* Floating Badge */}
             <motion.div
@@ -375,8 +381,8 @@ function About() {
             </div>
           </motion.div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 }
 
@@ -584,6 +590,8 @@ function Testimonials() {
   );
 }
 
+import InstagramGallery from './components/InstagramGallery';
+
 function Socials() {
   return (
     <section id="socials" className="py-32 bg-taupe-light">
@@ -595,40 +603,7 @@ function Socials() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          {/* Reel Embed 1 */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="aspect-[9/16] bg-white rounded-3xl overflow-hidden shadow-2xl border border-coffee/10"
-          >
-            <iframe
-              src="https://www.instagram.com/reel/DTTKAF9DIg4/embed"
-              className="w-full h-full"
-              frameBorder="0"
-              scrolling="no"
-              allowTransparency={true}
-            ></iframe>
-          </motion.div>
-
-          {/* Reel Embed 2 */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="aspect-[9/16] bg-white rounded-3xl overflow-hidden shadow-2xl border border-coffee/10"
-          >
-            <iframe
-              src="https://www.instagram.com/reel/DTJZ58hDJzb/embed"
-              className="w-full h-full"
-              frameBorder="0"
-              scrolling="no"
-              allowTransparency={true}
-            ></iframe>
-          </motion.div>
-        </div>
+        <InstagramGallery />
 
         <div className="text-center mt-12">
           <a
