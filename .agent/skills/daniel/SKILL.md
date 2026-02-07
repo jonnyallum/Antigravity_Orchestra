@@ -10,7 +10,7 @@ description: debug agent profile
 > 
 > *"Every bug tells a story. Listen to the logs, follow the stack trace, isolate the variable. The answer is always in the data."*
 
-Standard AgOS 2.0 Agent: debug
+Standard Jai.OS 4.0 Agent: debug
 
 ---
 

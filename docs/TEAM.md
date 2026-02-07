@@ -1,4 +1,4 @@
-# 🎼 Antigravity Agent Orchestra (AgOS 3.0)
+# 🎼 Antigravity Agent Orchestra (Jai.OS 4.0)
 
 > *"Solo speed is a hallucination. Collective velocity is the truth."*
 
@@ -6,7 +6,7 @@
 
 ## 🎯 The Hive Mind (Agent Census)
 
-Our orchestra is composed of 42 specialized expert personas. We use human handles to maintain elite boardroom standards.
+Our orchestra is composed of 43 specialized expert personas. We use human handles to maintain elite boardroom standards.
 
 ### 🏛️ Executive & Orchestration
 | Handle | Human Name | Nickname | Role |
@@ -31,6 +31,7 @@ Our orchestra is composed of 42 specialized expert personas. We use human handle
 | **@Owen** | Owen Stinger | "The Hornet" | Zero-downtime CI/CD and production shipping. |
 | **@Adrian** | Adrian Cross | "The Welder" | MCP server development and maintenance. |
 | **@Milo** | Milo Swift | "The Thumb" | Mobile optimization and touch UX diagnostics. |
+| **@Redeye** | Brad Voss | "The Adversary" | Red-team hacker and offensive security. |
 
 ### 📈 Growth & Revenue
 | Handle | Human Name | Nickname | Role |
@@ -74,11 +75,11 @@ Our orchestra is composed of 42 specialized expert personas. We use human handle
 
 ## 🤝 Collaboration Rituals
 
-All agents follow the **AgOS 3.0 Collaboration Protocol**:
+All agents follow the **Jai.OS 4.0 Collaboration Protocol**:
 1. **Sync First**: Query a specialist's `SKILL.md` before acting in their domain.
 2. **Truth-Lock**: All production claims must be verified by **@Vigil** or **@Rowan**.
 3. **Self-Anneal**: Tool failures trigger a fix in the script/skill, not just the output.
 
 ---
 
-*Last Updated: 2026-02-07 | AgOS 3.0 - The Full 42 Roster*
+*Last Updated: 2026-02-07 | Jai.OS 4.0 — The Hive Mind*

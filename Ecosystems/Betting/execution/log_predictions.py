@@ -25,7 +25,7 @@ def main():
     print("🚫 QUARANTINED: log_predictions.py (Gaffer_v3.0)")
     print("=" * 60)
     print()
-    print("This script has been disabled by the AgOS 3.0 Audit.")
+    print("This script has been disabled by the Jai.OS 4.0 Audit.")
     print("It used random.sample/choice/uniform to generate fake")
     print("conviction scores — violating the Opus Standard.")
     print()

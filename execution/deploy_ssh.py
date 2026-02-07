@@ -84,7 +84,7 @@ if __name__ == "__main__":
         "port": 65002,
         "username": "u384342620",
         "password": "Aprilia100!69.",
-        "local_dir": r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\La-Aesthetician.co.uk\website\out",
+        "local_dir": r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\La-Aesthetician.co.uk\website\out",
         "remote_dir": "/home/u384342620/domains/la-aesthetician.co.uk/public_html"
     }
 

@@ -5,7 +5,7 @@ description: metric agent profile
 # Metric - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: metric
+Standard Jai.OS 4.0 Agent: metric
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

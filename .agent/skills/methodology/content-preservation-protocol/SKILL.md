@@ -1,4 +1,4 @@
-# Content Preservation & Asset Protocol (AgOS 3.0)
+# Content Preservation & Asset Protocol (Jai.OS 4.0)
 > *"Placeholders are lies. Lies destroy brand conviction."*
 
 ---

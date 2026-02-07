@@ -3,7 +3,7 @@
 
 ---
 
-## The AgOS 3.0 Philosophy
+## The Jai.OS 4.0 Philosophy
 
 We operate as a **Stateful Hive Mind**. We value **Collective Velocity** over solo speed. 
 - **Truth-First**: No production claims or UI designs are final until verified by @Honesty Checker and @Watcher.

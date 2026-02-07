@@ -84,7 +84,7 @@ def purge_placeholders():
     print("Placeholder scan complete. (Manual deletion recommended for safety).")
 
 if __name__ == "__main__":
-    print(f"--- AgOS 3.0 REDUNDANCY PURGE ---")
+    print(f"--- Jai.OS 4.0 REDUNDANCY PURGE ---")
     purge_cache()
     purge_ghosts()
     purge_stale_tmp()

@@ -1,6 +1,6 @@
 """
 Feedback Engine - Processes task outcomes and extracts learnings.
-Part of the AgOS 2.0 Feedback Loop System.
+Part of the Jai.OS 4.0 Feedback Loop System.
 
 Enhanced with git integration for tracking commits, file changes,
 and correlating development activity with task outcomes.
@@ -589,7 +589,7 @@ def main():
     """CLI entry point."""
     if len(sys.argv) < 2:
         print("""
-Feedback Engine - AgOS 2.0 (with Git Integration)
+Feedback Engine - Jai.OS 4.0 (with Git Integration)
 
 Usage:
     python feedback_engine.py log <agent> <task_type> <success> [--duration=N] [--blocker=X] [--learning=Y]

@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # PATHS
-INPUT_ICON = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public\concepts\prism_monolith_j.png"
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public"
+INPUT_ICON = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public\concepts\prism_monolith_j.png"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public"
 FILENAME_FULL = "jonnyai_logo_final_v5.png"
 
 # COLORS

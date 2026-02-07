@@ -1,6 +1,6 @@
 """
 Context Loader - Rapid project context loading.
-Built by @Manus (Mason Drake "The Bridgemaster") for AgOS 2.0.
+Built by @Manus (Mason Drake "The Bridgemaster") for Jai.OS 4.0.
 
 Quick-loads relevant project context, recent changes, active blockers,
 and key files into any session for fast onboarding.
@@ -358,7 +358,7 @@ def main():
     """CLI entry point."""
     if len(sys.argv) < 2:
         print("""
-Context Loader - AgOS 2.0
+Context Loader - Jai.OS 4.0
 Built by @Manus (Mason Drake "The Bridgemaster")
 
 Usage:

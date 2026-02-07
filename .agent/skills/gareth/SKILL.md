@@ -5,7 +5,7 @@ description: gaffer agent profile
 # Gaffer - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: gaffer
+Standard Jai.OS 4.0 Agent: gaffer
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

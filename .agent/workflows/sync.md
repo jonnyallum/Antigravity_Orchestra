@@ -1,5 +1,5 @@
 ---
-description: Run the full AgOS 3.0 Brain Sync Protocol to align all agents and save progress.
+description: Run the full Jai.OS 4.0 Brain Sync Protocol to align all agents and save progress.
 ---
 # /sync - Brain Sync Protocol
 

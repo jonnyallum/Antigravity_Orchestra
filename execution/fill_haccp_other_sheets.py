@@ -11,7 +11,7 @@ from datetime import date, timedelta
 
 random.seed(99)
 
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\.tmp\haccp_sheets"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\.tmp\haccp_sheets"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # ============================================================

@@ -9,7 +9,7 @@ from datetime import datetime
 if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
-# AgOS 3.0 Brain Sync Protocol Orchestrator
+# Jai.OS 4.0 Brain Sync Protocol Orchestrator
 # Executes the full synchronization lifecycle
 
 ROOT_DIR = Path(__file__).parent.parent
@@ -35,7 +35,7 @@ def run_step(name, command):
 
 def brain_sync_protocol():
     print(f"============================================================")
-    print(f"   AgOS 3.0 BRAIN SYNC PROTOCOL - {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"   Jai.OS 4.0 BRAIN SYNC PROTOCOL - {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print(f"============================================================")
 
     steps = [

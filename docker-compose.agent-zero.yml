@@ -1,0 +1,12 @@
+services:
+  agent-zero:
+    image: agent0ai/agent-zero:latest
+    container_name: agent-zero
+    ports:
+      - "50080:80"
+    volumes:
+      - C:/Users/jonny/Desktop/AgOS-AgentZero-Data:/a0/usr
+    restart: unless-stopped
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}

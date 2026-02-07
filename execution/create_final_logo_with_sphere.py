@@ -2,8 +2,8 @@
 import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public"
-ICON_PATH = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public\concepts\hive_mind_sphere.png"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public"
+ICON_PATH = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public\concepts\hive_mind_sphere.png"
 
 # COLORS
 BLACK = (0, 0, 0)

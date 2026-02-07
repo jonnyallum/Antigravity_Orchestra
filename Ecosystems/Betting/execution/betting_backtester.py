@@ -1,5 +1,5 @@
 """
-Betting Ecosystem Backtester - AgOS 2.0
+Betting Ecosystem Backtester - Jai.OS 4.0
 Simulates agent performance against historical data.
 """
 

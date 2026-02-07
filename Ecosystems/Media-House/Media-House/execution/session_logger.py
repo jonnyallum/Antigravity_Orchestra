@@ -1,6 +1,6 @@
 """
 Session Logger - Auto-captures Claude Code session outcomes for feedback.
-Part of the AgOS 2.0 Feedback Loop System.
+Part of the Jai.OS 4.0 Feedback Loop System.
 
 This integrates with the feedback_engine to automatically log session
 outcomes, learnings, and inter-AI collaboration metrics.
@@ -351,7 +351,7 @@ def main():
     """CLI entry point."""
     if len(sys.argv) < 2:
         print("""
-Session Logger - AgOS 2.0
+Session Logger - Jai.OS 4.0
 
 Usage:
     python session_logger.py start <type> [--project=NAME]

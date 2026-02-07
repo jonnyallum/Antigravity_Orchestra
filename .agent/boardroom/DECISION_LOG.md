@@ -1,8 +1,8 @@
-# AgOS 2.0 Decision Log
+# Jai.OS 4.0 Decision Log
 > *Tracking architectural pivots and high-conviction decisions*
 
 ## 🏛️ Decision ID: `DEC-2026-02-01-001`
-**Title**: AgOS 2.0 Mass Upgrade & Personal Development Plans
+**Title**: Jai.OS 4.0 Mass Upgrade & Personal Development Plans
 **Status**: Approved
 **Author**: Conductor (Marcus Cole)
 **Consulted**: @JonnyAI, @Sentinel, @EcosystemCreator
@@ -10,13 +10,13 @@
 ---
 
 ## 🚩 Problem Statement
-Agents were non-compliant with AgOS 2.0 standards, lacking modular SOPs and iterative learning loops. We also needed a way to ensure agents "keep optimizing" autonomously.
+Agents were non-compliant with Jai.OS 4.0 standards, lacking modular SOPs and iterative learning loops. We also needed a way to ensure agents "keep optimizing" autonomously.
 
 ## ⚖️ Rationale for Choice
 Modified the `conductor_toolkit.py` to batch-inject SOPs and Personal Development Plans (PDPs). This ensures every agent has a set schedule for skill refinement and framework testing.
 
 ## 🚀 Anticipated Impact
-- 100% Agent compliance with AgOS 2.0.
+- 100% Agent compliance with Jai.OS 4.0.
 - Autonomous evolution of agent skills via the PDP loop.
 
 ---
@@ -46,10 +46,10 @@ Launched `chatroom.md` in `.agent/boardroom/` to allow high-velocity collaborati
 ---
 
 ## 🚩 Problem Statement
-The user needs to switch between specialized contexts (Betting, SaaS, E-commerce) while maintaining the Master AgOS 2.0 core.
+The user needs to switch between specialized contexts (Betting, SaaS, E-commerce) while maintaining the Master Jai.OS 4.0 core.
 
 ## ⚖️ Rationale for Choice
 Implemented `execution/hotswap_ecosystem.py`. This allows the root `CLAUDE.md`, `AGENTS.md`, and `GEMINI.md` to be hot-reloaded with variant configurations from the `Clients/` directory.
 
 ---
-*Last Updated: 2026-02-01 | AgOS 2.0 - The Antigravity Boardroom*
+*Last Updated: 2026-02-01 | Jai.OS 4.0 — The Hive Mind*

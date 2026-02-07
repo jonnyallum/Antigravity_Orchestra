@@ -1,5 +1,5 @@
 # 🛸 Antigravity Agency
-> **Agentic Enterprise OS (AgOS 3.0)** - *The Hive Mind*
+> **Jai.OS 4.0 — The Hive Mind** - *The Hive Mind*
 
 The **Antigravity Agency** is a high-performance agentic development environment designed to build, scale, and automate digital empires with "Collective Velocity" and "Trillion-Dollar Quality." 
 
@@ -7,8 +7,8 @@ This workspace is a **Meta-Orchestrator** where a swarm of specialized AI agents
 
 ---
 
-## 🏛️ The Architecture (AgOS 3.0)
-AgOS 3.0 operates on a rigid 4-layer Hive Mind stack:
+## 🏛️ The Architecture (Jai.OS 4.0)
+Jai.OS 4.0 operates on a rigid 4-layer Hive Mind stack:
 - **Layer 1: The Talent** - Modular skill packages and specialized AI personas (`.agent/skills/`).
 - **Layer 2: The Boardroom** - Structured collaboration, sync, and orchestration (`.agent/boardroom/`).
 - **Layer 3: The Engine** - Deterministic Python automation and feedback loops (`execution/`).
@@ -34,4 +34,4 @@ AgOS 3.0 operates on a rigid 4-layer Hive Mind stack:
 
 ---
 *Created by **Jonny** (The Boss)*
-*Powered by the [AgOS 3.0 Agent Orchestra](AGENTS.md)*
+*Powered by the [Jai.OS 4.0 Agent Orchestra](AGENTS.md)*

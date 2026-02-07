@@ -275,4 +275,4 @@ Issue: Touch targets on CTA buttons are 32px. Require 48px minimum.
 
 ---
 
-*Protocol Effective: 2026-02-05 | AgOS 3.0 - Quality Gates v1.0*
+*Protocol Effective: 2026-02-05 | Jai.OS 4.0 - Quality Gates v1.0*

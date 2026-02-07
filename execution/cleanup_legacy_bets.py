@@ -23,7 +23,7 @@ import json
 from dotenv import load_dotenv
 
 def main():
-    env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\.env"
+    env_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\.env"
     load_dotenv(env_path)
 
     url = os.getenv("ANTIGRAVITY_BRAIN_URL")
@@ -91,7 +91,7 @@ def main():
 
     # Step 3: Save local backup
     print("\n💾 Step 3: Saving local backup...")
-    backup_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\.tmp\legacy_bets_backup.json"
+    backup_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\.tmp\legacy_bets_backup.json"
     os.makedirs(os.path.dirname(backup_path), exist_ok=True)
     with open(backup_path, "w", encoding="utf-8") as f:
         json.dump(legacy_rows, f, indent=2, default=str)

@@ -50,7 +50,7 @@ def hotswap_ecosystem(target_name):
     print("Note: Master Core agents are preserved as they are inherited by the variant config.")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="AgOS 2.0 Ecosystem Hotswapper")
+    parser = argparse.ArgumentParser(description="Jai.OS 4.0 Ecosystem Hotswapper")
     parser.add_argument("target", help="Name of the client ecosystem to activate (e.g. Betting)")
     args = parser.parse_args()
     

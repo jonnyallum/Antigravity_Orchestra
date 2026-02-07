@@ -1,6 +1,6 @@
 """
 Project Workspace Initializer - Creates new project workspaces from master template.
-Part of the AgOS 2.0 Ecosystem Creator system.
+Part of the Jai.OS 4.0 Ecosystem Creator system.
 
 Usage:
     python init_workspace.py --name "ProjectName" [--type saas|ecommerce|trading|content|agency]
@@ -151,7 +151,7 @@ def create_project_config(dst: Path, name: str, project_type: str):
     manifest = {
         "ecosystem": {
             "name": f"{name} Ecosystem",
-            "derived_from": "AgOS 2.0 Master",
+            "derived_from": "Jai.OS 4.0 Master",
             "master_version": "2.0.0",
             "created": datetime.now().strftime("%Y-%m-%d %H:%M"),
             "project_type": project_type,
@@ -235,7 +235,7 @@ def init_workspace(name: str, project_type: str = "agency") -> bool:
     Returns:
         True if successful
     """
-    print(f"\nAgOS 2.0 - Ecosystem Creator")
+    print(f"\nJai.OS 4.0 - Ecosystem Creator")
     print("=" * 40)
     print(f"Project: {name}")
     print(f"Type: {project_type}")
@@ -282,7 +282,7 @@ def init_workspace(name: str, project_type: str = "agency") -> bool:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Initialize new project workspaces from AgOS 2.0 master"
+        description="Initialize new project workspaces from Jai.OS 4.0 master"
     )
     parser.add_argument(
         "--name", "-n",

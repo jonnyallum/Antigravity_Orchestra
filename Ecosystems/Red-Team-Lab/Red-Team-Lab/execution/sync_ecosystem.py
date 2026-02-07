@@ -1,6 +1,6 @@
 """
 Ecosystem Sync - Syncs master workspace changes to project ecosystems.
-Part of the AgOS 2.0 Ecosystem Creator system.
+Part of the Jai.OS 4.0 Ecosystem Creator system.
 
 Usage:
     python sync_ecosystem.py --all              # Sync all ecosystems
@@ -263,7 +263,7 @@ def print_summary(results: list, dry_run: bool):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Sync AgOS 2.0 master changes to project ecosystems"
+        description="Sync Jai.OS 4.0 master changes to project ecosystems"
     )
     parser.add_argument(
         "--project", "-p",

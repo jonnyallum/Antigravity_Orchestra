@@ -1,6 +1,6 @@
 """
 Health Dashboard - Visual system status and metrics.
-Built by @Metric (Maya Singh "The Oracle") for AgOS 2.0.
+Built by @Metric (Maya Singh "The Oracle") for Jai.OS 4.0.
 
 Generates visual reports, tracks KPIs, and surfaces insights
 across the entire AgOS ecosystem.
@@ -207,7 +207,7 @@ def get_project_status() -> list:
 def display_dashboard():
     """Display the full health dashboard."""
     print(f"\n{Colors.BOLD}{'='*70}{Colors.END}")
-    print(f"{Colors.BOLD}@Metric: AgOS 2.0 HEALTH DASHBOARD{Colors.END}")
+    print(f"{Colors.BOLD}@Metric: Jai.OS 4.0 HEALTH DASHBOARD{Colors.END}")
     print(f"{Colors.BOLD}{'='*70}{Colors.END}")
     print(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
@@ -388,7 +388,7 @@ def generate_markdown_report(data: dict) -> str:
     agents = data['agents']
     git = data['git']
 
-    report = f"""# AgOS 2.0 Health Report
+    report = f"""# Jai.OS 4.0 Health Report
 Generated: {data['generated_at']}
 
 ## Session Metrics
@@ -427,7 +427,7 @@ def main():
     """CLI entry point."""
     if len(sys.argv) < 2:
         print("""
-Health Dashboard - AgOS 2.0
+Health Dashboard - Jai.OS 4.0
 Built by @Metric (Maya Singh "The Oracle")
 
 Usage:

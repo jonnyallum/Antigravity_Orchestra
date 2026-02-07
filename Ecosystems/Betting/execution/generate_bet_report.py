@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 def generate_bet_report():
-    env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\.env"
+    env_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\.env"
     load_dotenv(env_path)
     
     url = os.getenv("ANTIGRAVITY_BRAIN_URL")
@@ -30,7 +30,7 @@ def generate_bet_report():
             data = p['prediction_data']
             lines.append(f"- **{event}** [{p_type}]: {data}")
 
-        target_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Ecosystems\Betting\docs\LATEST_BETS.md"
+        target_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Ecosystems\Betting\docs\LATEST_BETS.md"
         os.makedirs(os.path.dirname(target_path), exist_ok=True)
         with open(target_path, 'w', encoding='utf-8') as f:
             f.write("\n".join(lines))

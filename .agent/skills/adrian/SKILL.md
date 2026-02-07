@@ -5,7 +5,7 @@ description: adapter agent profile
 # Adapter - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: adapter
+Standard Jai.OS 4.0 Agent: adapter
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

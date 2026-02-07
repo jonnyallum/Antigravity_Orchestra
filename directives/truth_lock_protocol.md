@@ -65,4 +65,4 @@ When a Truth-Lock violation is detected:
 | 2026-02-06 | Gaffer_v3.0 used random.sample() for betting predictions | Opus Standard established, script quarantined |
 
 ---
-*Enforced by @Vigil and @Rowan | Standardized: 2026-02-07 | AgOS 3.0*
+*Enforced by @Vigil and @Rowan | Standardized: 2026-02-07 | Jai.OS 4.0*

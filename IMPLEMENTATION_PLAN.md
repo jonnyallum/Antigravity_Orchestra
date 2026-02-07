@@ -37,7 +37,7 @@
   - Upgrade UI elements to match the "Neural" standard. (P0)
 - [ ] **Task 2.4:** **The "Antigravity Footer" Standard**:
   - Implement a standardized, premium footer on **EVERY** site: "Built by JonnyAi" + Neural Build Registry (Agent Attribution). (P0)
-  - Example: `Built by JonnyAi | @Conductor @JonnyAI @Pixel @Sentinel | AgOS 3.0`
+  - Example: `Built by JonnyAi | @Conductor @JonnyAI @Pixel @Sentinel | Jai.OS 4.0`
 - [x] **Task 2.5:** **Village Bakery Incident Response**:
   - Discuss and finalize a rigorous fix plan for Village Bakery in the chatroom to ensure 100% accuracy and recover from previous failed updates. (P0)
 

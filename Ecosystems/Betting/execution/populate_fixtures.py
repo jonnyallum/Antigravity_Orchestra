@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from datetime import datetime, timezone
 
 def populate_fixtures():
-    env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\.env"
+    env_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\.env"
     load_dotenv(env_path)
     
     url = os.getenv("ANTIGRAVITY_BRAIN_URL")

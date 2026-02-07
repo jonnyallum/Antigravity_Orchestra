@@ -5,9 +5,9 @@ import json
 from datetime import datetime
 
 # Paths
-TEAM_ROSTER_PATH = "c:/Users/jonny/Desktop/AgOS 3.0 template/.agent/TEAM_ROSTER.md"
-NEWS_PATH = "c:/Users/jonny/Desktop/AgOS 3.0 template/.agent/NEWS.md"
-WEBSITE_DATA_DIR = "c:/Users/jonny/Desktop/AgOS 3.0 template/Clients/jonnyai.website/src/data"
+TEAM_ROSTER_PATH = "c:/Users/jonny/Desktop/Jai.OS 4.0 template/.agent/TEAM_ROSTER.md"
+NEWS_PATH = "c:/Users/jonny/Desktop/Jai.OS 4.0 template/.agent/NEWS.md"
+WEBSITE_DATA_DIR = "c:/Users/jonny/Desktop/Jai.OS 4.0 template/Clients/jonnyai.website/src/data"
 
 def parse_roster():
     print(f"Parsing {TEAM_ROSTER_PATH}...")
@@ -61,7 +61,7 @@ def parse_roster():
         agent['color'] = colors.get(handle, '#8b5cf6')
         
         # Avatar check
-        avatar_path = f"c:/Users/jonny/Desktop/AgOS 3.0 template/Clients/jonnyai.website/public/agents/{handle}.png"
+        avatar_path = f"c:/Users/jonny/Desktop/Jai.OS 4.0 template/Clients/jonnyai.website/public/agents/{handle}.png"
         if os.path.exists(avatar_path):
             agent['avatar'] = f"/agents/{handle}.png"
             

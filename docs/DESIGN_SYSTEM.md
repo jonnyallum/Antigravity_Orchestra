@@ -1,6 +1,6 @@
 # 🎨 JAI Design System: "White Futuristic"
 > **Core Theme:** High-Resolution Minimalism / Physicality / Citrus Glow
-> **Version:** 1.0 (AgOS 2.0 Compliant)
+> **Version:** 1.0 (Jai.OS 4.0 Compliant)
 
 This document defines the visual language of `jonnyai.website`, inspired by the "White Futuristic" architectural renders of the Spinnaker Tower and Honeytrap Lab.
 

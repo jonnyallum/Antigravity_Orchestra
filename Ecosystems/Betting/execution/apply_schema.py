@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 def apply_betting_schema():
-    env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\.env"
+    env_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\.env"
     load_dotenv(env_path)
     
     conn_string = os.getenv("ANTIGRAVITY_BRAIN_CONNECTION_STRING")
@@ -12,7 +12,7 @@ def apply_betting_schema():
         print("Missing ANTIGRAVITY_BRAIN_CONNECTION_STRING")
         return
 
-    sql_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Ecosystems\Betting\betting_schema.sql"
+    sql_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Ecosystems\Betting\betting_schema.sql"
     with open(sql_path, 'r') as f:
         sql = f.read()
 

@@ -1,10 +1,10 @@
 ---
-description: How to run an AgOS 2.0 Efficiency Sprint to upgrade agent capabilities.
+description: How to run an Jai.OS 4.0 Efficiency Sprint to upgrade agent capabilities.
 ---
 
 # 🏃 Efficiency Sprint Workflow
 
-> **Goal**: Rapidly upgrade multiple agents to the new AgOS 2.0 standard (Capabilities + SOPs).
+> **Goal**: Rapidly upgrade multiple agents to the new Jai.OS 4.0 standard (Capabilities + SOPs).
 
 ## 1. The Audit
 Run the conductor toolkit to identify gaps:

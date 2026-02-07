@@ -6,10 +6,10 @@ Welcome to the central node of my digital ecosystem. I engineer autonomous infra
 ---
 
 ## 🎼 The Antigravity Orchestra
-I operate the **Antigravity Agency**, powered by the proprietary **AgOS 2.0** orchestration layer. This isn't just software development—it's the engineering of autonomous intelligence.
+I operate the **Antigravity Agency**, powered by the proprietary **Jai.OS 4.0** orchestration layer. This isn't just software development—it's the engineering of autonomous intelligence.
 
 - **Current Status**: Scaling high-conviction signal systems and autonomous media networks.
-- **The Engine**: AgOS 2.0 (Proprietary Agentic Framework).
+- **The Engine**: Jai.OS 4.0 (Proprietary Agentic Framework).
 - **Core Philosophy**: Speed, Precision, and "Trillion-Dollar" Reliability.
 
 ---
@@ -37,7 +37,7 @@ Transforming traditional waste logistics through AgOS-driven efficiency. Portfol
 - **AI & Automation**: Autonomous Agents, MCP Server Development, Voice Synthesis, Web Scraping.
 - **Frontend**: Next.js 15, React Native, Framer Motion, Tailwind CSS v4.
 - **Backend**: TypeScript, Python, Rust, Supabase, PostgreSQL (RLS).
-- **Systems**: AgOS 2.0 Core, Docker, GitHub Actions CI/CD.
+- **Systems**: Jai.OS 4.0 Core, Docker, GitHub Actions CI/CD.
 
 ---
 

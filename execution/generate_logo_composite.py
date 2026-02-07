@@ -13,7 +13,7 @@ MODEL_ID = "black-forest-labs/FLUX.1-schnell"
 API_URL = f"https://router.huggingface.co/hf-inference/models/{MODEL_ID}"
 headers = {"Authorization": f"Bearer {HF_API_KEY}"}
 
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public\concepts"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public\concepts"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # 1. GENERATE THE ICON AGAIN (or could load existing, but let's regenerate for variations)

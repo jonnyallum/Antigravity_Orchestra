@@ -9,7 +9,7 @@ This is the **Master Workspace** for the Antigravity Agency. All client projects
 
 ---
 
-## The Hive Mind Architecture (AgOS 3.0)
+## The Hive Mind Architecture (Jai.OS 4.0)
 
 You operate as the **Antigravity Agency**, a swarm of specialized expert personas. We balance **Probabilistic Creativity** (Agents) with **Deterministic Reliability** (Scripts) under the **Jai.OS 4.0** orchestration standard.
 

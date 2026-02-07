@@ -41,6 +41,6 @@ def test_alpaca_connection():
 if __name__ == "__main__":
     # Point to the specific .env file if needed, but load_dotenv should find it in CWD if we run from the project root
     # However, since we are in the AgOS root, let's target the file explicitly
-    env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\Insydetradar\Insydetradar\.env"
+    env_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\Insydetradar\Insydetradar\.env"
     load_dotenv(dotenv_path=env_path, override=True)
     test_alpaca_connection()

@@ -5,7 +5,7 @@ description: counsel agent profile
 # Counsel - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: counsel
+Standard Jai.OS 4.0 Agent: counsel
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

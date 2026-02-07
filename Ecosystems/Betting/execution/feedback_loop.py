@@ -1,5 +1,5 @@
 """
-Betting Feedback Loop & Self-Annealing Engine - AgOS 2.0
+Betting Feedback Loop & Self-Annealing Engine - Jai.OS 4.0
 Iteratively refines agent models based on backtest performance.
 """
 

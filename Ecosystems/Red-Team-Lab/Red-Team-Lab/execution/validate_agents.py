@@ -1,5 +1,5 @@
 """
-Agent Structure Validator - Ensures all SKILL.md files meet the AgOS 2.0 standard.
+Agent Structure Validator - Ensures all SKILL.md files meet the Jai.OS 4.0 standard.
 Part of the AgOS Auto-Sync System.
 
 Usage:
@@ -11,7 +11,7 @@ import sys
 import re
 from pathlib import Path
 
-# Required sections in AgOS 2.0 SKILL.md format
+# Required sections in Jai.OS 4.0 SKILL.md format
 REQUIRED_SECTIONS = [
     "Profile Card",
     "Personality & Collaboration Style",
@@ -39,7 +39,7 @@ SKILLS_DIR = Path(__file__).parent.parent / ".agent" / "skills"
 
 def validate_skill_file(filepath: Path, verbose: bool = False) -> dict:
     """
-    Validate a SKILL.md file against the AgOS 2.0 standard.
+    Validate a SKILL.md file against the Jai.OS 4.0 standard.
 
     Args:
         filepath: Path to the SKILL.md file
@@ -69,7 +69,7 @@ def validate_skill_file(filepath: Path, verbose: bool = False) -> dict:
 
     # Check for Alias line (new format identifier)
     if '**Alias:**' not in content and 'Alias:' not in content:
-        result["issues"].append("Missing Alias line (AgOS 2.0 format)")
+        result["issues"].append("Missing Alias line (Jai.OS 4.0 format)")
         result["valid"] = False
 
     # Check for required sections
@@ -203,7 +203,7 @@ def main():
     """CLI entry point."""
     verbose = '--verbose' in sys.argv or '-v' in sys.argv
 
-    print("AgOS 2.0 Agent Validator")
+    print("Jai.OS 4.0 Agent Validator")
     print(f"Scanning: {SKILLS_DIR}")
 
     results = validate_all_agents(verbose)

@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 def verify_monetization_functions():
-    env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\.env"
+    env_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\.env"
     load_dotenv(env_path)
     
     conn_string = os.getenv("ANTIGRAVITY_BRAIN_CONNECTION_STRING")

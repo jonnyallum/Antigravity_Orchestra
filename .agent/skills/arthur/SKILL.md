@@ -5,7 +5,7 @@ description: archivist agent profile
 # Archivist - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: archivist
+Standard Jai.OS 4.0 Agent: archivist
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

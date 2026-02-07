@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 def check_supabase_connection():
     # Load from the Insydetradar specific .env
-    env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\Insydetradar\Insydetradar\.env"
+    env_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\Insydetradar\Insydetradar\.env"
     load_dotenv(env_path)
     
     db_url = os.getenv("DATABASE_URL")

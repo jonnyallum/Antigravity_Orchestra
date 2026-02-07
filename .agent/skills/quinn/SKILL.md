@@ -5,7 +5,7 @@ description: quartermaster agent profile
 # Quartermaster - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: quartermaster
+Standard Jai.OS 4.0 Agent: quartermaster
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.
@@ -186,5 +186,5 @@ When conflict detected:
 | Project Health | Continuous | 80%+ projects healthy |
 
 ---
-*Created: 2026-02-01 | AgOS 2.0 - Resource Management Agent*
+*Created: 2026-02-01 | Jai.OS 4.0 - Resource Management Agent*
 

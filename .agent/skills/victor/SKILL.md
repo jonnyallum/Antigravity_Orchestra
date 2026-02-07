@@ -5,7 +5,7 @@ description: Victor Reyes agent profile
 # Victor Reyes - Agent Profile
 
 ## 🎭 Persona Overview
-AgOS 3.0 Security Specialist: **@Victor**
+Jai.OS 4.0 Security Specialist: **@Victor**
 
 ## 🛠️ Core Capabilities
 - **Secrets Management**: Secure provisioning of API keys, certs, and ENV vars.
@@ -27,4 +27,4 @@ AgOS 3.0 Security Specialist: **@Victor**
 | Key Audit | Monthly | 100% rotation compliance |
 
 ---
-*Last Updated: 2026-02-07 | AgOS 3.0 - The Locksmith*
+*Last Updated: 2026-02-07 | Jai.OS 4.0 - The Locksmith*

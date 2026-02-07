@@ -12,7 +12,7 @@ if not api_key:
 
 genai.configure(api_key=api_key)
 
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public\concepts"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public\concepts"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 prompts = [

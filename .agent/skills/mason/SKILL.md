@@ -5,7 +5,7 @@ description: manus agent profile
 # Manus - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: manus
+Standard Jai.OS 4.0 Agent: manus
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

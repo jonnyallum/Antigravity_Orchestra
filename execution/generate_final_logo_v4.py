@@ -8,12 +8,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # PATHS
-INPUT_ICON = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public\concepts\number_one_icon.png" # Assuming we might want to just re-use the good icon or regenerate a specific "merged" concept
+INPUT_ICON = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public\concepts\number_one_icon.png" # Assuming we might want to just re-use the good icon or regenerate a specific "merged" concept
 # Actually, since the user wants them MERGED, we need to composites them VERY tightly.
 
 # Let's use the Monolith Icon again as base but position it differently
-INPUT_ICON = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public\concepts\prism_monolith_j.png"
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public"
+INPUT_ICON = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public\concepts\prism_monolith_j.png"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public"
 FILENAME_FULL = "jonnyai_logo_merged_v4.png"
 
 # COLORS

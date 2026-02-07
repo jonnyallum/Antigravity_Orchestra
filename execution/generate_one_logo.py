@@ -19,7 +19,7 @@ API_URL_2 = f"https://api-inference.huggingface.co/models/{MODEL_ID}"
 
 headers = {"Authorization": f"Bearer {HF_API_KEY}"}
 
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public\concepts"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public\concepts"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # CONCEPT 2: ELECTRIC ARCHITECT - REFINED (More Definition)

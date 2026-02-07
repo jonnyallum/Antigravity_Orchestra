@@ -9,7 +9,7 @@ def deploy_kwizz():
     username = "u384342620"
     password = "Aprilia100!69."
     
-    local_dir = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\kwizz\out"
+    local_dir = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\kwizz\out"
     remote_path = "domains/kwizz.co.uk/public_html"
 
     print(f"🚀 Deploying Kwizz Fix to {host}:{port}...")

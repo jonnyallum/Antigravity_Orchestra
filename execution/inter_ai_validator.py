@@ -1,6 +1,6 @@
 """
 Inter-AI Message Validator - Ensures message format compliance.
-Part of the AgOS 2.0 Feedback Loop System.
+Part of the Jai.OS 4.0 Feedback Loop System.
 
 Validates messages in .tmp/message4*.md files to ensure they follow
 the standardized handoff protocol for cross-platform AI communication.
@@ -205,7 +205,7 @@ def create_message_template(
     """
     timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    template = f"""# 🤖 AgOS 2.0 {title} | {target_ai.upper()}
+    template = f"""# 🤖 Jai.OS 4.0 {title} | {target_ai.upper()}
 **From:** {from_ai.capitalize()} (Claude Code Instance)
 **To:** {target_ai.capitalize()} (Target Instance)
 **Status:** {status}
@@ -333,7 +333,7 @@ def main():
     """CLI entry point."""
     if len(sys.argv) < 2:
         print("""
-Inter-AI Message Validator - AgOS 2.0
+Inter-AI Message Validator - Jai.OS 4.0
 
 Usage:
     python inter_ai_validator.py validate <file_path>

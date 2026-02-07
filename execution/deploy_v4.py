@@ -9,7 +9,7 @@ def deploy_insydetradar_v4():
     username = "u384342620"
     password = "Aprilia100!69."
     
-    local_dir = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\Insydetradar\Web"
+    local_dir = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\Insydetradar\Web"
     remote_path = "domains/insydetradar.com/public_html"
 
     print(f"Deploying v4.0 to {host}:{port}...")

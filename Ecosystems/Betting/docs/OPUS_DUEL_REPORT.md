@@ -1,7 +1,7 @@
 # OPUS 4.6 BETTING DUEL REPORT
 > Generated: 2026-02-06T20:07:13.747277
 > Algorithm: Opus_Bets_v4.6
-> Challenge: AgOS 3.0 (Gemini) vs Opus 4.6 (Cline)
+> Challenge: Jai.OS 4.0 (Gemini) vs Opus 4.6 (Cline)
 
 ## Algorithm Methodology
 

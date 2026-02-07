@@ -5,7 +5,7 @@ description: bookie agent profile
 # Bookie - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: bookie
+Standard Jai.OS 4.0 Agent: bookie
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

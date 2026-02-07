@@ -5,7 +5,7 @@ description: gynaecologist agent profile
 # Gynaecologist - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: gynaecologist
+Standard Jai.OS 4.0 Agent: gynaecologist
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

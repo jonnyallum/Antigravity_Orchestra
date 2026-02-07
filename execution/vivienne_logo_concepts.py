@@ -11,7 +11,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import math
 
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public\logo_concepts"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public\logo_concepts"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # BRAND COLORS

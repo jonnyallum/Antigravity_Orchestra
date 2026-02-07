@@ -1,4 +1,4 @@
-# Agent Routing Protocol (AgOS 3.0)
+# Agent Routing Protocol (Jai.OS 4.0)
 > *"Every agent was created for a reason. Use them all."*
 
 ---

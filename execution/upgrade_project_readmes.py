@@ -7,7 +7,7 @@ def get_project_description(path):
     name = path.name.replace("-", " ").replace("_", " ").title()
     
     if "waste" in name.lower():
-        return f"A high-performance logistics and waste management ecosystem for {name}, powered by AgOS 2.0."
+        return f"A high-performance logistics and waste management ecosystem for {name}, powered by Jai.OS 4.0."
     elif "radar" in name.lower() or "trade" in name.lower():
         return f"A sophisticated signals and trading intelligence platform for {name}, leveraging the Antigravity statistical engine."
     elif "bakery" in name.lower():
@@ -20,11 +20,11 @@ def generate_readme(path):
     description = get_project_description(path)
     
     content = f"""# {name}
-> **Powered by Antigravity AgOS 2.0**
+> **Powered by Antigravity Jai.OS 4.0**
 
 {description}
 
-This project is an autonomous agentic sub-system, managed by the **Antigravity Orchestra**. It inherits the full reliability, performance, and "trillion-dollar-enterprise" quality standards of the master AgOS 2.0 framework.
+This project is an autonomous agentic sub-system, managed by the **Antigravity Orchestra**. It inherits the full reliability, performance, and "trillion-dollar-enterprise" quality standards of the master Jai.OS 4.0 framework.
 
 ---
 
@@ -37,7 +37,7 @@ This project is orchestrated by:
 ## 🛠️ Tech Stack
 - **Frontend**: Next.js / React / Expo
 - **Styling**: Tailwind CSS v4 & Framer Motion
-- **Automation**: AgOS 2.0 Execution Engine (Python)
+- **Automation**: Jai.OS 4.0 Execution Engine (Python)
 
 ---
 
@@ -78,7 +78,7 @@ def upgrade_readmes():
             with open(license_path, "w", encoding="utf-8") as f:
                 f.write("Copyright (c) 2026 JonnyAi. All Rights Reserved.\n\nProprietary and Confidential.")
 
-    print("\nAll project READMEs upgraded to AgOS 2.0 standards.")
+    print("\nAll project READMEs upgraded to Jai.OS 4.0 standards.")
     print("Licensed to JonnyAi.")
 
 if __name__ == "__main__":

@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 mcp = FastMCP("Kwizz Supabase")
 
 # Load environment variables
-env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\kwizz\.env.local"
+env_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\kwizz\.env.local"
 load_dotenv(env_path)
 
 supabase_url = os.getenv("NEXT_PUBLIC_SUPABASE_URL")

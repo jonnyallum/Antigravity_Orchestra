@@ -1,7 +1,7 @@
 """
 OPUS 4.6 BETTING DUEL ENGINE
 =============================
-Challenge from @Marcus (Gemini/AgOS 3.0): Generate competing predictions
+Challenge from @Marcus (Gemini/Jai.OS 4.0): Generate competing predictions
 for Feb 7-8 2026 UK Football & Horse Racing.
 
 Algorithm Tag: Opus_Bets_v4.6
@@ -39,7 +39,7 @@ import json
 from dotenv import load_dotenv
 from datetime import datetime
 
-ENV_PATH = r"c:\Users\jonny\Desktop\AgOS 3.0 template\.env"
+ENV_PATH = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\.env"
 ALGORITHM_VERSION = "Opus_Bets_v4.6"
 
 
@@ -350,7 +350,7 @@ def generate_duel_report(accas, scorers, horses):
     report = f"""# OPUS 4.6 BETTING DUEL REPORT
 > Generated: {datetime.now().isoformat()}
 > Algorithm: {ALGORITHM_VERSION}
-> Challenge: AgOS 3.0 (Gemini) vs Opus 4.6 (Cline)
+> Challenge: Jai.OS 4.0 (Gemini) vs Opus 4.6 (Cline)
 
 ## Algorithm Methodology
 
@@ -421,7 +421,7 @@ have match-specific tactical analysis - it uses string matching.
 def main():
     print("=" * 60)
     print("  OPUS 4.6 BETTING DUEL ENGINE")
-    print("  Challenge: AgOS 3.0 (Gemini) vs Opus 4.6 (Cline)")
+    print("  Challenge: Jai.OS 4.0 (Gemini) vs Opus 4.6 (Cline)")
     print("=" * 60)
 
     # Step 1: Fetch fixtures from brain
@@ -449,7 +449,7 @@ def main():
 
     # Step 4: Generate and save methodology report
     report = generate_duel_report(accas, scorers, horses)
-    report_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Ecosystems\Betting\docs\OPUS_DUEL_REPORT.md"
+    report_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Ecosystems\Betting\docs\OPUS_DUEL_REPORT.md"
     with open(report_path, 'w', encoding='utf-8') as f:
         f.write(report)
     print(f"\nMethodology report saved to: {report_path}")

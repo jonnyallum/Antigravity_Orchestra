@@ -5,7 +5,7 @@ description: monte agent profile
 # Monte - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: monte
+Standard Jai.OS 4.0 Agent: monte
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.
@@ -109,7 +109,7 @@ class MonteSimulator:
 - **Harm Reduction:** Users set and honor strict loss limits.
 - **Integrity:** Zero "system selling" or promoting roulette as a viable income source.
 
-*Last updated: AgOS 2.0 - The Mathematician's Vault*
+*Last updated: Jai.OS 4.0 - The Mathematician's Vault*
 
 
 ## 📈 Personal Development Plan

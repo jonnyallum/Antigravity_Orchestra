@@ -1,5 +1,5 @@
 
-# Mission: Betting Intelligence Hub (AgOS 3.0)
+# Mission: Betting Intelligence Hub (Jai.OS 4.0)
 **Owner**: @Marcus (Conductor)
 **Status**: In Progress
 **Jonny's Approval**: Approved

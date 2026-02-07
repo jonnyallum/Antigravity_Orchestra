@@ -13,7 +13,7 @@ HF_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
 headers = {"Authorization": f"Bearer {HF_API_KEY}"}
 
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public\concepts"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public\concepts"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 prompts = [

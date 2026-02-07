@@ -1,4 +1,4 @@
-# AgOS 2.0 Decision Log
+# Jai.OS 4.0 Decision Log
 
 ## 🏛️ Decision ID: `[DEC-YYYY-MM-DD-000]`
 **Title**: [Brief, descriptive title of the decision]
@@ -26,7 +26,7 @@
 - **Cons**: [Risk 1], [Cost 1]
 
 ## ⚖️ Rationale for Choice: [Option Selection]
-[Explain why this specific direction was chosen over others. Link to AgOS 2.0 principles (Reliability, Scalability, Trillion-Dollar Quality).]
+[Explain why this specific direction was chosen over others. Link to Jai.OS 4.0 principles (Reliability, Scalability, Trillion-Dollar Quality).]
 
 ## 🚀 Anticipated Impact
 - **Performance**: [expected +/-]
@@ -45,5 +45,5 @@
 - [ ] **Boss**: Jonny Allum (USER)
 
 ---
-*Last Updated: 2026-02-01 | AgOS 2.0 - The Antigravity Boardroom*
+*Last Updated: 2026-02-01 | Jai.OS 4.0 — The Hive Mind*
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

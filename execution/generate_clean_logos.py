@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-OUTPUT_DIR = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\public"
+OUTPUT_DIR = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\jonnyai.website\public"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # COLORS

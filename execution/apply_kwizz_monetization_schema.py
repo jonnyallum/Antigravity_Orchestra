@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 def apply_kwizz_schema():
-    env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\.env"
+    env_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\.env"
     load_dotenv(env_path)
     
     conn_string = os.getenv("ANTIGRAVITY_BRAIN_CONNECTION_STRING")
@@ -13,7 +13,7 @@ def apply_kwizz_schema():
         return
 
     # Using absolute path for Jai.OS 4.0 compliance
-    sql_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\kwizz\supabase_monetization_schema.sql"
+    sql_path = r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\kwizz\supabase_monetization_schema.sql"
     
     if not os.path.exists(sql_path):
         print(f"SQL file not found at {sql_path}")

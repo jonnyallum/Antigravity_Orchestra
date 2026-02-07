@@ -1,4 +1,4 @@
-# AgOS 2.0 Delegation Template
+# Jai.OS 4.0 Delegation Template
 
 ## 🤝 Artifact: Mission Delegation
 **Handoff ID**: `[UID-YYYY-MM-DD-000]`
@@ -30,7 +30,7 @@ The task is only considered complete when:
 1. [ ] Code compiles and passes all linting.
 2. [ ] Performance metrics meet the required threshold.
 3. [ ] Documentation is updated in `SKILL.md` or `README.md`.
-4. [ ] Standard AgOS 2.0 headers are included in all new files.
+4. [ ] Standard Jai.OS 4.0 headers are included in all new files.
 5. [ ] @Sentinel has verified the security of the implementation.
 
 ## 🧱 Quality Gates

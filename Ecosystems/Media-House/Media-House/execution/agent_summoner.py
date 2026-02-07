@@ -1,6 +1,6 @@
 """
 Agent Summoner - Quick-activate specialist agents.
-Built by @Conductor (Marcus Cole "The Maestro") for AgOS 2.0.
+Built by @Conductor (Marcus Cole "The Maestro") for Jai.OS 4.0.
 
 Provides rapid agent context loading, team assembly, and
 role-specific prompts for the 24-agent roster.
@@ -366,7 +366,7 @@ def start_meeting(meeting_type: str) -> dict:
 def show_roster():
     """Display the full 24-agent roster."""
     print(f"\n{'='*60}")
-    print("THE ORCHESTRA - AgOS 2.0 AGENT ROSTER")
+    print("THE ORCHESTRA - Jai.OS 4.0 AGENT ROSTER")
     print(f"{'='*60}")
 
     for agent_key, agent in AGENT_ROSTER.items():
@@ -382,7 +382,7 @@ def main():
     """CLI entry point."""
     if len(sys.argv) < 2:
         print("""
-Agent Summoner - AgOS 2.0
+Agent Summoner - Jai.OS 4.0
 Built by @Conductor (Marcus Cole "The Maestro")
 
 Usage:

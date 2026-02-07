@@ -2,8 +2,8 @@ import os
 import shutil
 
 paths = [
-    r"c:\Users\jonny\Desktop\AgOS 3.0 template\nul",
-    r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\Poundtrades.app-antigravity\poundtrades-v2\nul"
+    r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\nul",
+    r"c:\Users\jonny\Desktop\Jai.OS 4.0 template\Clients\Poundtrades.app-antigravity\poundtrades-v2\nul"
 ]
 
 for p in paths:

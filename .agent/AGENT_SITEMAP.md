@@ -1,4 +1,4 @@
-# 🗺️ AgOS 3.0: The Hive Mind Sitemap
+# 🗺️ Jai.OS 4.0: The Hive Mind Sitemap
 
 The Antigravity Agency operates as a **Stateful Hive Mind** across four integrated layers. This architecture ensures that intelligence is probabilistic, but the outcomes are deterministic.
 
@@ -48,4 +48,4 @@ graph TD
 
 ---
 
-*Last Updated: 2026-02-05 | AgOS 3.0 - Architecture Sitemap*
+*Last Updated: 2026-02-05 | Jai.OS 4.0 - Architecture Sitemap*

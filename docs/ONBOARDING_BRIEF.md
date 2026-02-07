@@ -1,5 +1,5 @@
 # 🚀 ANTIGRAVITY AGENCY: COMPLETE ONBOARDING BRIEF
-> **Version:** AgOS 3.0 | **Last Updated:** 2026-02-03 | **For:** All AI Systems
+> **Version:** Jai.OS 4.0 | **Last Updated:** 2026-02-03 | **For:** All AI Systems
 
 ---
 
@@ -92,7 +92,7 @@ C:\Users\jonny\Desktop\Jonny AI\        # ROOT WORKSPACE
 │   │   │   ├── sprint_review.md
 │   │   │   └── incident_response.md
 │   │   ├── meetings/                   # Meeting minutes archive
-│   │   └── inbox/                      # Agent-to-agent messages (AgOS 3.0)
+│   │   └── inbox/                      # Agent-to-agent messages (Jai.OS 4.0)
 │   │
 │   ├── memory/                         # PERSISTENT MEMORY
 │   │   ├── FEEDBACK_PROTOCOL.md        # How agents learn
@@ -190,7 +190,7 @@ C:\Users\jonny\Desktop\Jonny AI\        # ROOT WORKSPACE
 | **Quartermaster** | Quinn Masters | "The Allocator" | `.agent/skills/quartermaster/SKILL.md` | Resource management |
 | **Chronos** | Theo Kronos | "The Timekeeper" | `.agent/skills/chronos/SKILL.md` | Scheduling, deadlines |
 
-### Proposed Agents (AgOS 3.0)
+### Proposed Agents (Jai.OS 4.0)
 
 | Agent | Nickname | Role | Status |
 |:------|:---------|:-----|:-------|
@@ -236,7 +236,7 @@ C:\Users\jonny\Desktop\Jonny AI\        # ROOT WORKSPACE
 │   └── .tmp/message4gemini.md                                 │
 │   └── Write here when ending session for another AI          │
 │                                                              │
-│   NERVE CENTER (AgOS 3.0 - Coming Soon)                      │
+│   NERVE CENTER (Jai.OS 4.0 - Coming Soon)                      │
 │   └── Supabase + pgvector embeddings                         │
 │   └── Persistent memory that survives all sessions           │
 │                                                              │
@@ -420,4 +420,4 @@ When you start a session:
 
 **Document Maintainer:** @Archivist  
 **Last Updated:** 2026-02-03  
-**Version:** AgOS 3.0 Vision
+**Version:** Jai.OS 4.0 Vision

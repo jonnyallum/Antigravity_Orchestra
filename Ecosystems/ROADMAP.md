@@ -1,4 +1,4 @@
-# 🗺️ AgOS 2.0 Ecosystem Roadmap
+# 🗺️ Jai.OS 4.0 Ecosystem Roadmap
 > **Architect:** Genesis Nova "The Cloner"
 > **Status:** Draft / Conceptual
 > **Date:** 2026-02-01

@@ -1,15 +1,15 @@
 # Antigravity Workspace Context
 *Managed by **Jonny** (The Boss) | Powered by the [Agent Orchestra](docs/TEAM.md)*
 
-> **AgOS 2.0** - The Antigravity Boardroom
+> **Jai.OS 4.0** - The Antigravity Boardroom
 
 ## Project Summary
 
-This is the **Master Workspace** for the Antigravity Agency. All client projects inherit from this folder. We use the **Agency Operating System (AgOS 2.0)** to build, break, and scale projects with "trillion-dollar-enterprise" quality.
+This is the **Master Workspace** for the Antigravity Agency. All client projects inherit from this folder. We use the **Jai.OS 4.0** to build, break, and scale projects with "trillion-dollar-enterprise" quality.
 
 ---
 
-## The Agency Operating System (AgOS 2.0)
+## The Jai.OS 4.0
 
 You operate as the **Antigravity Agency**, a professional team of specialized expert personas. We balance **Probabilistic Creativity** (Agents) with **Deterministic Reliability** (Scripts).
 
@@ -194,4 +194,4 @@ python execution/feedback_engine.py report
 ---
 
 *This file is mirrored across CLAUDE.md, AGENTS.md, and GEMINI.md.*
-*Last updated: AgOS 2.0 - The Antigravity Boardroom*
+*Last updated: Jai.OS 4.0 — The Hive Mind*

@@ -1,6 +1,6 @@
 """
 Project Scaffolder - Rapid client project initialization.
-Built by @Genesis (The Cloner) for AgOS 2.0.
+Built by @Genesis (The Cloner) for Jai.OS 4.0.
 
 Creates new client projects with proper AgOS structure, inherited
 CLAUDE.md, pre-configured ports, and agent assignments.
@@ -136,7 +136,7 @@ def create_project_claude_md(project_path: Path, project_name: str, project_type
     agent_list = "\n".join([f"- @{agent}" for agent in agents])
     tech_list = "\n".join([f"- {tech}" for tech in tech_stack])
 
-    return f"""# {project_name} - AgOS 2.0 Client Project
+    return f"""# {project_name} - Jai.OS 4.0 Client Project
 *Managed by the Antigravity Agency*
 
 > **Inherits from:** Master Workspace (`Jonny AI/CLAUDE.md`)
@@ -182,7 +182,7 @@ python ../execution/auto_commit.py --push
 
 ---
 
-*This project inherits all AgOS 2.0 operating principles from the master workspace.*
+*This project inherits all Jai.OS 4.0 operating principles from the master workspace.*
 """
 
 
@@ -285,7 +285,7 @@ npm run dev
 
 ---
 
-*Built with AgOS 2.0 by the Antigravity Agency*
+*Built with Jai.OS 4.0 by the Antigravity Agency*
 """
     (project_path / "README.md").write_text(readme_content, encoding='utf-8')
 
@@ -338,7 +338,7 @@ def main():
     """CLI entry point."""
     if len(sys.argv) < 2:
         print("""
-Project Scaffolder - AgOS 2.0
+Project Scaffolder - Jai.OS 4.0
 Built by @Genesis (The Cloner)
 
 Usage:

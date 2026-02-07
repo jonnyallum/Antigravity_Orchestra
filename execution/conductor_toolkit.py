@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 """
-AgOS 2.0 Conductor Toolkit
+Jai.OS 4.0 Conductor Toolkit
 ---------------------------
 Automated orchestration tools for the Maestro.
 Version: 2.0.0
@@ -103,8 +103,8 @@ class ConductorToolkit:
             print("All agents operational at Elite level.")
 
     def upgrade_agent_skills(self):
-        """Batch upgrades all agents to AgOS 2.0 standard structure"""
-        print("Starting AgOS 2.0 Skill Upgrade...")
+        """Batch upgrades all agents to Jai.OS 4.0 standard structure"""
+        print("Starting Jai.OS 4.0 Skill Upgrade...")
         upgraded_count = 0
         
         standard_sops = """
@@ -149,10 +149,10 @@ class ConductorToolkit:
                         new_content += f"---\ndescription: {agent_folder.name} agent profile\n---\n\n"
                         body = original_content
 
-                    # 2. Add AgOS 2.0 Sections
+                    # 2. Add Jai.OS 4.0 Sections
                     new_content += f"# {agent_folder.name.replace('-', ' ').title()} - Agent Profile\n\n"
                     new_content += "## 🎭 Persona Overview\n"
-                    new_content += f"Standard AgOS 2.0 Agent: {agent_folder.name}\n\n"
+                    new_content += f"Standard Jai.OS 4.0 Agent: {agent_folder.name}\n\n"
                     
                     new_content += "## 🛠️ Core Capabilities\n"
                     new_content += "- **Task Execution**: Executing specialized tasks defined in the Task List.\n"

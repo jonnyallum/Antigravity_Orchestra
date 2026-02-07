@@ -1,7 +1,7 @@
 import csv
 import os
 
-CSV_DIR = r'c:\Users\jonny\Desktop\AgOS 3.0 template\.tmp\haccp_sheets'
+CSV_DIR = r'c:\Users\jonny\Desktop\Jai.OS 4.0 template\.tmp\haccp_sheets'
 OUT = r'c:\Users\jonny\Desktop\HACCP_PASTE_DATA.txt'
 
 files = [

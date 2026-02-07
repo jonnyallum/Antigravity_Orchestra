@@ -5,7 +5,7 @@ description: scout agent profile
 # Scout - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: scout
+Standard Jai.OS 4.0 Agent: scout
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

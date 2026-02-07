@@ -2,7 +2,7 @@
 description: Mandatory inter-AI messaging protocol to ensure agents are always synced with the latest boardroom decisions and peer handover.
 ---
 
-# Inter-AI Communication & Messaging Protocol (AgOS 3.0)
+# Inter-AI Communication & Messaging Protocol (Jai.OS 4.0)
 
 To prevent context drift and duplicated effort, all agents must adhere to the **Check-Before-Act** ritual.
 

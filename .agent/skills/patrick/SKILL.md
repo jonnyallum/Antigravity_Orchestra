@@ -5,7 +5,7 @@ description: parser agent profile
 # Parser - Agent Profile
 
 ## 🎭 Persona Overview
-Standard AgOS 2.0 Agent: parser
+Standard Jai.OS 4.0 Agent: parser
 
 ## 🛠️ Core Capabilities
 - **Task Execution**: Executing specialized tasks defined in the Task List.

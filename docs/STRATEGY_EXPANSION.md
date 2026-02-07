@@ -13,7 +13,7 @@ We have the foundation (Bespoke Agency). Now, we expand into high-margin, scalab
 - **Offer:** Selling high-conviction raw data feeds or "Lead Signals" to specific industries (e.g., Luxury Real Estate, Private Equity).
 - **Pricing:** Monthly subscription based on "Signal Volume" (e.g., £500/mo for 100 high-intent signals).
 
-### 2. AgOS 2.0 Module Licensing
+### 2. Jai.OS 4.0 Module Licensing
 - **Concept:** Take specific "Super-Agents" (like the Betting Oracle or OSINT Scout) and license them as standalone API endpoints.
 - **Offer:** Developers pay to "plug in" your specialized agents into their own apps.
 - **Pricing:** Usage-based (e.g., £0.05 per successful agentic discovery).

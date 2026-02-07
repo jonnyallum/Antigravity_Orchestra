@@ -7,8 +7,8 @@ from openpyxl.styles import Font, PatternFill
 import csv
 import os
 
-SRC = r'c:\Users\jonny\Desktop\AgOS 3.0 template\.tmp\haccp_sheets\haccp_logbook.xlsx'
-CSV_DIR = r'c:\Users\jonny\Desktop\AgOS 3.0 template\.tmp\haccp_sheets'
+SRC = r'c:\Users\jonny\Desktop\Jai.OS 4.0 template\.tmp\haccp_sheets\haccp_logbook.xlsx'
+CSV_DIR = r'c:\Users\jonny\Desktop\Jai.OS 4.0 template\.tmp\haccp_sheets'
 OUT = r'c:\Users\jonny\Desktop\HACCP_ALL_DATA_CONSOLIDATED.xlsx'
 
 # Styles

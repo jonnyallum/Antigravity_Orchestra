@@ -2,7 +2,7 @@
 > **Identity:** Jonny Allum Innovations Ltd | **Brand:** Antigravity AI
 > **Focus:** Small Business AI Integration & Operational Velocity
 
-This strategy outlines the transition to becoming the leading **AI Partner for Small Businesses**, utilizing AgOS 2.0 to automate growth and efficiency.
+This strategy outlines the transition to becoming the leading **AI Partner for Small Businesses**, utilizing Jai.OS 4.0 to automate growth and efficiency.
 
 ---
 
@@ -19,7 +19,7 @@ Targeting businesses that have integrated AI agents and require continuous optim
 - **Model:** Auto-bill SaaS-style.
 
 ### Pillar C: Intellectual Property (Passive/Scalable)
-Licensing specific modules of AgOS 2.0 or specialized agents (e.g., The Betting Oracle, OSINT Scout).
+Licensing specific modules of Jai.OS 4.0 or specialized agents (e.g., The Betting Oracle, OSINT Scout).
 - **Pricing Strategy:** Licensing Fees per seat or per instance.
 
 ---
