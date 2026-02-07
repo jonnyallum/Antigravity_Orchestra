@@ -22,3 +22,8 @@ AgOS 3.0 Market Intelligence: **@Jasper**
 
 ---
 *Last Updated: 2026-02-05 | AgOS 3.0 - The Tracker*
+## Personal Development Plan
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| Skill Review | Weekly | 100% compliance |

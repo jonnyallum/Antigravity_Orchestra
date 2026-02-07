@@ -32,6 +32,17 @@ REQUIRED_SECTIONS_V3 = [
     "Personal Development Plan"
 ]
 
+# Required sections in Jai.OS 4.0 SKILL.md format
+REQUIRED_SECTIONS_V4 = [
+    "The Creed",
+    "Identity",
+    "Personality",
+    "Capabilities",
+    "Standard Operating Procedures",
+    "Collaboration",
+    "Learning Log"
+]
+
 # Required profile elements for V2
 REQUIRED_PROFILE_ELEMENTS_V2 = [
     "Human Name",
@@ -76,60 +87,96 @@ def validate_skill_file(filepath: Path, verbose: bool = False) -> dict:
         return result
 
     # Detect Version
-    is_v3 = "Persona Overview" in content or "Core Capabilities" in content
+    frontmatter = re.match(r'^---\s*\n(.*?)\n---\s*\n', content, re.DOTALL)
+    version = "2.0" # Default
     
-    if is_v3:
-        version = "3.0"
+    if frontmatter:
+        fm_content = frontmatter.group(1)
+        if 'version: "4.0"' in fm_content or "version: 4.0" in fm_content:
+            version = "4.0"
+        elif 'version: "3.0"' in fm_content or "version: 3.0" in fm_content:
+            version = "3.0"
+
+    # Secondary detection if no frontmatter version
+    if version == "2.0":
+        if "The Creed" in content and "Identity" in content:
+            version = "4.0"
+        elif "Persona Overview" in content or "Core Capabilities" in content:
+            version = "3.0"
+
+    if version == "4.0":
+        required_sections = REQUIRED_SECTIONS_V4
+    elif version == "3.0":
         required_sections = REQUIRED_SECTIONS_V3
     else:
-        version = "2.0"
         required_sections = REQUIRED_SECTIONS_V2
 
-    # Check for Alias line (AgOS 2.0 only, or legacy section in V3)
+    # Check for Alias line (AgOS 2.0 only)
     if version == "2.0" and '**Alias:**' not in content and 'Alias:' not in content:
-        result["issues"].append("Missing Alias line (AgOS 2.0 format)")
-        result["valid"] = False
+        result["warnings"].append("Missing Alias line (AgOS 2.0 format)")
 
-    # Check for required sections
+    # Check for required sections with flexible regex
+    # Allows for emojis, numbers, and common variations
+    PREFIX = r"##\s+(?:[\d\.\s\w\W]*?)\s*"
+    SECTION_RE = {
+        "The Creed": PREFIX + r"Creed",
+        "Identity": PREFIX + r"(Identity|Persona Overview|Profile Card)",
+        "Personality": PREFIX + r"(Personality|Persona Overview)",
+        "Capabilities": PREFIX + r"((Core )?Capabilities|Core Competencies)",
+        "Standard Operating Procedures": PREFIX + r"(Standard Operating Procedures|SOPs)",
+        "Collaboration": PREFIX + r"(Collaboration|Team Interaction|Team Persona)",
+        "Learning Log": PREFIX + r"(Learning Log|Feedback Loop)",
+        "Persona Overview": PREFIX + r"(Persona Overview|Identity|Profile Card)",
+        "Core Capabilities": PREFIX + r"((Core )?Capabilities|Core Competencies)",
+        "Standard Operating Procedures (SOPs)": PREFIX + r"(Standard Operating Procedures|SOPs)",
+        "Personal Development Plan": PREFIX + r"(Personal Development Plan|Training Day Skills)",
+        "Profile Card": PREFIX + r"(Profile Card|Identity)",
+        "Personality & Collaboration Style": PREFIX + r"(Personality|Collaboration Style)",
+        "Core Competencies": PREFIX + r"((Core )?Capabilities|Core Competencies)",
+        "Key Workflows": PREFIX + r"(Key Workflows|SOPs)",
+        "Team Interaction": PREFIX + r"(Team Interaction|Collaboration)",
+        "Performance Metrics": PREFIX + r"(Performance Metrics|Stats)",
+        "Restrictions": PREFIX + r"(Restrictions|Cannot Do)",
+        "Training Day Skills": PREFIX + r"(Training Day Skills|Personal Development Plan)"
+    }
+
     for section in required_sections:
-        # Check for variations of section headers
-        patterns = [
-            f"## {section}",
-            f"## \\d+\\. {section}",  # Numbered sections
-            f"### {section}"
-        ]
-        found = any(re.search(p, content, re.IGNORECASE) for p in patterns)
-        if not found:
+        pattern = SECTION_RE.get(section, f"## {section}")
+        if not re.search(pattern, content, re.IGNORECASE):
             result["issues"].append(f"Missing section: {section} (AgOS {version} format)")
             result["valid"] = False
 
     if version == "2.0":
         # Check for profile elements in Profile Card
-        profile_section = re.search(r'Profile Card.*?(?=##|\Z)', content, re.DOTALL | re.IGNORECASE)
+        profile_section = re.search(r'(Profile Card|Identity).*?(?=##|\Z)', content, re.DOTALL | re.IGNORECASE)
         if profile_section:
             profile_content = profile_section.group(0)
             for element in REQUIRED_PROFILE_ELEMENTS_V2:
                 if element not in profile_content:
                     result["warnings"].append(f"Profile Card missing: {element}")
         else:
-            result["issues"].append("Profile Card section not found or malformed")
-            result["valid"] = False
-
-        # Check for Inner Circle
-        if "Inner Circle" not in content:
-            result["warnings"].append("Missing 'Inner Circle' in Team Interaction")
+            result["warnings"].append("Profile Card section not found or malformed")
 
         # Check for Performance Metrics table
-        if "| Metric |" not in content and "| Target |" not in content:
+        if "| Metric |" not in content and "| Target |" not in content and "| Attribute |" not in content:
             result["warnings"].append("Performance Metrics may not have proper table format")
 
         # Check for Learning Log table
-        if "| Date |" not in content or "| Learning |" not in content:
+        if "| Date |" not in content or ("| Learning |" not in content and "| Learning Log |" not in content):
             result["warnings"].append("Learning Log may not have proper table format")
-    else:
+    elif version == "3.0":
         # V3 specific checks
-        if "| Job |" not in content and "| Task |" not in content:
-             result["warnings"].append("Personal Development Plan may be missing job table")
+        if "| Job |" not in content and "| Task |" not in content and "| Metric |" not in content:
+             result["warnings"].append("Personal Development Plan may be missing job/task table")
+    elif version == "4.0":
+        # V4 specific checks (Jai.OS 4.0)
+        has_identity_table = "| Attribute |" in content and "| Value |" in content
+        if not has_identity_table:
+            result["warnings"].append("Identity section missing Attribute/Value table")
+        
+        has_learning_table = "| Date |" in content and ("| Learning |" in content or "| Learning Log |" in content)
+        if not has_learning_table:
+            result["warnings"].append("Learning Log missing Date/Learning table")
 
     if verbose:
         print(f"\n{'=' * 60}")

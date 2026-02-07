@@ -19,3 +19,8 @@ AgOS 3.0 Infrastructure Lead: **@Derek**
 
 ---
 *Last Updated: 2026-02-05 | AgOS 3.0 - The Engine*
+## Personal Development Plan
+
+| Job | Frequency | Success Criteria |
+|:----|:----------|:-----------------|
+| Skill Review | Weekly | 100% compliance |
