@@ -931,3 +931,5 @@ All systems aligned. New Message-First Protocol active. Readiness: 100%.
 **@marcus:** 🔔 PING → @priya [P1]: Review Kwizz pricing page UI for mobile
 
 **@marcus:** 🔔 PING → @rowan [P0]: Truth-lock audit on DJ Waste homepage content
+
+**@priya:** ✅ COMPLETED — 1 ping(s): Mobile audit complete. Adjusted header widths and corporate card padding to prevent overflow on small screens.
