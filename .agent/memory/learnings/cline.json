@@ -14,6 +14,17 @@
         "Meetings directory was never created despite being referenced in boardroom protocol",
         "Feedback engine itself was never being called by any agent workflow"
       ]
+    },
+    {
+      "timestamp": "2026-02-07T21:55:22.024621",
+      "task_type": "data-cleanup",
+      "success": true,
+      "duration_minutes": 10,
+      "blockers": [],
+      "human_intervention": false,
+      "learnings": [
+        "Supabase REST API DELETE with eq filter works cleanly for bulk row removal by column value"
+      ]
     }
   ],
   "learnings": [
@@ -36,9 +47,14 @@
       "timestamp": "2026-02-07T21:47:38.976710",
       "learning": "Feedback engine itself was never being called by any agent workflow",
       "source": "audit"
+    },
+    {
+      "timestamp": "2026-02-07T21:55:22.024621",
+      "learning": "Supabase REST API DELETE with eq filter works cleanly for bulk row removal by column value",
+      "source": "data-cleanup"
     }
   ],
   "patterns": {},
   "created": "2026-02-07T21:47:38.976710",
-  "last_updated": "2026-02-07T21:47:38.976710"
+  "last_updated": "2026-02-07T21:55:22.024621"
 }

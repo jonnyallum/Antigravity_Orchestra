@@ -11,7 +11,13 @@ Workflow:
 6. Final verification
 """
 
+import sys
 import httpx
+
+# Force UTF-8 encoding for Windows terminals
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
 import os
 import json
 from dotenv import load_dotenv
