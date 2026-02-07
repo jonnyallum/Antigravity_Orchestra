@@ -21,6 +21,7 @@
 | **Conductor** | Marcus Cole | "The Maestro" | Orchestrator & Team Lead |
 | **Jonny AI** | Jonny Allum | "The Architect" | Full-Stack Development Lead |
 | **Pixel** | Priya Sharma | "The Perfectionist" | UI/Visual Designer |
+| **Vivienne** | Vivienne Hayes | "The Brand Architect" | Brand & Logo Design |
 | **Sentinel** | Sam Blackwood | "The Gatekeeper" | Security & QA |
 | **DevOps** | Derek O'Brien | "The Engine" | Infrastructure & Deployment |
 | **Datastore** | Diana Chen | "The Vault" | Database & Storage |
