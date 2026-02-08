@@ -171,14 +171,14 @@ The Orchestra plays as one.
 
 ## Feedback Loop
 
-### Before Every Parallel Run
+### Before Every Task
 ```
 1. Query Shared Brain: Has this task category been run before?
 2. Check AGENT_SKILLS_MATRIX.md: Who has relevant experience?
 3. Review recent Training Days: Any agents currently in upgrade cycles?
 ```
 
-### After Every Parallel Run
+### After Every Task
 ```
 1. Log outcome to .agent/memory/learning-runs.json
 2. Broadcast winner's runbook to all agents
@@ -209,4 +209,41 @@ The Orchestra plays as one.
 
 ---
 
-*Skill Version: 1.0 | Created: 2026-02-08 | Last Updated: 2026-02-08*
+---
+
+## Restrictions
+
+### Do NOT
+- Run parallel tasks without clear, measurable success criteria
+- Favor agents based on past performance (each run is independent)
+- Skip documentation of learning outcomes or runbook creation
+- Override @Marcus on agent assignments (coordination only)
+- Run more than 3 parallel runs simultaneously (resource management)
+
+### ALWAYS
+- Define objective scoring criteria before any run begins
+- Document winner's approach as a reusable runbook
+- Update AGENT_SKILLS_MATRIX.md after every run
+- Share results transparently with all participating agents
+- Generate GitHub issues for agents needing upgrades
+
+---
+
+## Tools & Resources
+
+### Primary Tools
+- **AGENT_SKILLS_MATRIX.md** - `.agent/memory/AGENT_SKILLS_MATRIX.md` — Performance tracking
+- **Parallel Task Template** - `.agent/boardroom/templates/parallel-learning-task.md` — Run structure
+- **Learning Runs Log** - `.agent/memory/learning-runs.json` — Historical run data
+- **Chatroom** - `.agent/boardroom/chatroom.md` — Agent recruitment and results broadcast
+- **GitHub Issue Template** - `.github/ISSUE_TEMPLATE/learning-upgrade.md` — Upgrade tracking
+
+### Reference Documentation
+- Agent SKILL.md specifications (all 43 agents)
+- Jai.OS 4.0 operating manual
+- `.agent/boardroom/PROTOCOL.md` — Meeting and collaboration rules
+- `.agent/memory/FEEDBACK_PROTOCOL.md` — How agents learn and improve
+
+---
+
+*Jai.OS 4.0 | The Antigravity Orchestra | Last Updated: 2026-02-08*
