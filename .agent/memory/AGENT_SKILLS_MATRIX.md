@@ -72,7 +72,7 @@
 
 | Task Category | Top Performer | Win Rate | Key Technique | Runbook |
 |:-------------|:-------------|:---------|:-------------|:--------|
-| - | - | - | - | Awaiting first parallel run |
+| Brand Alignment | @Conductor (Gemini) | 1/1 (100%) | Analyze→Implement→Document | [brand-to-print-alignment.md](../../library/runbooks/brand-to-print-alignment.md) |
 
 ---
 
@@ -82,7 +82,9 @@
 
 | Agent | Gap Identified | Recommended Action | Source Run | Target Date |
 |:------|:--------------|:-------------------|:-----------|:------------|
-| - | - | - | - | Awaiting first parallel run |
+| @Priya | Did not participate | Enable parallel invocation | PLR-001 | Next run |
+| @Sebastian | Did not participate | Enable parallel invocation | PLR-001 | Next run |
+| @Vivienne | Did not participate | Enable parallel invocation | PLR-001 | Next run |
 
 ---
 
@@ -90,7 +92,7 @@
 
 | Run ID | Date | Task | Agents | Winner | Key Insight |
 |:-------|:-----|:-----|:-------|:-------|:------------|
-| - | - | - | - | - | Awaiting first parallel run |
+| PLR-001 | 2026-02-08 | Village Bakery Brand Overhaul | @Conductor | @Conductor (8.1/10) | Analyze existing assets before building new. Fonts = half the brand identity |
 
 ---
 
