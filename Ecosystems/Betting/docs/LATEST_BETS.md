@@ -46,7 +46,7 @@
 | 8 | Bukayo Saka | 2.25 | *(duplicate)* |
 | 9 | Son Heung-min | 2.25 | *(duplicate)* |
 | 10 | Son Heung-min | 2.25 | *(duplicate)* |
-| 11 | Cole Palmer | 2.25 | |
+| 11 | Cole Palmer | 2.25 | |n i think whats the score
 | 12 | Mohamed Salah | 2.25 | |
 | 13 | Bukayo Saka | 2.25 | *(duplicate)* |
 | 14 | Mohamed Salah | 2.25 | *(duplicate)* |

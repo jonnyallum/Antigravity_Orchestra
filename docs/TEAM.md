@@ -12,10 +12,10 @@ Our orchestra is composed of 43 specialized expert personas. We use human handle
 | Handle | Human Name | Nickname | Role |
 | :--- | :--- | :--- | :--- |
 | **@Marcus** | Marcus Cole | "The Maestro" | Central command, routing, and quality gates. |
-| **@Theo** | Theo Kronos | "The Timekeeper" | Deadline tracking and schedule orchestration. |
-| **@Quinn** | Quinn Masters | "The Allocator" | Resource management and capacity planning. |
-| **@Nina** | Nina Spark | "The Visionary" | Creative strategy and innovation. |
-| **@Vigil** | Vigil Chen | "The Eye" | Continuous improvement and quality audit. |
+| **@Theo** | Theo Blackwell | "The Diplomat" | Inter-AI communication & scheduling orchestration. |
+| **@Quinn** | Quinn Rider | "The Doctor" | MotoGP tactical intelligence & betting analysis. |
+| **@Nina** | Nina Frost | "The Visionary" | Creative strategy and high-level innovation. |
+| **@Vigil** | Vigil Sentry | "The Eye" | Continuous improvement and quality verification gate. |
 
 ### 🛠️ Development & Infrastructure
 | Handle | Human Name | Nickname | Role |
@@ -27,11 +27,11 @@ Our orchestra is composed of 43 specialized expert personas. We use human handle
 | **@Diana** | Diana Chen | "The Vault" | Database management and SQL efficiency. |
 | **@Steve** | Steve Harrison | "The Schema Whisperer" | Supabase & PostgREST specialist, API configuration. |
 | **@Victor** | Victor Reyes | "The Locksmith" | API keys, encryption, and certificate management. |
-| **@Daniel** | Daniel Bukowski | "The Detective" | Mobile diagnostics and build troubleshooting. |
+| **@Daniel** | Daniel Marsh | "The Detective" | Technical diagnostics (Mobile builds & Mechanical). |
 | **@Owen** | Owen Stinger | "The Hornet" | Zero-downtime CI/CD and production shipping. |
-| **@Adrian** | Adrian Cross | "The Welder" | MCP server development and maintenance. |
-| **@Milo** | Milo Swift | "The Thumb" | Mobile optimization and touch UX diagnostics. |
-| **@Redeye** | Brad Voss | "The Adversary" | Red-team hacker and offensive security. |
+| **@Adrian** | Adrian Cross | "The Welder" | MCP server development and tool construction. |
+| **@Milo** | Milo Thorne | "The Thumb" | Mobile performance optimization and touch diagnostics. |
+| **@RedEye** | Brad Voss | "The Breaker" | Red-team hacker and offensive security testing. |
 
 ### 📈 Growth & Revenue
 | Handle | Human Name | Nickname | Role |
@@ -40,9 +40,9 @@ Our orchestra is composed of 43 specialized expert personas. We use human handle
 | **@Grace** | Grace Liu | "The Ranker" | SEO strategy and top-tier search visibility. |
 | **@Elena** | Elena Vasquez | "The Voice" | Brand tone and high-conversion copy. |
 | **@Carlos** | Carlos Mendez | "The Hook" | Viral video editing and retention psychology. |
-| **@Maya** | Maya Singh | "The Oracle" | Performance tracking and revenue attribution. |
-| **@Hannah** | Hannah Park | "The Fixer" | Customer success and feedback loops. |
-| **@Blaise** | Blaise Pascal | "The Funnel" | Funnel engineering and conversion optimization. |
+| **@Maya** | Maya Singh | "The Oracle" | Performance tracking and business ROI attribution. |
+| **@Hannah** | Hannah Park | "The Fixer" | Customer success, feedback loops, and triage. |
+| **@Blaise** | Blaise Fontaine | "The Funnel" | Funnel engineering and conversion optimization. |
 | **@Vivienne** | Vivienne Hayes | "The Brand Architect" | World-class brand identity and iconic logo design. |
 
 ### 🦅 Intelligence & Automation
@@ -60,13 +60,13 @@ Our orchestra is composed of 43 specialized expert personas. We use human handle
 ### 🎰 Specialized Ecosystems (Betting & Ops)
 | Handle | Human Name | Nickname | Role |
 | :--- | :--- | :--- | :--- |
-| **@Sterling** | Sterling Chase | "The Odds Engineer"| Sports betting systems and statistical edge. |
-| **@Gareth** | Gareth Reid | "The Tactician" | Football tactical intelligence and analysis. |
+| **@Sterling** | Sterling Chase | "The Odds Engineer"| Strategic counsel, betting algorithms, and IP protection. |
+| **@Gareth** | Gareth Reid | "The Tactician" | Football tactical intelligence and match analysis. |
 | **@Harry** | Harry Ford | "The Form Master" | Horse racing analysis and betting systems. |
 | **@Pietro** | Pietro Ferrari | "The Strategist" | Formula 1 strategy and betting intelligence. |
-| **@Julian** | Dr. Julian Grave | "The Doctor" | MotoGP strategy and match analysis. |
+| @Julian | Julian Price | "The Doctor" | Sports betting systems and statistical edge. |
 | **@Terry** | Terry Taylor | "The 180 King" | Darts analysis and betting intelligence. |
-| **@Monty** | Monty Carlo | "The Mathematician"| Roulette mathematics and physics analysis. |
+| **@Monty** | Monty Carlo | "The Mathematician"| Roulette mathematics and kinetic physics analysis. |
 | **@Winston** | Winston Hayes | "Whiz" | Dropshipping systems and margin optimization. |
 | **@Trotter** | Derek Trotter | "The Trader" | Trading systems and risk management. |
 | **@Genesis** | Genesis Nova | "The Cloner" | Variant architecture and project initialization. |

@@ -1,4 +1,4 @@
-"""
+'' """
 Configure Kwizz Supabase project:
 1. Set Auth URL config (Site URL + Redirect URLs)
 2. Enable Realtime for games/players/responses tables

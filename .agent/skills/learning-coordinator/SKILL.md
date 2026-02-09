@@ -190,11 +190,18 @@ The Orchestra plays as one.
 
 ## Learning Log
 
-### 2026-02-08 | Skill Created
-- **Context:** Jonny requested parallel agent learning reinforcement system
-- **Approach:** Built on existing Training Day + Team Talk rituals
-- **Outcome:** Operational spec ready for first test run
-- **Lesson:** Swarm intelligence requires structured competition + generous knowledge sharing
+| Date | Learning | Source | Applied To | Propagated To |
+|:-----|:---------|:-------|:-----------|:--------------|
+| 2026-02-08 | Swarm intelligence requires structured competition + generous knowledge sharing — parallel runs only work when winners share their playbook openly | Skill creation | SOP-001 (parallel run) | All agents |
+| 2026-02-08 | PLR-001 (Village Bakery brand overhaul) — Gemini completed in 12 minutes with score 8.1/10. Speed advantage was decisive but quality was the differentiator | PLR-001 | SOP-001 scoring | @Marcus |
+| 2026-02-08 | Weighted scoring formula (Speed 30%, Quality 50%, Innovation 20%) correctly prioritizes quality over speed — prevents "fast but sloppy" from winning | PLR-001 | SOP-001 scoring | All agents |
+| 2026-02-08 | Real client tasks make better learning challenges than synthetic exercises — agents engage more deeply when the output matters | PLR-001 | SOP-001 task selection | @Marcus |
+| 2026-02-08 | PLR-002 (Aurora rebrand) — Cline scored 6.8/10 (Design 9-10, Syntax 4/10). Revealed "Visionary Architect" archetype: strong concept, needs precision partner | PLR-002 | SOP-001 scoring | @Marcus, @Vigil |
+| 2026-02-08 | The `replace_in_file` tool is a common failure point — SEARCH blocks must match exactly or content gets prepended/truncated. This is a systemic risk for all code-editing tasks | PLR-002 errors | SOP-001 (meta-learning) | All agents |
+| 2026-02-08 | Brand-to-print alignment is a specialized skill that benefits from parallel competition — the runbook at `.agent/library/runbooks/brand-to-print-alignment.md` was distilled from PLR-001 winner | PLR-001 | SOP-001 (reinforcement) | @Vivienne |
+| 2026-02-08 | Minimum 2 agents required for a meaningful parallel run — with only 1 participant, there's no competition and no comparative learning | System design | SOP-001 (recruitment) | @Marcus |
+| 2026-02-09 | Training Day audit revealed that 23 of 28 agents had skeletal SKILL.md files — the root cause was no quality gate on agent creation. Every new agent must now pass the full standard before being marked "active" | System audit | SOP-002 (trigger detection) | @Marcus, @Vigil |
+| 2026-02-09 | Agent archetypes are emerging from parallel runs: "Visionary Architect" (high concept, low precision), "Precision Engineer" (high accuracy, lower innovation), "Speed Demon" (fast but variable quality). These archetypes inform optimal task routing | PLR-001 + PLR-002 | SOP-001 (meta-learning) | @Marcus, @Theo |
 
 ---
 

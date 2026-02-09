@@ -1,75 +1,37 @@
+# CLINE_SYNC — Session Context
+> Last Updated: 2026-02-09T11:06:00Z | Updated by: @Cline (Full System Audit)
 
-# 🤖 Project Task for @Cline
-> **Objective:** Sync @Cline with the Kwizz.co.uk Jai.OS 4.0 workspace for collaborative development.
-> **Last Synced:** 2026-02-06T19:28:00Z | **Status:** ✅ SYNCED & OPERATIONAL
+## System Status: 🟢 OPERATIONAL (Memory Restored)
 
-## 1. Setup Phase
-- [x] **Read Memory:** Reviewed `CLAUDE.md`, `AGENTS.md`, `GEMINI.md` — 4-layer Hive Mind Architecture absorbed.
-- [x] **Activate Tools:** MCP server verified. `fastmcp 2.14.4`, `mcp 1.26.0`, `supabase 2.15.1` all installed.
-  - `.mcp.json` configured with Supabase HTTP MCP endpoint.
-  - `execution/mcp_supabase_kwizz.py` ready (FastMCP server with 4 tools: `list_quizzes`, `get_quiz_details`, `create_quiz_pack`, `get_active_games`).
-- [x] **Supabase Connectivity:** REST API confirmed live — returning quiz data (5+ packs verified).
-  - ⚠️ **Note:** Direct PostgreSQL connection (`db.japkqygktnubcrmlttqt.supabase.co`) DNS fails (free-tier paused). REST API works fine.
-  - Self-annealed `check_kwizz_supabase.py` to use REST API instead.
+### What Just Happened
+Full 4-phase system audit completed. The memory layer (Layer 4) was hollow — agent-health.json had zero task completions, task-history.json was empty, memory banks were 3 days stale. All restored.
 
-## 2. Collaborative Objectives
-- [ ] **UI Polish:** Assist @Pixel in upgrading `host/page.tsx` and `play/page.tsx` with high-velocity Framer Motion animations.
-- [ ] **Content Engine:** Help @Conductor monitor the `bulk_import_trivia.py` runs and verify data integrity via MCP.
-- [ ] **Security:** Support @Sam in implementing Google Auth logic in the frontend.
+### Files Restored This Session
+- `.agent/memory/agent-health.json` — 45 agents, 19 active, 105 tasks logged
+- `.agent/memory/task-history.json` — 29 verified tasks with confidence scores
+- `.tmp/memory_banks/active_context.md` — Current focus and blockers
+- `.tmp/memory_banks/project_state.md` — All 9 clients + 4 ecosystems
+- `.tmp/memory_banks/decision_log.md` — 8 active decisions documented
+- `.tmp/message4cline.md` — Cleared, standing orders set
+- `.tmp/message4claude.md` — Cleared, context synced
+- `.tmp/message4gemini.md` — Cleared, PLR-002 learnings referenced
 
-## 3. The Rules of Engagement
-1. **Sync Before Strike:** Always read `.agent/skills/` before working in a specific agent's domain.
-2. **Deterministic-First:** If a task can be a Python script in `execution/`, build it there instead of doing manual code edits.
-3. **No Placeholders:** If you need content, use the MCP to fetch real data from Supabase.
+### Current Project Priorities
+1. **System Health** — Memory restoration complete, hardening in progress
+2. **Kwizz** — Monetization ready, needs Hostinger deploy
+3. **JonnyAI Website** — Aurora rebrand applied, needs sign-off
+4. **Betting Hub** — Schema deployed, UI build next
+5. **AI-Clash** — Pilot script drafted
 
-## 4. How to Sync
-1. ~~Run `python execution/validate_agents.py` to verify your environment.~~ ✅ Ran — 41 agents found (14 valid Jai.OS 4.0 format, 27 in Jai.OS 4.0 format — validator needs upgrade).
-2. ~~Run `python execution/check_kwizz_supabase.py` to confirm DB connection.~~ ✅ REST API confirmed live. Script self-annealed.
-3. Access tools via the configured MCP server.
+### Key Architecture Facts
+- **45 agents** across `.agent/skills/` (19 active, 26 standby)
+- **Jai.OS 4.0** — 4-layer architecture (Talent, Boardroom, Engine, Memory)
+- **Parallel Learning** — 2 runs completed (PLR-001, PLR-002)
+- **Quality Gates** — 8-agent sign-off mandate active
+- **Tech Stack** — Next.js 15+, React 19, TypeScript, Tailwind v4, Supabase
 
-## 5. @Cline Context Map (What I Know)
-
-### Architecture
-- **Jai.OS 4.0 Hive Mind:** 4 layers — Talent → Boardroom → Engine → Memory
-- **39-Agent Orchestra** with key handles: @Marcus (Conductor), @Sebastian (Architect), @Priya (Designer), @Sam (Security), @Diana (Database), @Steve (Supabase), @Vigil (Verification), @Owen (Deployment)
-
-### Kwizz Project State
-- **Phase 1-3:** ✅ Complete (Foundation, Quiz Engine, Real-Time Host/Player)
-- **Phase 4:** 🔄 In Progress (God-Tier Polish)
-  - Task 4.1: Public Deployment — Pending
-  - Task 4.2: Audio Experience (SFX) — Pending
-  - Task 4.3: PWA Transformation — Pending
-  - Task 4.4: Advanced Host Features — Pending
-  - Task 4.5: QR Fix — ✅ Done
-- **Phase 5: Monetization** ✅ Strategy & Schema Complete
-  - Task 5.1: MONETIZATION_STRATEGY.md v2.0 — ✅ "3 Doors" model (Free/Credits/Unlimited)
-  - Task 5.2: Supabase monetization schema — ✅ 7 tables, RLS, helper functions
-  - Task 5.3: Pricing page UI — ✅ `/pricing` route with animated 3-card layout
-  - Task 5.4: Apply schema to Supabase — Pending (@Diana/@Steve)
-  - Task 5.5: Stripe integration — Pending (@Sebastian)
-  - Task 5.6: Credit deduction gate — Pending (@Sebastian)
-  - Task 5.7: Player Prime cosmetics UI — Pending (@Priya)
-
-### Codebase Familiarity
-| File | Status | Notes |
-|:-----|:-------|:------|
-| `app/page.tsx` | ✅ Read & Updated | Home page — Added "Pricing" link with CreditCard icon |
-| `app/pricing/page.tsx` | ✅ Created | "3 Doors" pricing page — Free Trial, Pay As You Go, Unlimited + Corporate CTA |
-| `supabase_monetization_schema.sql` | ✅ Created | 7 tables, RLS policies, `check_host_access()` + `deduct_credit()` functions |
-| `MONETIZATION_STRATEGY.md` | ✅ Rewritten | v2.0 — "3 Doors" pricing, revenue projections, 90-day launch plan |
-| `app/host/page.tsx` | ✅ Read | Host dashboard — Lobby (QR+PIN), Active Game (questions/responses), Finished (leaderboard) |
-| `app/play/page.tsx` | ✅ Read | Player interface — Join form, Lobby wait, Buzzer, Finished rank |
-| `app/select/page.tsx` | ✅ Read | Quiz selector — Category filter, quiz grid, "Sync & Launch" |
-| `app/globals.css` | ✅ Read | Tailwind v4 theme — Obsidian, Electric Purple, Neon Cyan, glassmorphism utilities |
-| `lib/useGameSync.ts` | ✅ Read | Supabase Realtime hook — game/player/response sync, CRUD functions |
-| `lib/supabase.ts` | ✅ Located | Supabase client init |
-| `execution/mcp_supabase_kwizz.py` | ✅ Read | FastMCP server with 4 tools |
-| `execution/check_kwizz_supabase.py` | ✅ Read & Fixed | Self-annealed to use REST API |
-
-### Known Issues
-1. **Buzzer timing is placeholder:** `play/page.tsx` line ~55 uses `Math.random() * 3000` instead of actual timing — needs real implementation.
-2. **Direct DB connection fails:** Free-tier Supabase pauses direct PostgreSQL. All scripts should use REST API.
-3. **Agent validator expects Jai.OS 4.0 format:** `validate_agents.py` needs updating for Jai.OS 4.0 SKILL.md structure.
-
----
-*Generated by @Conductor for @Cline | Updated by @Cline on sync*
+### Session Start Checklist
+1. ✅ Check `.tmp/message4cline.md` for pending messages
+2. ✅ Check `.agent/boardroom/chatroom.md` for recent activity
+3. ✅ Review this file for context
+4. ✅ Check `.tmp/memory_banks/active_context.md` for current focus
