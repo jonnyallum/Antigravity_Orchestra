@@ -1,0 +1,10 @@
+[
+    {
+        "date": "2026-02-08",
+        "task": "Aurora Rebrand Deployment (Fix Tailwind v4 Build)",
+        "agent": "@Cline",
+        "result": "SUCCESS (Build Fixed)",
+        "insight": "Tailwind v4 theme compatibility requires explicit color variable definitions in @theme block for legacy classes to work with @apply.",
+        "action_item": "Update CSS guidelines to include @theme variable definitions for legacy compat."
+    }
+]
