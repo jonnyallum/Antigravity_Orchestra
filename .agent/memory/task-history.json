@@ -265,19 +265,55 @@
       "description": "Full system audit — memory amnesia diagnosed",
       "success": true,
       "confidence": 1.0
+    },
+    {
+      "id": "T030",
+      "date": "2026-02-10",
+      "agent": "marcus",
+      "type": "training",
+      "description": "Owen Stinger Training Day: Automated Verification Tooling",
+      "success": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "T031",
+      "date": "2026-02-10",
+      "agent": "owen",
+      "type": "tooling",
+      "description": "Developed verify_deploy.py for post-ship health checks",
+      "success": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "T032",
+      "date": "2026-02-10",
+      "agent": "owen",
+      "type": "deployment",
+      "description": "Deployed JonnyAi icon-branding to jonnyai.co.uk",
+      "success": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "T033",
+      "date": "2026-02-10",
+      "agent": "marcus",
+      "type": "feature",
+      "description": "DJ Waste content expansion + Demolition rebranding mission",
+      "success": true,
+      "confidence": 1.0
     }
   ],
   "summary": {
-    "total_tasks": 29,
-    "completed": 28,
+    "total_tasks": 34,
+    "completed": 33,
     "failed": 1,
     "in_progress": 0,
     "success_rate": 0.97,
     "by_agent": {
-      "marcus": 8,
+      "marcus": 12,
       "cline": 8,
       "sebastian": 2,
-      "owen": 3,
+      "owen": 5,
       "priya": 3,
       "rowan": 1,
       "victor": 1,
