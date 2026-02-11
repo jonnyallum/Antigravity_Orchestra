@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antigravity Orchestra — Health Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #030308;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #0c1225 0%, #1a0a2e 50%, #0c1225 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(232, 117, 26, 0.3);
+  }
+  .header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #e8751a, #f59e0b, #e84393);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+  }
+  .header .subtitle { color: #888; font-size: 1rem; }
+  .header .timestamp { color: #666; font-size: 0.85rem; margin-top: 0.5rem; }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .metric-card {
+    background: linear-gradient(135deg, #0f1a3a, #1a0a2e);
+    border: 1px solid rgba(232, 117, 26, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .metric-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(232, 117, 26, 0.5);
+  }
+  .metric-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #e8751a, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .metric-label { color: #999; font-size: 0.85rem; margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 1px; }
+
+  .health-bar {
+    width: 100%;
+    height: 12px;
+    background: #1a1a2e;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  .health-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 1s ease;
+  }
+  .health-green { background: linear-gradient(90deg, #10b981, #34d399); }
+  .health-yellow { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+  .health-red { background: linear-gradient(90deg, #ef4444, #f87171); }
+
+  .section { margin-bottom: 3rem; }
+  .section h2 {
+    font-size: 1.5rem;
+    color: #e8751a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(232, 117, 26, 0.2);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0a0a1a;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  th {
+    background: #0f1a3a;
+    color: #e8751a;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #1a1a2e;
+    font-size: 0.9rem;
+  }
+  tr:hover td { background: rgba(232, 117, 26, 0.05); }
+
+  .status-live { color: #10b981; font-weight: 600; }
+  .status-dev { color: #f59e0b; font-weight: 600; }
+  .status-planned { color: #6366f1; font-weight: 600; }
+
+  .eco-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  .eco-card {
+    background: linear-gradient(135deg, #0f1a3a, #0a0a1a);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 12px;
+    padding: 1.25rem;
+  }
+  .eco-card h3 { color: #818cf8; margin-bottom: 0.5rem; }
+  .eco-card p { color: #888; font-size: 0.85rem; }
+
+  .footer {
+    text-align: center;
+    color: #444;
+    font-size: 0.8rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #1a1a2e;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🛸 Antigravity Orchestra</h1>
+  <div class="subtitle">Jai.OS 4.0 — Health Dashboard</div>
+  <div class="timestamp">Generated: 2026-02-11 20:23 | Last Audit: 2026-02-11</div>
+  <div class="health-bar">
+    <div class="health-fill health-green" style="width: 90.0%"></div>
+  </div>
+  <div style="color: #10b981; margin-top: 0.5rem; font-weight: 600;">System Health: 9.0/10</div>
+</div>
+
+<div class="metrics-grid">
+  <div class="metric-card">
+    <div class="metric-value">44</div>
+    <div class="metric-label">Agents</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value">293+</div>
+    <div class="metric-label">SOPs</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value">978+</div>
+    <div class="metric-label">Learnings</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value">77</div>
+    <div class="metric-label">Active Scripts</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value">38</div>
+    <div class="metric-label">Archived Scripts</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value">10</div>
+    <div class="metric-label">MCP Servers</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value">10</div>
+    <div class="metric-label">Client Projects</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value">4</div>
+    <div class="metric-label">Ecosystems</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🏢 Client Portfolio</h2>
+  <table>
+    <thead>
+      <tr><th>Client</th><th>Path</th><th>Documentation</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>AI-Clash</td><td><code>Clients\AI-Clash</code></td><td><span class="status-dev">⚠️ Missing</span></td></tr>
+      <tr><td>CD Waste</td><td><code>Clients\CD Waste</code></td><td><span class="status-live">✅ Has README</span></td></tr>
+      <tr><td>DJ Waste</td><td><code>Clients\DJ Waste</code></td><td><span class="status-live">✅ Has README</span></td></tr>
+      <tr><td>Insydetradar</td><td><code>Clients\Insydetradar</code></td><td><span class="status-live">✅ Has README</span></td></tr>
+      <tr><td>Joes #app</td><td><code>Clients\Joes #app</code></td><td><span class="status-dev">⚠️ Missing</span></td></tr>
+      <tr><td>jonnyai.website</td><td><code>Clients\jonnyai.website</code></td><td><span class="status-live">✅ Has README</span></td></tr>
+      <tr><td>kwizz</td><td><code>Clients\kwizz</code></td><td><span class="status-live">✅ Has README</span></td></tr>
+      <tr><td>La-Aesthetician.co.uk</td><td><code>Clients\La-Aesthetician.co.uk</code></td><td><span class="status-live">✅ Has README</span></td></tr>
+      <tr><td>Poundtrades.app-antigravity</td><td><code>Clients\Poundtrades.app-antigravity</code></td><td><span class="status-live">✅ Has README</span></td></tr>
+      <tr><td>Village-bakery</td><td><code>Clients\Village-bakery</code></td><td><span class="status-live">✅ Has README</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h2>🌐 Ecosystems</h2>
+  <div class="eco-grid">
+    <div class="eco-card">
+      <h3>🎰 Betting</h3>
+      <p>Sports betting algorithms & statistical edge engineering</p>
+      <p class="status-live">Active</p>
+    </div>
+    <div class="eco-card">
+      <h3>🎬 Media-House</h3>
+      <p>Content production & YouTube automation</p>
+      <p class="status-planned">Planned</p>
+    </div>
+    <div class="eco-card">
+      <h3>🛡️ Red-Team-Lab</h3>
+      <p>Security research & penetration testing</p>
+      <p class="status-planned">Planned</p>
+    </div>
+    <div class="eco-card">
+      <h3>📈 Trading-Floor</h3>
+      <p>Stock/crypto trading systems & risk management</p>
+      <p class="status-planned">Planned</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🎻 Agent Health</h2>
+  <table>
+    <thead>
+      <tr><th>Agent</th><th>Tasks</th><th>Success Rate</th><th>Last Active</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>@adrian</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@alex</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@arthur</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@blaise</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@carlos</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@cline</td><td>14</td><td>0.86</td><td>2026-02-09T10:48:00Z</td></tr>
+      <tr><td>@coordinator-l</td><td>3</td><td>1.0</td><td>2026-02-08T20:10:00Z</td></tr>
+      <tr><td>@daniel</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@derek</td><td>2</td><td>1.0</td><td>2026-02-03T12:30:00Z</td></tr>
+      <tr><td>@diana</td><td>4</td><td>1.0</td><td>2026-02-06T19:35:00Z</td></tr>
+      <tr><td>@elena</td><td>2</td><td>1.0</td><td>2026-02-05T16:30:00Z</td></tr>
+      <tr><td>@felix</td><td>3</td><td>0.67</td><td>2026-02-06T19:35:00Z</td></tr>
+      <tr><td>@gareth</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@genesis</td><td>1</td><td>1.0</td><td>2026-02-01T22:42:00Z</td></tr>
+      <tr><td>@grace</td><td>1</td><td>1.0</td><td>2026-02-05T16:30:00Z</td></tr>
+      <tr><td>@hannah</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@harry</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@jasper</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@julian</td><td>0</td><td>0</td><td>None</td></tr>
+      <tr><td>@luna</td><td>0</td><td>0</td><td>None</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+  <p>Antigravity Orchestra — Jai.OS 4.0 Health Dashboard</p>
+  <p>Generated by <code>execution/generate_health_dashboard.py</code> | 2026-02-11 20:23</p>
+</div>
+
+</body>
+</html>
