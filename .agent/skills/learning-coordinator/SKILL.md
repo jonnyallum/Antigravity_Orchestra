@@ -246,7 +246,7 @@ The Orchestra plays as one.
 - **GitHub Issue Template** - `.github/ISSUE_TEMPLATE/learning-upgrade.md` — Upgrade tracking
 
 ### Reference Documentation
-- Agent SKILL.md specifications (all 43 agents)
+- Agent SKILL.md specifications (all 44 agents)
 - Jai.OS 4.0 operating manual
 - `.agent/boardroom/PROTOCOL.md` — Meeting and collaboration rules
 - `.agent/memory/FEEDBACK_PROTOCOL.md` — How agents learn and improve

@@ -13,7 +13,7 @@ changelog: "v2.0 — Added delegation protocol, routing matrix, handover templat
 
 ## The Problem This Solves
 
-The Jai.OS 4.0 ecosystem has 43 agents across multiple AI environments (Claude, Gemini, Cline). Without enforced collaboration loops AND smart delegation, work gets:
+The Jai.OS 4.0 ecosystem has 44 agents across multiple AI environments (Claude, Gemini, Cline). Without enforced collaboration loops AND smart delegation, work gets:
 - **Duplicated** — two agents solve the same problem independently
 - **Dropped** — handover messages are sent but never read
 - **Unlearned** — incidents are fixed but the fix is never captured

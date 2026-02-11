@@ -1,9 +1,9 @@
 # 🛸 Antigravity Orchestra
-> **Jai.OS 4.0 — The Hive Mind** | *43-Agent AI Operating System*
+> **Jai.OS 4.0 — The Hive Mind** | *44-Agent AI Operating System*
 
 The **Antigravity Orchestra** is a production-grade multi-agent AI ecosystem that builds, scales, and automates digital businesses with "Collective Velocity" and "Trillion-Dollar Quality."
 
-This is not an AI assistant — it's a **complete operating system** where 43 specialized AI agent personas collaborate through structured protocols, persistent memory, and deterministic execution pipelines.
+This is not an AI assistant — it's a **complete operating system** where 44 specialized AI agent personas collaborate through structured protocols, persistent memory, and deterministic execution pipelines.
 
 ---
 
@@ -24,7 +24,7 @@ This is not an AI assistant — it's a **complete operating system** where 43 sp
 │  .agent/boardroom/ + Quality Gates Protocol     │
 ├─────────────────────────────────────────────────┤
 │  Layer 1: THE TALENT                            │
-│  43 specialized agent personas + skill packages  │
+│  44 specialized agent personas + skill packages  │
 │  .agent/skills/ (308+ SOPs, 440+ learnings)     │
 └─────────────────────────────────────────────────┘
 ```
@@ -37,13 +37,13 @@ Every task follows **Directive → Orchestration → Execution**:
 
 ---
 
-## 🎻 The Orchestra (43 Agents)
+## 🎻 The Orchestra (44 Agents)
 
 | Category | Key Agents | Focus |
 |:---------|:-----------|:------|
 | **Leadership** | @Marcus (Conductor), @Sebastian (Architect) | Orchestration, architecture, quality gates |
 | **Creative** | @Priya (Design), @Elena (Copy), @Carlos (Video), @Vivienne (Brand) | God-tier aesthetics, brand identity, content |
-| **Engineering** | @Owen (Deploy), @Derek (Infrastructure), @Diana (Database), @Steve (Supabase) | CI/CD, hosting, schema design, API optimization |
+| **Engineering** | @Owen (Deploy), @Hugo (GitHub Intel), @Derek (Infrastructure), @Diana (Database), @Steve (Supabase) | CI/CD, GitHub intelligence, hosting, schema design, API optimization |
 | **Intelligence** | @Sophie (Research), @Grace (SEO), @Maya (Analytics), @Rowan (Truth-Lock) | Web intel, search visibility, data-driven insights |
 | **Security** | @Sam (Gatekeeper), @RedEye (Red Team), @Victor (Vault) | Security audits, penetration testing, secrets management |
 | **Specialists** | @Bookie (Betting), @Trotter (Trading), @Winston (E-Commerce), @Milo (Mobile) | Domain-specific expertise across verticals |
@@ -59,7 +59,7 @@ A central Supabase database connecting all AI platforms (Claude, Gemini, ChatGPT
 
 | Table | Purpose |
 |:------|:--------|
-| `agents` | 43 agent profiles with capabilities |
+| `agents` | 44 agent profiles with capabilities |
 | `projects` | Client projects with health scores |
 | `tasks` | Task tracking with outcomes and learnings |
 | `learnings` | Cross-agent knowledge propagation |
@@ -105,7 +105,7 @@ A central Supabase database connecting all AI platforms (Claude, Gemini, ChatGPT
 
 ## 🌐 Ecosystems (Hotswappable Verticals)
 
-The Orchestra can pivot its entire 43-agent swarm to specialized domains:
+The Orchestra can pivot its entire 44-agent swarm to specialized domains:
 
 | Ecosystem | Status | Focus |
 |:----------|:-------|:------|
@@ -159,7 +159,7 @@ Every deployment must pass ALL gates:
 ## 🚀 Quick Start
 
 ```bash
-# Validate all 43 agents
+# Validate all 44 agents
 python execution/validate_agents.py
 
 # Check agent health
@@ -178,7 +178,7 @@ python execution/health_dashboard.py
 
 | Metric | Value |
 |:-------|:------|
-| **Agents** | 43 (all Jai.OS 4.0 standard) |
+| **Agents** | 44 (all Jai.OS 4.0 standard) |
 | **SOPs** | 308+ specialized procedures |
 | **Learnings** | 440+ institutional memory entries |
 | **Execution Scripts** | 76 active (39 archived) |

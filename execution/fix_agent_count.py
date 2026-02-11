@@ -1,20 +1,20 @@
-"""Fix all agent count references to 43 across the website."""
+"""Fix all agent count references to 44 across the website."""
 import os
 
 BASE = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\jonnyai.website\src"
 
 replacements = {
     os.path.join(BASE, "components", "sections", "Hero.tsx"): [
-        ("39-Agent Orchestra", "43-Agent Orchestra"),
-        ('tracking-tight">39</div>', 'tracking-tight">43</div>'),
+        ("39-Agent Orchestra", "44-Agent Orchestra"),
+        ('tracking-tight">39</div>', 'tracking-tight">44</div>'),
     ],
     os.path.join(BASE, "app", "layout.tsx"): [
-        ("42 specialized AI agents", "43 specialized AI agents"),
-        ("42-agent orchestra", "43-agent orchestra"),
+        ("42 specialized AI agents", "44 specialized AI agents"),
+        ("42-agent orchestra", "44-agent orchestra"),
     ],
     os.path.join(BASE, "data", "news.ts"): [
-        ("All 39 agents", "All 43 agents"),
-        ("39-agent orchestra", "43-agent orchestra"),
+        ("All 39 agents", "All 44 agents"),
+        ("39-agent orchestra", "44-agent orchestra"),
     ],
 }
 
@@ -32,4 +32,4 @@ for filepath, pairs in replacements.items():
     open(filepath, "w", encoding="utf-8").write(content)
     print(f"SAVED: {filepath}")
 
-print("\nDone! All agent counts updated to 43.")
+print("\nDone! All agent counts updated to 44.")

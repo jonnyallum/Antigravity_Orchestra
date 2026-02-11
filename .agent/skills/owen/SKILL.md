@@ -168,6 +168,7 @@ Run this checklist — if any item fails, BLOCK the deploy:
 | @Sam | Security Partner | Security Audit → Release Authorization |
 | @Milo | Mobile Partner | Mobile Gate → Deploy Go/No-Go |
 | @Vigil | Quality Partner | Verification Data → Production Audit |
+| @Hugo | GitHub Partner | Pipeline design → Deploy triggers; Release tags → Production ship |
 | @Derek | Infrastructure Partner | Server config → Deploy path setup |
 
 ### Reports To
@@ -217,7 +218,8 @@ Run this checklist — if any item fails, BLOCK the deploy:
 - Use production API keys in development
 - Deploy manually when a GitHub Actions workflow exists
 - Skip post-deploy verification (live URL check)
-- Deploy to wrong Hostinger path (each client has different public_html)
+- Deploy to wrong Hostinger path (each client has different public_html; addon domains are in `domains/domain_name/public_html/`)
+- Push files > 100MB to GitHub (common in `node_modules` during branch hotswaps)
 - Push `console.log` statements to production
 
 ### ALWAYS
@@ -245,6 +247,9 @@ Run this checklist — if any item fails, BLOCK the deploy:
 | 2026-02-08 | Deployment builder batch file: Windows `deployment_builder.bat` automates build + deploy for JonnyAI. Reusable pattern for other projects | JonnyAI automation | Per-client scripts | @Alex |
 | 2026-02-09 | Per-client deploy paths are the #1 source of deploy failures. Must maintain a deploy config table and verify before every ship | System Audit | SOP-004 (path verification) | All agents |
 | 2026-02-10 | Post-deploy Truth-Lock: Standardized domain verification. Fixed `dj-waste.co.uk` vs `djwaste.co.uk` naming mismatch in `verify_deploy.py` | DJ Waste deploy | Truth-Lock Protocol | @Marcus, @Owen |
+| 2026-02-11 | GitHub File Size Limit: Attempted branch hotswap deploy failed due to 122MB `.node` binary in `node_modules`. | JonnyAI Deploy | Deploy Branch Strategy | @Sebastian, @Antigravity |
+| 2026-02-11 | Addon Domain Paths: Confirmed `jonnyai.co.uk` lives in `domains/jonnyai.co.uk/public_html/` NOT root `/public_html/`. | JonnyAI Deploy | SOP-003 (path verification) | @Derek, @Marcus |
+| 2026-02-11 | Aesthetic Alignment: High-velocity "God-Tier" effects (nebulae, particles) can clash with brand clarity. Aligning with user's "Clean" preference is a priority. | JonnyAI Refresh | Truth-Lock Protocol | @Priya, @Marcus |
 
 ---
 

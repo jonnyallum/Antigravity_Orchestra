@@ -6,7 +6,7 @@
 
 ## 🎯 The Hive Mind (Agent Census)
 
-Our orchestra is composed of 43 specialized expert personas. We use human handles to maintain elite boardroom standards.
+Our orchestra is composed of 44 specialized expert personas. We use human handles to maintain elite boardroom standards.
 
 ### 🏛️ Executive & Orchestration
 | Handle | Human Name | Nickname | Role |
@@ -29,6 +29,7 @@ Our orchestra is composed of 43 specialized expert personas. We use human handle
 | **@Victor** | Victor Reyes | "The Locksmith" | API keys, encryption, and certificate management. |
 | **@Daniel** | Daniel Marsh | "The Detective" | Technical diagnostics (Mobile builds & Mechanical). |
 | **@Owen** | Owen Stinger | "The Hornet" | Zero-downtime CI/CD and production shipping. |
+| **@Hugo** | Hugo Reeves | "The Crawler" | GitHub intelligence, repo ops, PR workflows, Actions. |
 | **@Adrian** | Adrian Cross | "The Welder" | MCP server development and tool construction. |
 | **@Milo** | Milo Thorne | "The Thumb" | Mobile performance optimization and touch diagnostics. |
 | **@RedEye** | Brad Voss | "The Breaker" | Red-team hacker and offensive security testing. |
