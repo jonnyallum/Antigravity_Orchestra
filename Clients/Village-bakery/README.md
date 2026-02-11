@@ -27,4 +27,4 @@ This project and its associated agentic workflows are the proprietary intellectu
 
 ---
 *Managed by **Jonny** (The Boss)*
-*Built by the [Antigravity Agent Orchestra](https://github.com/jonnyallum/JonnyAI.co.uk)*
+*Built by the [Antigravity Agent Orchestra](https://github.com/jonnyallum/Antigravity_Orchestra)*

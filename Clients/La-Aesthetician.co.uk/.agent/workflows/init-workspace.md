@@ -15,7 +15,7 @@ This ensures you get the latest version of all agents and tools.
 1. **Clone the Repository**
    // turbo
    ```powershell
-   git clone https://github.com/jonnyallum/JonnyAI.co.uk.git .
+   git clone https://github.com/jonnyallum/Antigravity_Orchestra.git .
    ```
    *Note: Run this in your EMPTY target directory.*
 

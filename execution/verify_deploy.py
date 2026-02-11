@@ -36,8 +36,8 @@ PROJECT_CONFIGS = {
         "critical": True
     },
     "djwaste": {
-        "url": "https://djwaste.co.uk",
-        "required_strings": ["DJ Waste", "Premium Industrial"],
+        "url": "https://dj-waste.co.uk",
+        "required_strings": ["DJ Waste", "Demolition", "Hampshire", "Portsmouth"],
         "critical": False
     },
     "la-aesthetician": {

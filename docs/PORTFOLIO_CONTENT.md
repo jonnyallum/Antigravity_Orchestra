@@ -51,7 +51,7 @@ When I’m not architecting systems, you’ll find me:
 
 ## 📫 Secure Connection
 - **Email**: jonnyallum@gmail.com
-- **Agency**: [Antigravity AI](https://github.com/jonnyallum/JonnyAI.co.uk)
+- **Agency**: [Antigravity AI](https://github.com/jonnyallum/Antigravity_Orchestra)
 - **Startup**: [KLIQT.MEDIA](https://kliqt.media)
 
 *Copyright © 2026 **JonnyAi**. All Rights Reserved.*

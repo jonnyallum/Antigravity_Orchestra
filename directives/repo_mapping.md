@@ -7,8 +7,8 @@
 
 | Repository | URL | Purpose | Contains |
 |:-----------|:----|:--------|:---------|
-| **JonnyAI.com** | `github.com/jonnyallum/JonnyAI.com` | 🌐 **The Website** | Next.js source code, components, pages, brand guide, deployment configs |
-| **JonnyAI.co.uk** | `github.com/jonnyallum/JonnyAI.co.uk` | 🧠 **The Ecosystem/Brain** | Agent skills, boardroom, memory, execution scripts, clients, ecosystems, directives |
+| **jonnyai_website** | `github.com/jonnyallum/jonnyai_website` | 🌐 **The Website** | Next.js source code, components, pages, brand guide, deployment configs |
+| **Antigravity_Orchestra** | `github.com/jonnyallum/Antigravity_Orchestra` | 🧠 **The Orchestra/Brain** | Agent skills, boardroom, memory, execution scripts, clients, ecosystems, directives |
 
 ---
 
@@ -16,25 +16,32 @@
 
 | Local Path | Connected Repo | Remote |
 |:-----------|:---------------|:-------|
-| `c:\Users\jonny\Desktop\AgOS 3.0 template` | **JonnyAI.co.uk** (Ecosystem) | `origin: https://github.com/jonnyallum/JonnyAI.co.uk.git` |
-| `Clients/jonnyai.website/` (submodule/subfolder) | **JonnyAI.com** (Website) | Separate repo — push website changes HERE |
+| `c:\Users\jonny\Desktop\AgOS 3.0 template` | **Antigravity_Orchestra** (Orchestra) | `origin: https://github.com/jonnyallum/Antigravity_Orchestra.git` |
+| `Clients/jonnyai.website/` (subfolder) | **jonnyai_website** (Website) | Separate repo — push website changes HERE |
 
 ---
 
 ## Rules
 
-1. **Agent skills, memory, execution scripts, directives** → Push to **JonnyAI.co.uk**
-2. **Website components, pages, CSS, Next.js config** → Push to **JonnyAI.com**
-3. **NEVER push website source code changes to JonnyAI.co.uk** — that's the ecosystem repo
-4. **NEVER push agent/ecosystem changes to JonnyAI.com** — that's the website repo
+1. **Agent skills, memory, execution scripts, directives** → Push to **Antigravity_Orchestra**
+2. **Website components, pages, CSS, Next.js config** → Push to **jonnyai_website**
+3. **NEVER push website source code changes to Antigravity_Orchestra** — that's the orchestra repo
+4. **NEVER push agent/orchestra changes to jonnyai_website** — that's the website repo
 5. When in doubt, run `git remote -v` to confirm which repo you're pushing to
 
 ---
 
+## Rename History
+
+| Date | Old Name | New Name | Reason |
+|:-----|:---------|:---------|:-------|
+| 2026-02-11 | `JonnyAI.co.uk` | `Antigravity_Orchestra` | Clarity — name reflects purpose |
+| 2026-02-11 | `JonnyAI.com` | `jonnyai_website` | Clarity — name reflects purpose |
+
 ## Incident Record
 
-**2026-02-09:** Website changes were accidentally pushed to JonnyAI.co.uk (ecosystem repo) instead of JonnyAI.com (website repo). This directive was created to prevent recurrence.
+**2026-02-09:** Website changes were accidentally pushed to the ecosystem repo instead of the website repo. This directive was created to prevent recurrence.
 
 ---
 
-*Created: 2026-02-10 | Jai.OS 4.0 — Repo Integrity Protocol*
+*Created: 2026-02-10 | Updated: 2026-02-11 (repo rename) | Jai.OS 4.0 — Repo Integrity Protocol*

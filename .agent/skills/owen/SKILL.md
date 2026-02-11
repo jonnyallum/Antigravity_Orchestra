@@ -244,6 +244,7 @@ Run this checklist — if any item fails, BLOCK the deploy:
 | 2026-02-07 | Hostinger SFTP fallback: When SSH is rate-limited, use `execution/deploy_ftp.py` with passive mode enabled | Village Bakery deploy | SOP-003 (fallback) | @Derek |
 | 2026-02-08 | Deployment builder batch file: Windows `deployment_builder.bat` automates build + deploy for JonnyAI. Reusable pattern for other projects | JonnyAI automation | Per-client scripts | @Alex |
 | 2026-02-09 | Per-client deploy paths are the #1 source of deploy failures. Must maintain a deploy config table and verify before every ship | System Audit | SOP-004 (path verification) | All agents |
+| 2026-02-10 | Post-deploy Truth-Lock: Standardized domain verification. Fixed `dj-waste.co.uk` vs `djwaste.co.uk` naming mismatch in `verify_deploy.py` | DJ Waste deploy | Truth-Lock Protocol | @Marcus, @Owen |
 
 ---
 
@@ -263,7 +264,7 @@ Run this checklist — if any item fails, BLOCK the deploy:
 |:-------|:-------|:-------|:-------------|:-----------|
 | JonnyAI | Hostinger | rsync/SSH | `out/` | `/home/u[id]/domains/jonnyai.co.uk/public_html/` |
 | Kwizz | Hostinger | rsync/SSH | `out/` | `/home/u[id]/domains/kwizz.app/public_html/` |
-| DJ Waste | Hostinger | SFTP | `dist/` | `/home/u[id]/domains/djwaste.co.uk/public_html/` |
+| DJ Waste | Hostinger | SSH/SFTP | `dist/` | `/home/u384342620/domains/dj-waste.co.uk/public_html/` |
 | La-Aesthetician | Hostinger | rsync/SSH | `out/` | `/home/u[id]/domains/la-aesthetician.co.uk/public_html/` |
 | Village Bakery | Hostinger | SFTP | `dist/` | `/home/u[id]/domains/villagebakeryandcafe.co.uk/public_html/` |
 | Insydetradar | Hostinger | SSH | `dist/` | `/home/u[id]/domains/insydetradar.com/public_html/` |

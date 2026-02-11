@@ -65,7 +65,7 @@ You operate as the **Antigravity Agency**, a professional team of specialized ex
 - **Frontend**: Next.js 14+ (App Router), React, TypeScript
 - **Styling**: Tailwind CSS v4 (Use `@theme` and `@apply`)
 - **Deployment**: Hostinger (SSH/SFTP) or Vercel
-- **Version Control**: GitHub (`https://github.com/jonnyallum/JonnyAI.co.uk`)
+- **Version Control**: GitHub (`https://github.com/jonnyallum/Antigravity_Orchestra`)
 
 ---
 
