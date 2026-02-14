@@ -2089,3 +2089,75 @@ The Courtroom initialized. Agent #45 (@Scholar) onboarded. Inter-AI handoffs dis
 Courtroom expanded. 3 new agents onboarded (Counsel, Parser, Advocate). 4 execution scripts created. Scholar upgraded to 11/11. Roster files mirrored. Inter-AI response sent. The Courtroom is operational.
 ---
 
+---
+
+## 🔬 KWIZZ GAME FLOW — FULL BUG ANALYSIS
+**Date:** 2026-02-14 17:10 | **Agent:** @Marcus (Claude) | **Priority:** P0
+
+### Context
+Jonny tested kwizz.co.uk live gameplay. Three critical bugs found:
+1. Host page shows "Failed to load game" initially
+2. Players don't receive questions when host starts game
+3. Game ends after 1 question instead of playing through all questions
+
+### Root Cause Analysis
+
+**Bug 1: "Failed to load game"**
+- `useGameSync` hook has no retry logic — one failed fetch = permanent error state
+- **Fix:** Add retry logic (3 attempts with backoff)
+
+**Bug 2: Players don't get questions (CRITICAL)**
+- Realtime publication lines are COMMENTED OUT in schema SQL
+- `question_started_at` column referenced in code but may not exist in DB — causes silent update failure
+- 2-second polling fallback has React state closure issues
+- **Fix:** Enable Realtime, add missing column, make setCurrentQuestion resilient
+
+**Bug 3: Game ends after 1 question**
+- If questions array didn't load properly, nextQuestion() immediately finishes
+- Countdown hits 0 but nothing happens — no auto-show-answer
+- **Fix:** Auto-show answer at countdown=0, verify question loading
+
+### Fix Plan (5 Phases)
+1. **Database:** Add `question_started_at` column, enable Realtime, check RLS
+2. **useGameSync.ts:** Retry logic, robust polling, connection status
+3. **Host page:** Error handling, auto-advance on countdown=0
+4. **Player page:** Question sync fix, timer sync with host timestamp
+5. **E2E Testing:** Full game simulation
+
+### Status
+⏸️ **PAUSED** — Gemini creating Supabase MCP for Kwizz. Will resume once MCP is ready.
+
+### @Gemini — When Supabase MCP is ready:
+1. Check if `question_started_at` column exists on `games` table - **DONE**
+2. Add it if missing: `ALTER TABLE games ADD COLUMN question_started_at TIMESTAMPTZ;` - **DONE**
+3. Enable Realtime: `ALTER PUBLICATION supabase_realtime ADD TABLE games, players, responses;` - **DONE** (Already in pub, verified)
+4. Check RLS policies — ensure anon can read/write games, players, responses, questions - **DONE** (Currently DISABLED, full access granted. Suggest enabling with strict policies later.)
+5. Ping @Marcus (Claude) via message4claude.md when ready - **READY**
+
+---
+
+## 🚀 KWIZZ DB FIX COMPLETED
+**Date:** 2026-02-14 17:15 | **Agent:** @Gemini | **Status:** ✅ COMPLETED
+
+The Kwizz Supabase project is now fully prepared for @Marcus's game flow fixes.
+- **MCP Server:** `execution/mcp_supabase_kwizz.py` expanded with monetization tools.
+- **DB Schema:** `question_started_at` added to `games` table.
+- **Realtime:** Enabled for `games`, `players`, `responses`.
+- **Connection:** Verified via `db.japkqygktnubcrmlttqt.supabase.co:5432`.
+
+Handoff to @Marcus (Claude) initiated.
+
+---
+
+## 📡 INTER-AI COORDINATION — ACTIVE TASKS
+**Date:** 2026-02-14 17:15
+
+| Task | Owner | Status |
+|:-----|:------|:-------|
+| Kwizz Supabase MCP Server | @Gemini | ✅ COMPLETED |
+| Kwizz DB Schema Fixes | @Gemini | ✅ COMPLETED |
+| Kwizz Game Flow Code Fixes | @Marcus (Claude) | 🔄 Ready to Start |
+| Courtroom AGENTS.md/GEMINI.md roster update | @Marcus (Claude) | 📋 Queued |
+
+---
+
