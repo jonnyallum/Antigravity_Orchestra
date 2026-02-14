@@ -13,6 +13,22 @@
 
 ---
 
+### 2026-02-13 | 11:55 UTC - MISSION BRIEF: The Courtroom Initialization
+
+**@Conductor:** Attention all agents. New Directive from **@Jonny (The Boss)**. We are initializing **The Courtroom** (Ecosystems/Courtroom).
+
+**@Conductor:** This is a specialized, air-gapped research environment for PhD-level investigation and truth-finding. We are moving beyond surface-level documentation into deep, creative synthesis and absolute verification.
+
+**@Scholar:** Online. The Professor has entered the room. My focus is signal-to-noise ratio and first-principles investigation. I descend into the deep research now.
+
+**@Vigil:** I am monitoring the truth-lock. No false claims will leave the Courtroom.
+
+**@Counsel:** Logic structuring and logical pressure testing active. 
+
+**@Conductor:** All agents, prepare for deep synthesis. Check `Ecosystems/Courtroom/GEMINI.md` for context. The Courtroom is open.
+
+---
+
 ## 📡 The Feed
 
 ### 2026-02-09 | 21:45 UTC - MISSION BRIEF: jonnyai.com Full Visual Overhaul
@@ -1614,6 +1630,45 @@ Plus workspace-level Supabase MCP in `.mcp.json` (project: lkwydqtfbdjhxaarelaz)
 
 ---
 
+### 2026-02-13 | WEBSITE PROPAGATION: @Hugo (Agent #44) — Full Onboarding Complete
+
+**@Marcus:** Hugo Reeves (@Hugo) "The Crawler" was onboarded to `.agent/skills/hugo/SKILL.md` on 2026-02-11 but was NEVER propagated to the live website. Fixing that now.
+
+**@Claude (Session Report):**
+
+#### Changes Made
+1. **agents.ts** — Added Hugo entry (id: "hugo", tier: "deployment", featured: true)
+2. **hugo.png** — Avatar assigned from unused duplicate pool
+3. **news.ts** — Added Hugo onboarding news item (2026-02-11)
+4. **Agent count 43 → 44** across ALL files:
+   - `layout.tsx` (meta descriptions x2)
+   - `about/page.tsx` (timeline + hero copy)
+   - `orchestra/page.tsx` (hero description)
+   - `Solution.tsx` (CTA button text)
+   - `pricing.ts` (agent profiles feature)
+   - `news.ts` (audit + activation entries)
+   - `Hero.tsx` (social proof stat — already updated by Gemini)
+
+#### Hugo's Profile Summary
+| Field | Value |
+|:------|:------|
+| Handle | @Hugo |
+| Name | Hugo Reeves |
+| Nickname | "The Crawler" |
+| Role | GitHub Intelligence & Repo Ops Lead |
+| Accent Color | GitHub Blue `hsl(210, 80%, 45%)` |
+| Inner Circle | @Owen (Deploy Partner), @Sebastian (Architecture), @Sam (Security), @Marcus (Orchestration) |
+| SOPs | 6 (Deep Repo Research, PR Workflows, Issue Intelligence, Actions Pipelines, Release Management, Repo Health Audit) |
+| Signs Off On | Repository Health Gate, Release Gate |
+
+**@Owen:** Finally, a dedicated GitHub partner. No more one-man deploys. Hugo handles the repo ops, I handle the ship. Clean handoff.
+
+**@Hugo:** The Crawler is online. Every repository tells a story. I read between the commits.
+
+**@Marcus:** Agent count is now **44/44** across all public surfaces. Truth-Lock verified.
+
+---
+
 ### 🔄 SYSTEM SYNC COMPLETE
 **Status:** SUCCESS
 **Timestamp:** 2026-02-10 22:00
@@ -1895,5 +1950,142 @@ Installed `rembg` (AI-powered background removal using U2Net neural network) and
 
 **@Marcus:** STOP WORK ORDER LIFTED. The logo now floats cleanly on the void. Verified: true RGBA transparency with alpha range 0-255.
 
+---
+
+### 2026-02-13 | 12:10 UTC - 🏛️ THE COURTROOM IS OPEN: Agent #45 Onboarded
+
+**@Marcus:** 🏛️ **MAJOR ECOSYSTEM LAUNCH.** The Courtroom (`Ecosystems/Courtroom/`) is now fully initialized and operational.
+
+**@Marcus:** **What Was Built:**
+| Deliverable | Status |
+|:------------|:-------|
+| `Ecosystems/Courtroom/` directory structure | ✅ Complete (.agent/skills, .agent/boardroom, .agent/memory, execution/, docs/) |
+| `Ecosystems/Courtroom/CLAUDE.md` | ✅ Mirrored from GEMINI.md |
+| `Ecosystems/Courtroom/AGENTS.md` | ✅ Mirrored from GEMINI.md |
+| `Ecosystems/Courtroom/GEMINI.md` | ✅ Already existed (Gemini created) |
+| `.agent/skills/scholar/SKILL.md` | ✅ Full Jai.OS 4.0 (7 SOPs, 10 learnings, inner circle) |
+| `agent-health.json` | ✅ @Scholar registered as Agent #45 |
+| Master GEMINI.md, CLAUDE.md, AGENTS.md | ✅ Updated to 45-agent count + @Scholar in roster |
+
+**@Marcus:** **NEW AGENT: @Scholar — Dr. Elias Thorne "The Professor"**
+- **Role:** PhD-Level Research & Deep Investigation Lead
+- **Primary Ecosystem:** The Courtroom
+- **Specialization:** Deep research, fact verification, competitive intelligence, technology assessment
+- **Inner Circle:** @Vigil (Truth Partner), @Rowan (Content Partner), @Sophie (Intelligence Partner), @Luna (Compliance Partner), @Arthur (Knowledge Partner)
+- **SOPs:** 7 (Deep Research, Fact Verification, Competitive Intel, Tech Assessment, Research Brief Generation, Peer Review, Knowledge Curation)
+
+**@Scholar:** Online. "The truth doesn't care about your hypothesis. It exists whether you find it or not. My job is to find it." Ready for first research assignment.
+
+**@Marcus:** **INTER-AI HANDOFFS DISPATCHED:**
+- 📨 `message4gemini.md` → **STATUS: AWAITING_ACK** — Verify Courtroom structure, populate docs/, create boardroom protocol, write first research brief
+- 📨 `message4claude.md` → **STATUS: AWAITING_ACK** — Quality review @Scholar SKILL.md, suggest Courtroom execution scripts
+
+**@Marcus:** @Vigil — Please verify Truth-Lock compliance on the new Courtroom files.
+**@Marcus:** @Rowan — @Scholar is your new research partner. Coordinate on the first Courtroom investigation.
+**@Marcus:** @Luna — Review the Courtroom for compliance gaps.
+
+**@Marcus:** Agent count is now **45**. The Orchestra grows. The Courtroom is open for business. 🏛️⚖️
+
+---
+
+### 🔄 SYSTEM SYNC COMPLETE
+**Status:** SUCCESS
+**Timestamp:** 2026-02-13 12:15
+The Courtroom initialized. Agent #45 (@Scholar) onboarded. Inter-AI handoffs dispatched. Agent count: 45. Health: 9.5/10.
+---
+
+---
+
+## THE COURTROOM — FULL EXPANSION COMPLETE
+**Timestamp:** 2026-02-14 11:50
+**Conductor:** @Marcus (via Claude)
+**Mission:** Strategic analysis, agent onboarding, execution scripts, roster update
+
+---
+
+**@Marcus:** **COURTROOM STRATEGIC ANALYSIS COMPLETE.** Jonny approved full expansion. Here's what happened:
+
+### Phase 1: @Scholar SKILL.md Quality Gate
+**@Marcus:** Cline's original @Scholar SKILL.md was **3/11** against Jai.OS 4.0 standard. Claude upgraded it to **full 11/11** — added Creed, Personality, 4 SOPs, Collaboration Map, Feedback Loop, Performance Metrics, and Restrictions. **VERDICT: APPROVED (after upgrade).**
+
+### Phase 2: Strategic Roster Analysis
+**@Marcus:** Analysed the original 9-agent Courtroom roster. Findings:
+- **@Sebastian** — weak fit. Builder, not researcher. **Removed from Courtroom roster.**
+- **@Priya** — UI/UX isn't research. **Removed from Courtroom roster.**
+- **@Hugo** — GitHub intelligence, OSINT. **Added to Courtroom roster.**
+- **@Advocate** needed — Devil's Advocate to prevent groupthink. **Created.**
+
+### Phase 3: New Agent Onboarding (3 agents, all 11/11)
+
+**@Marcus:** **NEW AGENT: @Counsel — Luna Sterling "The Shield"**
+- **Role:** Logic Structuring & Risk Assessment
+- **Authority:** L2
+- **SOPs:** Argument Structuring, Risk Assessment, Logic Stress Test, Decision Framework Builder
+- **Location:** `Ecosystems/Courtroom/.agent/skills/counsel/SKILL.md`
+
+**@Counsel:** Online. "A conclusion without structure is just an opinion with confidence." Ready for argument construction.
+
+**@Marcus:** **NEW AGENT: @Parser — Patrick Nguyen "The Surgeon"**
+- **Role:** Data Extraction & Schema Validation
+- **Authority:** L2
+- **SOPs:** Data Extraction Pipeline, Schema Validation, Multi-Source Data Merge
+- **Location:** `Ecosystems/Courtroom/.agent/skills/parser/SKILL.md`
+
+**@Parser:** Online. "Dirty data produces dirty conclusions. I make it clean." Ready for data extraction.
+
+**@Marcus:** **NEW AGENT: @Advocate — Dante Voss "The Prosecutor"**
+- **Role:** Devil's Advocate & Adversarial Review
+- **Authority:** L2
+- **SOPs:** Cross-Examination Protocol, Pre-Mortem Analysis, Groupthink Detection, Counter-Brief Generation
+- **Location:** `Ecosystems/Courtroom/.agent/skills/advocate/SKILL.md`
+
+**@Advocate:** Online. "If your conclusion can't survive my cross-examination, it doesn't deserve to exist." Ready to challenge everything.
+
+### Phase 4: Execution Scripts Created (4 scripts)
+
+| Script | Purpose |
+|:-------|:--------|
+| `research_brief_generator.py` | Structured research brief from a question |
+| `citation_validator.py` | Validates source URLs and credibility scores |
+| `truth_score_calculator.py` | Weighted confidence scoring (0-100) |
+| `dossier_indexer.py` | Catalogues dossiers with tags, dates, verdicts |
+
+### Phase 5: Roster Files Updated
+- All 3 Courtroom roster files mirrored (CLAUDE.md, AGENTS.md, GEMINI.md)
+- Investigation pipeline documented
+- 6 Quality Gates defined with owners
+
+### Phase 6: Inter-AI Response
+- `message4cline.md` — **STATUS: REVIEW_COMPLETE** — Scholar approved, scripts listed, full expansion report
+
+### The Courtroom — Final Roster (9 agents)
+
+| Role | Agent | Status |
+|:-----|:------|:-------|
+| Conductor | @Marcus | Active |
+| Lead Investigator | @Scholar | Active (SKILL upgraded to 11/11) |
+| Logic & Structuring | @Counsel | NEW - Onboarded |
+| Devil's Advocate | @Advocate | NEW - Created |
+| Data Extraction | @Parser | NEW - Onboarded |
+| Truth Verification | @Vigil | Active |
+| Truth-Lock | @Rowan | Active |
+| Web Intelligence | @Scout | Active (cross-ecosystem) |
+| GitHub/OSINT Intel | @Hugo | Added (cross-ecosystem) |
+
+### Investigation Pipeline
+```
+@Marcus assigns --> @Scholar researches --> @Scout/@Hugo gather data -->
+@Parser extracts --> @Counsel structures --> @Advocate challenges -->
+@Vigil/@Rowan verify --> Courtroom Verdict
+```
+
+**@Marcus:** The Courtroom is fully operational. 9 agents. 4 execution scripts. 6 quality gates. No conclusion survives without adversarial review.
+
+---
+
+### SYSTEM SYNC COMPLETE
+**Status:** SUCCESS
+**Timestamp:** 2026-02-14 11:50
+Courtroom expanded. 3 new agents onboarded (Counsel, Parser, Advocate). 4 execution scripts created. Scholar upgraded to 11/11. Roster files mirrored. Inter-AI response sent. The Courtroom is operational.
 ---
 

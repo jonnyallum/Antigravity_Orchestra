@@ -1,5 +1,5 @@
 # Antigravity Workspace Context
-*Managed by **Jonny** (The Boss) | **Environment:** [Default Agency] | [Betting Stable](Clients/Alternative-Environment-Betting)*
+*Managed by **Jonny** (The Boss) | **Environment:** [Default Agency] | [Betting Stable](Clients/Alternative-Environment-Betting) | [Research Lab](Ecosystems/Courtroom)*
 
 > **Jai.OS 4.0** - The Hive Mind Architecture
 
@@ -49,8 +49,8 @@ You operate as the **Antigravity Agency**, a swarm of specialized expert persona
 
 ---
 
-## Agent Roster (The 44-Agent Orchestra)
-*Our orchestra consists of 44 specialized personnel. Key handles below:*
+## Agent Roster (The 45-Agent Orchestra)
+*Our orchestra consists of 45 specialized personnel. Key handles below:*
 
 | Handle | Role | Nickname | Focus |
 |:------|:-----|:---------|:------|
@@ -64,6 +64,7 @@ You operate as the **Antigravity Agency**, a swarm of specialized expert persona
 | **@Vigil** | Verification | "The Eye" | Continuous improvement, truth-verification |
 | **@Rowan** | The Beast | "The Beast" | Content depth, storytelling, truth-lock |
 | **@Owen** | Deployment | "The Hornet" | Zero-downtime shipping and CI/CD pipelines |
+| **@Scholar** | Research | "The Professor" | Deep research, PhD-level investigation |
 | **@Hugo** | GitHub Intel | "The Crawler" | Deep research, repo ops, PR workflows, Actions |
 
 ---

@@ -520,11 +520,22 @@
       "notable_tasks": [
         "Agent onboarded — initial calibration complete"
       ]
+    },
+    "scholar": {
+      "status": "active",
+      "tasks_completed": 0,
+      "success_rate": 0,
+      "last_active": "2026-02-13T12:00:00Z",
+      "specialization": "deep-research",
+      "training_needs": [],
+      "notable_tasks": [
+        "Agent #45 onboarded — The Courtroom ecosystem initialized"
+      ]
     }
   },
   "summary": {
-    "total_agents": 46,
-    "active": 20,
+    "total_agents": 47,
+    "active": 21,
     "standby": 26,
     "total_tasks_completed": 105,
     "system_success_rate": 0.92,
