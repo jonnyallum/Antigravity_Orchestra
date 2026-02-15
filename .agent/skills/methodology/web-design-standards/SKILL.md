@@ -22,3 +22,4 @@ Websites should not sound like they were written by a robot (even though we use 
 - **Styling**: Tailwind CSS v4 + Framer Motion.
 - **Backend**: Supabase (PostgreSQL + RLS).
 - **SEO**: Goldie Protocol (Semantic HTML, Meta Tags, Schema.org).
+- **Data**: "Loaded, not Skeleton" (Mandatory database saturation on launch).

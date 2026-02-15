@@ -236,7 +236,8 @@ The Orchestra plays as one.
    - Bias: Who funded it? What's their agenda?
    - Corroboration: Do other sources agree?
 4. **Synthesize** into structured findings
-5. **Deliver** to requesting agent with full source list
+5. **Content Sourcing**: Specifically identify datasets (API, CSV, Scraping targets) for "Loaded" database saturation (>1000 items).
+6. **Deliver** to requesting agent with full source list
 
 ### SOP-007: Trend Monitoring (NEW)
 **Trigger:** Monthly, or when market shift is suspected.

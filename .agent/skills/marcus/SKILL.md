@@ -93,7 +93,8 @@ The Orchestra plays as one.
 2. Summon the 8 relevant agents for sign-off
 3. Monitor `SIGN_OFF.md` progress
 4. Verify all comments are addressed
-5. Execute final conductor sign-off
+5. **Content Gate**: Verify "Loaded, not Skeleton" compliance (check database saturation)
+6. Execute final conductor sign-off
 6. Log outcome to `task-history.json`
 
 ### SOP-003: Delegation Routing (NEW)

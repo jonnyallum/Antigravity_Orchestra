@@ -112,6 +112,7 @@ The Orchestra plays as one.
 | Open Graph | og:title, og:description, og:image on all pages | |
 | Canonical tags | Self-referencing on all pages | |
 | Internal linking | Minimum 3 internal links per page | |
+| Content Saturation | Verify "Loaded, not Skeleton" (e.g. >100 entities) | |
 
 4. Coordinate with @Sebastian for implementation
 5. Submit to Google Search Console

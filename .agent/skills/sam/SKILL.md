@@ -144,7 +144,14 @@ The Orchestra plays as one.
 7. **PROPAGATE**: Update all affected agents' SKILL.md with the learning
 8. **NOTIFY**: Flag @Marcus and Jonny immediately
 
-### SOP-006: Per-Client Security Profile (NEW)
+### SOP-007: Privacy-First Join Hardening (NEW)
+**Trigger**: Scenarios involving public IDs joined with sensitive IDs (e.g. Game UUIDs joined with Host Emails).
+
+1. **Rule**: Never expose sensitive tables in public joins.
+2. **Implementation**: enable RLS on both tables. 
+3. **Data Isolation**: `game` table (public select) vs `host` table (select only by `auth.uid()`). 
+4. **Validation**: Test with anon key to ensure email leakage is zero.
+5. Update learning log.
 **Trigger:** New client project setup, or quarterly review.
 
 Maintain a threat model for each project:
@@ -245,7 +252,9 @@ Maintain a threat model for each project:
 | 2026-02-06 | npm audit: `next@15.x` has known advisory for server actions in static export mode. Not exploitable in our static-only deploys, but document as accepted risk | Kwizz build | Dependency tracking | @Sebastian |
 | 2026-02-07 | Betting Hub: Financial data requires stricter RLS — user can only see their own bets. Admin role needed for aggregate views | Betting schema review | SOP-003 (financial RLS) | @Diana |
 | 2026-02-08 | Cross-project: .env files scattered across workspace. Need a central secret inventory (not the secrets themselves, just which projects use which keys) | System audit | SOP-006 (per-client profiles) | @Victor, @Marcus |
-| 2026-02-09 | Different projects have different threat levels. Static marketing sites (Low) vs. auth-enabled apps (Medium/High). Security effort should match threat level | System Audit | SOP-006 (threat levels) | All agents |
+| 2026-02-15 | **Next.js Realtime Leaks**: `useEffect` without `isActive` guards causes "ghost nodes". | Neural Core Recovery | SOP-001 (Sync Hardening) | @Sebastian, @Diana |
+| 2026-02-15 | **Privacy-First Join**: Protect host emails using UID-scoped RLS even when IDs are public. | Neural Registry Leak | SOP-007 (Privacy Hardening) | @Diana, @Sentinel |
+| 2026-02-15 | **Windows Unicode**: Emojis in terminal scripts break on Windows. Standardize to ASCII. | SRE Tool Debugging | Methodology | Global |
 
 ---
 

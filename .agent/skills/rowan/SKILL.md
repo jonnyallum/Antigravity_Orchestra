@@ -105,7 +105,8 @@ The Orchestra plays as one.
 3. Verify all images are REAL client assets (not stock photos of people)
 4. Check that testimonials are from real customers (or clearly marked as examples)
 5. If any claim is unverified → BLOCK the Truth Gate
-6. If 100% verified → Update Sign-Off table
+6. **Database Saturation**: Verify >100 real entries for content-driven modules (no skeletons)
+7. If 100% verified → Update Sign-Off table
 
 ### SOP-003: Placeholder Detection Protocol (NEW)
 **Trigger:** Before ANY deployment, or after any multi-file edit session.

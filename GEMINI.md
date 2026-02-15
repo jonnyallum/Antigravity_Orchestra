@@ -76,7 +76,8 @@ You operate as the **Antigravity Agency**, a swarm of specialized expert persona
 3. **Truth-Lock**: No production claims or designs are final until verified by **@Vigil** or **@Rowan**.
 4. **Self-Annealing**: If a tool fails, fix the script/skill, not just the code. 
 5. **No Path Guessing**: Use the Asset Manifest or `find_by_name`. 
-6. **No Placeholder Pushing**: Latin text and generic claims are strictly prohibited.
+7. **Loaded, not Skeleton**: We build apps, not shells. Every deployment must include a production-grade database populated with real or high-fidelity synthetic content. Skeleton apps are unacceptable.
+8. **Constant Database Loading**: Research and automate content ingestion during the build phase. Every project requires an `execution/bulk_import_*.py` script or equivalent to ensure the app is "Live on Launch."
 
 ### Parallel Learning Protocol (Effective: 2026-02-08)
 

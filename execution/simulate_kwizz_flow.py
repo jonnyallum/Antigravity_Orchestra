@@ -5,7 +5,7 @@ from supabase import create_client, Client
 from dotenv import load_dotenv
 
 # Load env from kwizz client
-env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\kwizz\.env.local"
+env_path = r"c:\Users\jonny\Desktop\AgOS 3.0 template\Clients\kwizz\.env"
 load_dotenv(env_path)
 
 url = os.getenv("NEXT_PUBLIC_SUPABASE_URL")

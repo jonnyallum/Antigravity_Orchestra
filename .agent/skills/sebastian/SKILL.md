@@ -93,8 +93,9 @@ The Orchestra plays as one.
 2. Query task-history for related previous work on this project
 3. Draft a technical spec in `.tmp/architecture_spec.md`
 4. Align with @Priya on visual constraints and @Diana on data requirements
-5. Execute core implementation (Schema → API → UI)
-6. Run `tsc` and build check before marking "Ready for Review"
+5. **Mandatory**: Create an `execution/bulk_import_[feature].py` script for database saturation
+6. Execute core implementation (Schema → API → UI)
+7. Run `tsc` and build check before marking "Ready for Review"
 
 ### SOP-002: Technical Quality Gate
 **Trigger:** Before any deployment or pull request.

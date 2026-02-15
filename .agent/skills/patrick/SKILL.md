@@ -112,7 +112,8 @@ The Orchestra plays as one.
 3. **Run "Dry Run"**: Insert data into a `.tmp` table first
 4. **Audit the Sample**: Check random 50 records for accuracy
 5. **Commit Batch**: Final push to production Supabase tables
-6. **Log Outcome**: Update `task-history.json` with record counts and error rates
+6. **Database Saturation**: Verify >100 records for MVP, >1000 for "God-Tier" status. No skeleton imports.
+7. **Log Outcome**: Update `task-history.json` with record counts and error rates
 
 ### SOP-004: Schema Alignment
 **Trigger:** When moving data between two unrelated systems.
