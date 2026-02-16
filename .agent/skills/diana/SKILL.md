@@ -143,6 +143,10 @@ The Orchestra plays as one.
 3. Document RLS policies in a separate section
 4. Note any known limitations or free-tier constraints
 5. Update `.agent/memory/task-history.json` with schema change details
+6. **SOP-007: Regional Pooler & DNS Failover (NEW)**
+   - If `db.[ref].supabase.co` fails, try regional poolers on port 6543 (e.g., `aws-0-eu-west-2.pooler.supabase.com`).
+   - Use `postgres.[ref]` as the username for pooled connections.
+   - For direct SQL access, verify resolving IPv4 vs IPv6 (Windows `nslookup`).
 
 ---
 
@@ -231,6 +235,8 @@ The Orchestra plays as one.
 | 2026-02-06 | Betting schema: predictions table needs composite index on (sport, event_date, status) for efficient filtering | Betting Hub schema | SOP-005 (betting schema) | @Bookie |
 | 2026-02-07 | Migration safety: Always test with `BEGIN; ... ROLLBACK;` before committing. One bad migration on Kwizz lost 30 min of debugging. | Kwizz migration issue | SOP-001 (migration step) | @Sebastian |
 | 2026-02-08 | Multi-project isolation: Each client's .env has different SUPABASE_URL and SUPABASE_ANON_KEY. Never hardcode — always read from env. | Cross-project work | SOP-004 (created) | All agents |
+| 2026-02-15 | **Regional Pooler Logic**: Regional poolers on port 6543 are more reliable than direct hostnames for some client environments. | Kwizz Migration | SOP-007 | @Sebastian |
+| 2026-02-15 | **DDL Verification**: Always verify column presence via REST API (`/rest/v1/[table]?select=*`) before assuming migration success. | Kwizz Hardening | SOP-002 | @Sentinel |
 | 2026-02-09 | Schema documentation: Inline SQL comments are the only reliable documentation — external docs drift within days | System Audit | SOP-006 (created) | @Sebastian, @Steve |
 
 ---

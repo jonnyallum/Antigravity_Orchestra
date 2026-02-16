@@ -135,6 +135,14 @@ The Orchestra plays as one.
 4. If `replace_in_file` fails, re-read the file first (content may have auto-formatted)
 5. Never assume file content — always verify before SEARCH/REPLACE
 
+### SOP-006: Hard-Lock Realtime Sync (NEW)
+**Trigger:** Any real-time gameplay or synchronization feature.
+
+1. **Frontend Guard**: Always implement a check in the selection handler (e.g., `if (game.is_answer_revealed) return`) to prevent race conditions during reveal.
+2. **Subscription Safety**: Use `isActive` boolean guards within `useEffect` hooks and their cleanup functions to prevent "ghost nodes" and memory leaks.
+3. **Connection Failover**: Use direct IPs or `socket.gethostbyname` if standard DNS resolution fails on direct DB hosts.
+4. **Verification**: Always test the lock-out state end-to-end after any sync logic change.
+
 ---
 
 ## Collaboration
@@ -221,6 +229,9 @@ The Orchestra plays as one.
 | 2026-02-08 | Tailwind v4 `@theme` block: Must define CSS variables explicitly for any color used in `@apply`. Legacy class names don't auto-resolve. | PLR-002 Aurora Rebrand | SOP-003 (created) | @Priya, all projects |
 | 2026-02-08 | `replace_in_file` SEARCH blocks must match character-for-character including auto-formatting. Always re-read file before editing. | PLR-002 build errors | SOP-005 (created) | All agents |
 | 2026-02-08 | Aurora palette: Deep purples + electric blues + warm accents. Defined as CSS variables in @theme for reuse. | PLR-002 | JonnyAI globals.css | @Priya |
+| 2026-02-15 | **Hard-Lock Guard**: Frontend UI must explicitly check `is_answer_revealed` to prevent race conditions during reveal. | Kwizz Sync Hardening | SOP-006 | @Priya |
+| 2026-02-15 | **Sync Subscriptions**: `useEffect` hooks require `isActive` boolean guards to prevent memory leaks and "ghost" state updates. | Neural Core Recovery | SOP-006 | @Diana |
+| 2026-02-15 | **Windows Unicode**: Emojis in terminal output cause `UnicodeEncodeError` on cp1252. Use ASCII only for execution scripts. | Kwizz Migration | Global | All agents |
 | 2026-02-09 | Multi-project workspace: Each client has different tech stack (Next.js, Vite+React, Expo). Never assume config — always check project's package.json | System Audit | SOP-001 (enhanced) | All devs |
 
 ---
