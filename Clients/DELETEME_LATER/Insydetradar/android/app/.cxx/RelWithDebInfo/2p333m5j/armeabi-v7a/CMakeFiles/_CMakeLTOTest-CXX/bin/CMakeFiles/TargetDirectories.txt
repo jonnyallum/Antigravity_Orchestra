@@ -1,4 +1,0 @@
-C:/Users/jonny/Desktop/Jonny AI/Clients/New folder/Insydetradar/android/app/.cxx/RelWithDebInfo/2p333m5j/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
-C:/Users/jonny/Desktop/Jonny AI/Clients/New folder/Insydetradar/android/app/.cxx/RelWithDebInfo/2p333m5j/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
-C:/Users/jonny/Desktop/Jonny AI/Clients/New folder/Insydetradar/android/app/.cxx/RelWithDebInfo/2p333m5j/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
-C:/Users/jonny/Desktop/Jonny AI/Clients/New folder/Insydetradar/android/app/.cxx/RelWithDebInfo/2p333m5j/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir
