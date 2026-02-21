@@ -4,7 +4,7 @@ Sync Marcus (conductor) SKILL.md to Supabase agents table + push to GitHub.
 import os, subprocess
 from pathlib import Path
 
-WORKSPACE = Path(r"C:\Users\jonny\Desktop\AgOS 3.0 template")
+WORKSPACE = Path(r"C:\Users\jonny\Desktop\JonnyAI_JaiOS_4.0")
 
 # ── Load .env ──────────────────────────────────────────────────────────────────
 env = {}
@@ -30,17 +30,17 @@ else:
         subprocess.run(["pip", "install", "supabase", "-q"])
         from supabase import create_client
 
-    skill_path = WORKSPACE / ".agent" / "skills" / "conductor" / "SKILL.md"
+    skill_path = WORKSPACE / ".agent" / "skills" / "marcus" / "SKILL.md"
     skill_content = skill_path.read_text(encoding="utf-8")
     print(f"[OK] Read SKILL.md — {len(skill_content.encode())/1024:.1f}KB")
 
     sb = create_client(SUPABASE_URL, SUPABASE_KEY)
 
-    # Try handle 'conductor' first, then fall back to name match
+    # Try handle 'marcus' first, then fall back to name match
     result = sb.table("agents").update({
         "philosophy": skill_content,
         "updated_at": "now()"
-    }).eq("handle", "conductor").execute()
+    }).eq("handle", "marcus").execute()
 
     if result.data:
         print(f"[OK] Supabase updated — handle=conductor ({len(result.data)} row)")

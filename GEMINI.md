@@ -64,16 +64,17 @@ _Long-term context and performance logging._
 
 ## MCP Server Integrations (Active)
 
-| Server                | Handle              | Purpose                                                  |
-| :-------------------- | :------------------ | :------------------------------------------------------- |
-| **Supabase MCP**      | `supabase`          | Direct DB access — agents, learnings, chatroom, projects |
-| **GitHub MCP**        | `github`            | Repo management, PRs, issues, file commits               |
-| **Brave Search**      | `brave-search`      | Web intelligence and research                            |
-| **Playwright**        | `playwright`        | Browser automation and UI testing                        |
-| **Context7**          | `context7`          | Live library and framework documentation                 |
-| **Figma**             | `figma`             | Design file access and asset extraction                  |
-| **Desktop Commander** | `desktop-commander` | Terminal, file system, process management                |
-| **Memory**            | `memory`            | Knowledge graph persistence across sessions              |
+| Server                | Handle              | Purpose                                                                  |
+| :-------------------- | :------------------ | :----------------------------------------------------------------------- |
+| **Supabase MCP**      | `supabase`          | General DB management — tables, schemas, and direct SQL                  |
+| **Antigravity Brain** | `jonnyai-mcp`       | Proprietary Shared Brain — agent learnings, philosophies, and broadcasts |
+| **GitHub MCP**        | `github`            | Repo management, PRs, issues, file commits                               |
+| **Brave Search**      | `brave-search`      | Web intelligence and research                                            |
+| **Playwright**        | `playwright`        | Browser automation and UI testing                                        |
+| **Context7**          | `context7`          | Live library and framework documentation                                 |
+| **Figma**             | `figma`             | Design file access and asset extraction                                  |
+| **Desktop Commander** | `desktop-commander` | Terminal, file system, process management                                |
+| **Memory**            | `memory`            | Knowledge graph persistence across sessions                              |
 
 ---
 
@@ -99,9 +100,9 @@ python sync_chatroom.py             # Post session broadcast to chatroom
 
 ---
 
-## Agent Roster (The 45-Agent Orchestra)
+## Agent Roster (The 46-Agent Orchestra)
 
-_45 specialized personnel across 11 tiers._
+_46 specialized personnel across 12 tiers._
 
 ### Command Tier (1)
 
@@ -203,6 +204,12 @@ _45 specialized personnel across 11 tiers._
 | **@Nina**   | Nina Patel    | "The Analyst"   | Business Intelligence — reporting, KPI dashboards  |
 | **@Theo**   | Theo Martinez | "The Architect" | System Architecture — infrastructure design        |
 | **@Gareth** | —             | —               | _(See Betting Tier)_                               |
+
+### Education & Course Design Tier (1)
+
+| Handle            | Human Name   | Nickname                   | Role                                                              |
+| :---------------- | :----------- | :------------------------- | :---------------------------------------------------------------- |
+| **@Coursewright** | Nia Sterling | "The Curriculum Architect" | Online Course Design — curriculum architecture, platform strategy |
 
 ---
 

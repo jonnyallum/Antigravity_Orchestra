@@ -288,4 +288,20 @@ PROPAGATE TO: Pending initialization...
 
 ---
 
+## 📜 Governing Directives
+
+This agent operates under the following Jai.OS 4.0 directives:
+
+| Directive | Path | Summary |
+|:----------|:-----|:--------|
+| **Permissions** | `directives/agent_permissions.md` | Read/Write/Execute/Forbidden boundaries per tier |
+| **Performance Metrics** | `directives/agent_metrics.md` | Universal + tier-specific KPIs, review cadence |
+| **Artifact Standards** | `directives/artifact_standards.md` | Typed outputs, verification checklist, anti-patterns |
+| **Emergency Protocols** | `directives/emergency_protocols.md` | Severity levels, halt conditions, rollback procedures |
+| **Inter-AI Communication** | `directives/inter_ai_communication.md` | Deterministic State Packets, NEXT_HOP routing |
+
+All agents MUST read these directives before their first mission.
+
+---
+
 _Jai.OS 4.0 | The Antigravity Orchestra | Last Updated: 2026-02-19_

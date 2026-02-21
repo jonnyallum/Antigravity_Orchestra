@@ -1,33 +1,45 @@
 ---
-description: Mandatory inter-AI messaging protocol to ensure agents are always synced with the latest boardroom decisions and peer handover.
+description: Mandatory Deterministic Inter-AI State-Machine Protocol. Eliminates human hand-holding by 50%+ via strict packet-based handoffs.
 ---
 
-# Inter-AI Communication & Messaging Protocol (AgOS 3.0)
+# Deterministic Inter-AI State-Machine Protocol (Jai.OS 4.0)
 
-To prevent context drift and duplicated effort, all agents must adhere to the **Check-Before-Act** ritual.
+To eliminate "lost" agents and context drift, all communication is now **State-Machine Driven**. We are moving from "Messaging" to "State Packets."
 
-## 🚨 The Mandatory First Step (The Greeting)
-Before browsing the file system or executing terminal commands, every agent MUST check the following locations for mission-critical updates from peer agents:
+## 🚨 The State-Machine Handshake
 
-1.  **Direct Inbox**: `.tmp/message4[persona-name].md`
-    *   Example: If you are @Marcus, check `.tmp/message4marcus.md`.
-2.  **Global Broadcast**: `.tmp/message4all.md` or `.tmp/message4ai.md`
-3.  **The Chatroom**: `.agent/boardroom/chatroom.md` (Check the last 3-5 entries).
-4.  **Sync Logs**: `CLINE_SYNC.md` (or relevant `[AGENT]_SYNC.md` files).
+Every communication in `chatroom.md` or `.tmp/message4[agent].md` MUST follow the **Deterministic Packet Schema**.
 
-## 📩 Sending Messages (The Handover)
-When completing a task or hitting a blocker that involves another agent:
+If a message does not contain these four fields, it is considered a **Protocol Violation (PV)**.
 
-1.  **Write the Handover**: Create/Update `.tmp/message4[target-agent].md`.
-2.  **Ping the Chatroom**: Add a summary to `.agent/boardroom/chatroom.md`.
-    *   *Format*: `**[Your Persona]**: [Summary] -> [Target Persona]`
-3.  **Use Truth-First Language**: Avoid "I think" or "maybe". Use "I have confirmed" or "Verification required by @[Agent]".
+### 1. The Schema:
 
-## 🔄 The Sync Lock
-If a project is undergoing high-velocity changes across multiple AI environments:
-1.  Check if a lock file exists (e.g., `SYNC_LOCK_IN_PROGRESS`).
-2.  Do not commit major architectural changes until the lock is cleared.
+```markdown
+[TASK_ID]: [UUID or Short Link]
+[CURRENT_STATE]: [READY | IN_PROGRESS | BLOCKED | GATE_CLEARED]
+[PAYLOAD_PATH]: [Absolute Path to Artifact/PR/Status]
+[NEXT_HOP]: @[AgentHandle] | DONE
+```
 
-## 🏛️ Operating Principles
-*   **Silence is Failure**: If you do a major task and don't log it in the chatroom, it didn't happen.
-*   **The Chain of Custody**: Always reference the previous agent's work when starting your turn (e.g., "Continuing @Cline's work on Monetization...").
+### 2. The Logic:
+
+- **NO OPEN LOOPS**: Never end a message with a question to the Human unless it's a "Strategy Pivot" (L3 Authority).
+- **DIRECTED ACTION**: If you finish a task, you MUST assign the `NEXT_HOP` to the specialist who owns the next gate (e.g., @Sebastian -> @Sam for Security Audit).
+- **IDLE_DEATH**: If an agent has no `NEXT_HOP` pointing to them, they remain in "Hibernation." Do not act without a `NEXT_HOP` assignment.
+
+---
+
+## 🏛️ Operating Principles (Jai.OS 4.0)
+
+1. **The Handover is a Command**: A `NEXT_HOP` assignment is a deterministic signal to act.
+2. **Context-in-Payload**: Do not explain your code in the chatroom. Put the explanation in the `PAYLOAD_PATH` (e.g., a README.md or Commented PR).
+3. **Truth-Lock Verification**: Before a `NEXT_HOP` to "DONE", **@Vigil** or **@Rowan** must be assigned a `NEXT_HOP` for quality gating.
+4. **Human Exclusion Phase**: AIs should cycle through at least 3-5 `NEXT_HOP` transitions before requiring a Human "Strategy Audit."
+
+## 🔄 Automated Routing (The Antigravity Brain)
+
+The **Antigravity Brain MCP** (`jonnyai-mcp`) is the authoritative bridge for this protocol. It parses these packets to update the `tasks` and `projects` tables in Supabase automatically.
+
+---
+
+_Jai.OS 4.0 | The Antigravity Orchestra | jonnyai-mcp Active_
